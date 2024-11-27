@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace RiddleRaiders
 {
     public partial class Form1 : Form
@@ -23,12 +25,24 @@ namespace RiddleRaiders
 
             this.BackgroundImage = Image.FromFile("assets/img/level_01.jpg");
 
+
+
         }
 
         private void BtnExitClick(object? sender, EventArgs e)
         {
 
-            Application.Exit();
+            DialogResult result = MessageBox.Show(
+                caption: "RiddleRaiders ",
+                text: "Do you want to exit the game? ",
+                buttons: MessageBoxButtons.YesNo,
+                icon: MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
 
         }
 

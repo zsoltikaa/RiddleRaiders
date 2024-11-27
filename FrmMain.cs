@@ -21,7 +21,7 @@ namespace RiddleRaiders
             lblTitle.Visible = false;
             lblVersion.Visible = false;
 
-
+            this.BackgroundImage = Image.FromFile("assets/img/level_01.jpg");
 
         }
 

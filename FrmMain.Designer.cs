@@ -36,6 +36,10 @@ namespace RiddleRaiders
             btnPlay = new Button();
             btnExit = new Button();
             lblVersion = new Label();
+            pbxEnemy = new PictureBox();
+            pbxPlayer = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pbxEnemy).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxPlayer).BeginInit();
             SuspendLayout();
             // 
             // lblTitle
@@ -85,12 +89,34 @@ namespace RiddleRaiders
             lblVersion.TabIndex = 3;
             lblVersion.Text = "v. 1.0.0.1";
             // 
+            // pbxEnemy
+            // 
+            pbxEnemy.BackColor = Color.Transparent;
+            pbxEnemy.Image = (System.Drawing.Image)resources.GetObject("pbxEnemy.Image");
+            pbxEnemy.Location = new Point(897, 534);
+            pbxEnemy.Name = "pbxEnemy";
+            pbxEnemy.Size = new Size(160, 185);
+            pbxEnemy.TabIndex = 5;
+            pbxEnemy.TabStop = false;
+            // 
+            // pbxPlayer
+            // 
+            pbxPlayer.BackColor = Color.Transparent;
+            pbxPlayer.Image = (System.Drawing.Image)resources.GetObject("pbxPlayer.Image");
+            pbxPlayer.Location = new Point(390, 476);
+            pbxPlayer.Name = "pbxPlayer";
+            pbxPlayer.Size = new Size(133, 243);
+            pbxPlayer.TabIndex = 4;
+            pbxPlayer.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (System.Drawing.Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1366, 768);
+            Controls.Add(pbxEnemy);
+            Controls.Add(pbxPlayer);
             Controls.Add(lblVersion);
             Controls.Add(btnExit);
             Controls.Add(btnPlay);
@@ -100,6 +126,8 @@ namespace RiddleRaiders
             MinimizeBox = false;
             Name = "Form1";
             Text = "Riddle Raiders";
+            ((System.ComponentModel.ISupportInitialize)pbxEnemy).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxPlayer).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -110,5 +138,8 @@ namespace RiddleRaiders
         private Button btnPlay;
         private Button btnExit;
         private Label lblVersion;
+        private PictureBox pictureBox1;
+        private PictureBox pbxEnemy;
+        private PictureBox pbxPlayer;
     }
 }

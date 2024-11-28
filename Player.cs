@@ -8,10 +8,10 @@ namespace AdventureQuiz
 {
     internal class Player
     {
-        string name;
-        int health;
-        int damage;
-        string imagePath;
+        public string name;
+        public int health;
+        public int damage;
+        public string imagePath;
 
         public Player(string name, int health, int damage, string imagePath)
         {

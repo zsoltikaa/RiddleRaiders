@@ -8,17 +8,19 @@ namespace AdventureQuiz
 {
     internal class Enemy
     {
-        string name;
-        int health;
-        int damage;
-        string imagePath;
+        public string name;
+        public int health;
+        public int damage;
+        public string imagePath;
+        public Position position;
 
-        public Enemy(string name, int health, int damage, string imagePath)
+        public Enemy(string name, int health, int damage, string imagePath, Position position)
         {
             this.name = name;
             this.health = health;
             this.damage = damage;
             this.imagePath = imagePath;
+            this.position = position;
         }
     }
 }

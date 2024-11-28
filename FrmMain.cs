@@ -1,15 +1,14 @@
 using AdventureQuiz;
-using System.Runtime.InteropServices.Marshalling;
-using System.Windows.Forms;
+using System.Drawing.Design;
 
 namespace RiddleRaiders
 {
     public partial class Form1 : Form
     {
-        private int level = 0;
+        private int level;
         private Scene currentScene;
-        private List<Scene> sceneList;
-        private string imageDir = "../../../Resources/";
+        private List<Scene> sceneList = new List<Scene>();
+        private string imageDir;
 
         Player player;
         public Form1()
@@ -17,11 +16,28 @@ namespace RiddleRaiders
 
             InitializeComponent();
 
-            player = new Player("Player", 5, 1, $"{imageDir}player.png");
+            InitGame();
 
             btnExit.Click += BtnExitClick;
 
             btnPlay.Click += BtnPlayClick;
+
+        }
+
+        private void InitGame()
+        {
+
+            level = -1;
+
+            imageDir = "../../../Resources/";
+
+            player = new Player("Player", 5, 1, $"{imageDir}player.png");
+
+            FillScenes();
+
+            pbxPlayer.Visible = false;
+
+            pbxEnemy.Visible = false;
 
         }
 
@@ -34,6 +50,18 @@ namespace RiddleRaiders
             lblVersion.Visible = false;
 
             ChangeLevel();
+
+            Image img = Image.FromFile(player.imagePath);
+
+            pbxPlayer.Image = img;
+
+            pbxPlayer.Width = img.Width;
+
+            pbxPlayer.Height = img.Height;
+
+            pbxPlayer.Visible = true;
+
+            pbxEnemy.Visible = true;
 
         }
 
@@ -57,17 +85,36 @@ namespace RiddleRaiders
         private void FillScenes()
         {
 
-            sceneList.Add(new Scene($"{imageDir}jungle.jpg", "Jungle", new Position(390, 476), new Position(900, 534)));
+            sceneList.Add(new Scene($"{imageDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{imageDir}mutated_crocodile.png", new Position(900, 534))));
 
         }
         private void ChangeLevel()
         {
 
             level += 1;
-            
-            this.BackgroundImage = Image.FromFile($"../../../Resources/jungle.jpg");
 
+            currentScene = sceneList[level];
 
+            UpdateScene();
+
+        }
+
+        private void UpdateScene()
+        {
+
+            this.BackgroundImage = Image.FromFile(currentScene.backgroundImage);
+
+            Image img = Image.FromFile(currentScene.enemy.imagePath);
+
+            pbxEnemy.Image = img;
+
+            pbxEnemy.Width = img.Width;
+
+            pbxEnemy.Height = img.Height;
+
+            pbxPlayer.Location = new Point(currentScene.playerPosition.x, currentScene.playerPosition.y);
+
+            pbxEnemy.Location = new Point(currentScene.enemy.position.x, currentScene.enemy.position.y);
 
         }
 

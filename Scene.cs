@@ -12,13 +12,15 @@ namespace AdventureQuiz
         public readonly string sceneName;
         public readonly Position playerPosition;
         public readonly Enemy enemy;
+        public readonly string chat;
 
-        public Scene(string backgroundImage, string sceneName, Position playerPosition, Enemy enemy)
+        public Scene(string backgroundImage, string sceneName, Position playerPosition, Enemy enemy, string chat)
         {
             this.backgroundImage = backgroundImage;
             this.sceneName = sceneName;
             this.playerPosition = playerPosition;
             this.enemy = enemy;
+            this.chat = chat;
         }
     }
 }

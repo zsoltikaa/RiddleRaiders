@@ -38,6 +38,7 @@ namespace RiddleRaiders
             lblVersion = new Label();
             pbxEnemy = new PictureBox();
             pbxPlayer = new PictureBox();
+            rtbChat = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)pbxEnemy).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxPlayer).BeginInit();
             SuspendLayout();
@@ -109,12 +110,26 @@ namespace RiddleRaiders
             pbxPlayer.TabIndex = 4;
             pbxPlayer.TabStop = false;
             // 
+            // rtbChat
+            // 
+            rtbChat.BackColor = Color.White;
+            rtbChat.BorderStyle = BorderStyle.FixedSingle;
+            rtbChat.Enabled = false;
+            rtbChat.Font = new System.Drawing.Font("Monocraft", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rtbChat.Location = new Point(504, 351);
+            rtbChat.Name = "rtbChat";
+            rtbChat.Size = new Size(258, 152);
+            rtbChat.TabIndex = 6;
+            rtbChat.Text = "";
+            rtbChat.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (System.Drawing.Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1366, 768);
+            Controls.Add(rtbChat);
             Controls.Add(pbxEnemy);
             Controls.Add(pbxPlayer);
             Controls.Add(lblVersion);
@@ -141,5 +156,6 @@ namespace RiddleRaiders
         private PictureBox pictureBox1;
         private PictureBox pbxEnemy;
         private PictureBox pbxPlayer;
+        private RichTextBox rtbChat;
     }
 }

@@ -1,5 +1,5 @@
 using AdventureQuiz;
-using System.Drawing.Design;
+using Timer = System.Windows.Forms.Timer;
 
 namespace RiddleRaiders
 {
@@ -9,8 +9,10 @@ namespace RiddleRaiders
         private Scene currentScene;
         private List<Scene> sceneList = new List<Scene>();
         private string imageDir;
-
-        Player player;
+        private Timer timer;
+        private int currentCharIndex;
+        private string text;
+        private Player player;
         public Form1()
         {
 
@@ -21,6 +23,26 @@ namespace RiddleRaiders
             btnExit.Click += BtnExitClick;
 
             btnPlay.Click += BtnPlayClick;
+
+            timer = new Timer();
+            timer.Interval = 30; 
+            timer.Tick += TimerTick;
+
+        }
+
+        private void TimerTick(object? sender, EventArgs e)
+        {
+
+            if (currentCharIndex < text.Length)
+            {
+                rtbChat.AppendText(text[currentCharIndex].ToString());
+                rtbChat.ScrollToCaret(); 
+                currentCharIndex++;
+            }
+            else
+            {
+                timer.Stop();
+            }
 
         }
 
@@ -39,11 +61,13 @@ namespace RiddleRaiders
 
             pbxEnemy.Visible = false;
 
+           
+
         }
 
         private void BtnPlayClick(object? sender, EventArgs e)
         {
-            
+
             btnPlay.Visible = false;
             btnExit.Visible = false;
             lblTitle.Visible = false;
@@ -85,9 +109,10 @@ namespace RiddleRaiders
         private void FillScenes()
         {
 
-            sceneList.Add(new Scene($"{imageDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{imageDir}mutated_crocodile.png", new Position(900, 534))));
+            sceneList.Add(new Scene($"{imageDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{imageDir}mutated_crocodile.png", new Position(900, 534)), "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission. \nPrepare yourself, creature!"));
 
         }
+
         private void ChangeLevel()
         {
 
@@ -116,7 +141,15 @@ namespace RiddleRaiders
 
             pbxEnemy.Location = new Point(currentScene.enemy.position.x, currentScene.enemy.position.y);
 
-        }
+            rtbChat.Visible = true;
 
+            text = currentScene.chat;
+
+            currentCharIndex = 0;
+
+            timer.Start();
+
+        }
+        
     }
 }

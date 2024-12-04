@@ -5,14 +5,19 @@ namespace RiddleRaiders
 {
     public partial class Form1 : Form
     {
+        private static Random rnd = new Random();
+
         private int level;
         private Scene currentScene;
         private List<Scene> sceneList = new List<Scene>();
-        private string imageDir;
-        private Timer timer;
+        private string resourceDir;
+        private Timer textTimer;
+        private Timer questionTimer;
         private int currentCharIndex;
         private string text;
         private Player player;
+        private List<Question> questionList = new List<Question>();
+        private Question currentQuestion;
         public Form1()
         {
 
@@ -24,13 +29,27 @@ namespace RiddleRaiders
 
             btnPlay.Click += BtnPlayClick;
 
-            timer = new Timer();
-            timer.Interval = 30; 
-            timer.Tick += TimerTick;
+            textTimer = new Timer();
+            textTimer.Interval = 30; 
+            textTimer.Tick += TextTimerTick;
+
+            questionTimer = new Timer();
+            questionTimer.Interval = 5;
+            questionTimer.Tick += QuestionTimerTick;
 
         }
 
-        private void TimerTick(object? sender, EventArgs e)
+        private void QuestionTimerTick(object sender, EventArgs e)
+        {
+            pnlTimer.Width -= 2;
+
+            if (pnlTimer.Width < 0)
+            {
+                player.health--;
+            }
+        }
+
+        private void TextTimerTick(object? sender, EventArgs e)
         {
 
             if (currentCharIndex < text.Length)
@@ -41,7 +60,12 @@ namespace RiddleRaiders
             }
             else
             {
-                timer.Stop();
+                textTimer.Stop();
+                Thread.Sleep(2000);
+                rtbChat.Visible = false;
+                tblQuestionPanel.Visible = true;
+
+                questionTimer.Start();
             }
 
         }
@@ -51,18 +75,25 @@ namespace RiddleRaiders
 
             level = -1;
 
-            imageDir = "../../../Resources/";
+            resourceDir = "../../../Resources/";
 
-            player = new Player("Player", 5, 1, $"{imageDir}player.png");
+            player = new Player("Player", 5, 1, $"{resourceDir}player.png");
 
             FillScenes();
+
+            FillQuestions();
 
             pbxPlayer.Visible = false;
 
             pbxEnemy.Visible = false;
+        }
 
-           
-
+        private void EngageEnemy()
+        {
+            while(currentScene.enemy.health > 0)
+            {
+                
+            }
         }
 
         private void BtnPlayClick(object? sender, EventArgs e)
@@ -109,8 +140,19 @@ namespace RiddleRaiders
         private void FillScenes()
         {
 
-            sceneList.Add(new Scene($"{imageDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{imageDir}mutated_crocodile.png", new Position(900, 534)), "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission. \nPrepare yourself, creature!"));
+            sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission. \nPrepare yourself, creature!"));
 
+        }
+
+        private void FillQuestions()
+        {
+            using (StreamReader sr = new StreamReader($"{resourceDir}questions.txt"))
+            {
+                while (!sr.EndOfStream)
+                {
+                    questionList.Add(new Question(sr.ReadLine()));
+                }
+            }
         }
 
         private void ChangeLevel()
@@ -147,8 +189,15 @@ namespace RiddleRaiders
 
             currentCharIndex = 0;
 
-            timer.Start();
+            textTimer.Start();
 
+        }
+
+        private void GenerateRandomQuestion()
+        {
+            int questionIndex = rnd.Next(0, questionList.Count);
+            currentQuestion = questionList[questionIndex];
+            questionList.RemoveAt(questionIndex);
         }
         
     }

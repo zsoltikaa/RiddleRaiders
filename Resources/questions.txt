@@ -1,0 +1,500 @@
+What is the capital of France?;London;Berlin;Paris;Madrid;Paris
+Who wrote "Romeo and Juliet"?;Charles Dickens;William Shakespeare;Jane Austen;Mark Twain;William Shakespeare
+What is the largest planet in our solar system?;Earth;Mars;Jupiter;Saturn;Jupiter
+What is the chemical symbol for water?;H2O;CO2;O2;H2;H2O
+Who painted the Mona Lisa?;Vincent van Gogh;Leonardo da Vinci;Pablo Picasso;Claude Monet;Leonardo da Vinci
+What is the smallest continent?;Asia;Africa;Europe;Australia;Australia
+What is the freezing point of water in Celsius?;0°C;32°F;100°C;0°F;0°C
+What is the longest river in the world?;Amazon River;Nile River;Yangtze River;Mississippi River;Nile River
+What is the main ingredient in guacamole?;Tomato;Avocado;Onion;Garlic;Avocado
+What is the largest ocean on Earth?;Atlantic Ocean;Indian Ocean;Arctic Ocean;Pacific Ocean;Pacific Ocean
+What year did World War I begin?;1914;1920;1939;1945;1914
+Who was the first president of the United States?;Abraham Lincoln;George Washington;Thomas Jefferson;John Adams;George Washington
+What ancient civilization built the pyramids of Egypt?;Romans;Greeks;Egyptians;Mesopotamians;Egyptians
+In which battle did Napoleon Bonaparte face defeat?;Battle of Waterloo;Battle of Gettysburg;Battle of Hastings;Battle of Trafalgar;Battle of Waterloo
+Who was the first man to walk on the moon?;Yuri Gagarin;Buzz Aldrin;Neil Armstrong;John Glenn;Neil Armstrong
+What is the capital of Japan?;Seoul;Beijing;Tokyo;Kyoto;Tokyo
+In which country did the Industrial Revolution begin?;Germany;France;United States;United Kingdom;United Kingdom
+What is the hardest natural substance on Earth?;Gold;Diamond;Iron;Platinum;Diamond
+What is the speed of light in a vacuum?;300,000 km/s;150,000 km/s;500,000 km/s;1,000,000 km/s;300,000 km/s
+Who invented the telephone?;Thomas Edison;Nikola Tesla;Alexander Graham Bell;Samuel Morse;Alexander Graham Bell
+What is the chemical symbol for gold?;Ag;Au;Pb;Fe;Au
+In physics, what is the unit of force?;Joule;Newton;Watt;Volt;Newton
+What is the center of an atom called?;Proton;Electron;Neutron;Nucleus;Nucleus
+Which planet is known as the "Red Planet"?;Earth;Mars;Venus;Jupiter;Mars
+Who developed the theory of relativity?;Isaac Newton;Galileo Galilei;Albert Einstein;Nikola Tesla;Albert Einstein
+What is the capital of Italy?;Florence;Rome;Milan;Naples;Rome
+In which year did the Titanic sink?;1910;1912;1915;1920;1912
+Who was the first emperor of China?;Qin Shi Huang;Han Wu Di;Kublai Khan;Genghis Khan;Qin Shi Huang
+Which ocean is the largest in the world?;Atlantic;Indian;Arctic;Pacific;Pacific
+What is the main gas in Earth's atmosphere?;Oxygen;Hydrogen;Nitrogen;Carbon Dioxide;Nitrogen
+What is the largest land mammal?;Elephant;Whale;Hippopotamus;Rhino;Elephant
+Who wrote the novel "1984"?;George Orwell;Aldous Huxley;Ray Bradbury;J.K. Rowling;George Orwell
+In what year did the Berlin Wall fall?;1987;1989;1991;1993;1989
+Who was the first woman to fly solo across the Atlantic?;Amelia Earhart;Bessie Coleman;Harriet Quimby;Jacqueline Cochran;Amelia Earhart
+What is the capital of Canada?;Ottawa;Toronto;Vancouver;Montreal;Ottawa
+In which video game series does the character "Link" appear?;Super Mario;Zelda;Metroid;Halo;Zelda
+What is the best-selling video game of all time?;Minecraft;Grand Theft Auto V;The Legend of Zelda;Tetris;Minecraft
+Which gaming console is known for its "Ring of Death" issue?;PlayStation 3;Xbox 360;Nintendo Wii;Sega Dreamcast;Xbox 360
+What year was the first "Super Mario Bros." game released?;1985;1983;1980;1987;1985
+What was the first video game to feature a jumping mechanic?;Space Invaders;Donkey Kong;Super Mario Bros.;Pitfall!;Donkey Kong
+What does "RPG" stand for in video games?;Racing Player Game;Role-Playing Game;Robot Play Game;Real Play Game;Role-Playing Game
+Who is the main antagonist in the "Halo" series?;GLaDOS;Cortana;The Flood;Master Chief;The Flood
+Which company created the "PlayStation" console?;Sega;Microsoft;Sony;Nintendo;Sony
+What is the best-selling video game console of all time?;Nintendo Wii;PlayStation 2;Xbox 360;Nintendo Switch;PlayStation 2
+What is the highest-grossing video game franchise?;Call of Duty;Grand Theft Auto;Super Mario;Pokémon;Pokémon
+Which fictional character is known for saying, "It's dangerous to go alone! Take this."?;Mario;Link;Samus;Sonic;Link
+What year did the first "Pokémon" game release?;1995;1996;1998;2000;1996
+In what game does the character "Pikachu" appear?;Zelda;Pokémon;Metroid;Minecraft;Pokémon
+What is the primary goal in the game "Minecraft"?;Build a house;Collect all items;Survive and explore;Defeat enemies;Survive and explore
+Which game franchise features characters like "Mario," "Luigi," and "Princess Peach"?;Sonic the Hedgehog;Super Mario;The Legend of Zelda;Final Fantasy;Super Mario
+Who wrote "To Kill a Mockingbird"?;Mark Twain;Harper Lee;J.K. Rowling;Ernest Hemingway;Harper Lee
+What is the title of the first Harry Potter book?;The Chamber of Secrets;The Goblet of Fire;The Philosopher's Stone;The Half-Blood Prince;The Philosopher's Stone
+Who directed the film "Jurassic Park"?;James Cameron;Steven Spielberg;Ridley Scott;Christopher Nolan;Steven Spielberg
+What is the capital of Australia?;Sydney;Melbourne;Brisbane;Canberra;Canberra
+Who wrote "The Great Gatsby"?;F. Scott Fitzgerald;Ernest Hemingway;George Orwell;Jane Austen;F. Scott Fitzgerald
+What is the title of the first "Star Wars" movie released?;The Empire Strikes Back;A New Hope;Return of the Jedi;The Phantom Menace;A New Hope
+Who plays the character of Jack Sparrow in the "Pirates of the Caribbean" series?;Matt Damon;Johnny Depp;Tom Cruise;Brad Pitt;Johnny Depp
+In the game "The Legend of Zelda," what is the name of the main character?;Mario;Link;Samus;Sonic;Link
+Which book series is set in a world where wizards attend Hogwarts School of Witchcraft and Wizardry?;Percy Jackson;Harry Potter;The Chronicles of Narnia;The Hunger Games;Harry Potter
+What is the most watched film of all time?;Titanic;Avengers: Endgame;The Lion King;Star Wars: The Force Awakens;Avengers: Endgame
+What is the name of the artificial intelligence in the movie "2001: A Space Odyssey"?;HAL 9000;Siri;Cortana;Alexa;HAL 9000
+Who directed the movie "Inception"?;Steven Spielberg;Christopher Nolan;Martin Scorsese;Quentin Tarantino;Christopher Nolan
+Which video game is known for the battle royale mode called "Fortnite"?;Minecraft;Call of Duty;Fortnite;Apex Legends;Fortnite
+What is the name of the planet in the "Avatar" movie?;Pandora;Mars;Earth;Titan;Pandora
+Who wrote the novel "1984"?;Aldous Huxley;Ray Bradbury;George Orwell;William Golding;George Orwell
+What is the main objective of the game "Minecraft"?;Explore and fight monsters;Build structures and explore;Collect all the items;Complete quests;Build structures and explore
+In what year was the first "The Lord of the Rings" movie released?;2001;2000;2002;1999;2001
+What fictional city is the setting of the "Batman" comic series?;Gotham City;Metropolis;Star City;Central City;Gotham City
+What is the name of the main character in the video game "Halo"?;Marcus Fenix;Master Chief;Samus Aran;Link;Master Chief
+In the film "The Matrix," what is the name of the main character?;Neo;Trinity;Morpheus;Agent Smith;Neo
+Who wrote "The Hobbit"?;J.K. Rowling;C.S. Lewis;J.R.R. Tolkien;George R.R. Martin;J.R.R. Tolkien
+Which of these films was directed by Quentin Tarantino?;The Godfather;Pulp Fiction;Inception;The Dark Knight;Pulp Fiction
+Who is the author of the "Game of Thrones" book series?;J.K. Rowling;George R.R. Martin;Terry Pratchett;Robert Jordan;George R.R. Martin
+In which game do you control a character called Mario?;Zelda;Sonic;Super Mario;Final Fantasy;Super Mario
+What is the primary objective in the game "The Legend of Zelda"?;Collect coins;Defeat enemies;Rescue Princess Zelda;Build structures;Rescue Princess Zelda
+Who directed the movie "Titanic"?;Ridley Scott;James Cameron;Peter Jackson;Steven Spielberg;James Cameron
+What is the name of the character in "The Hunger Games" who volunteers to take her sister’s place?;Hermione Granger;Katniss Everdeen;Tris Prior;Clary Fray;Katniss Everdeen
+What was the first video game to feature the character Mario?;Donkey Kong;Super Mario Bros.;Mario Kart;The Legend of Zelda;Donkey Kong
+What is the main gas that makes up Earth's atmosphere?;Oxygen;Nitrogen;Carbon Dioxide;Hydrogen;Nitrogen
+What is the largest known star in the universe?;The Sun;Betelgeuse;VY Canis Majoris;Sirius A;VY Canis Majoris
+What is the hardest natural mineral on Earth?;Gold;Diamond;Ruby;Emerald;Diamond
+What is the primary function of chlorophyll in plants?;To absorb water;To absorb sunlight for photosynthesis;To store energy;To help with reproduction;To absorb sunlight for photosynthesis
+In physics, what is the unit of electric current?;Volt;Ampere;Watt;Ohm;Ampere
+What is the phenomenon where light bends when passing through different mediums?;Refraction;Reflection;Diffraction;Absorption;Refraction
+What type of energy is stored in food?;Mechanical energy;Chemical energy;Electrical energy;Nuclear energy;Chemical energy
+What is the name of the process by which plants make their own food?;Photosynthesis;Fermentation;Respiration;Transpiration;Photosynthesis
+Who discovered the theory of evolution by natural selection?;Albert Einstein;Isaac Newton;Charles Darwin;Galileo Galilei;Charles Darwin
+What is the speed of light in a vacuum?;300,000 m/s;300,000 km/s;150,000 km/s;300,000 km/h;300,000 km/s
+What is the largest bone in the human body?;Femur;Humerus;Tibia;Skull;Femur
+What is the chemical symbol for the element oxygen?;O;O2;O3;Ox;O
+What is the main function of red blood cells?;To fight infections;To transport oxygen;To produce hormones;To help in digestion;To transport oxygen
+Which gas is most responsible for global warming?;Carbon Dioxide;Oxygen;Nitrogen;Methane;Carbon Dioxide
+What is the force that pulls objects toward the center of the Earth?;Magnetism;Gravity;Friction;Air resistance;Gravity
+Who developed the law of universal gravitation?;Albert Einstein;Isaac Newton;Galileo Galilei;Nikola Tesla;Isaac Newton
+What is the process called when water turns into vapor?;Condensation;Evaporation;Precipitation;Transpiration;Evaporation
+What is the primary component of the Earth’s core?;Iron;Nickel;Oxygen;Silicon;Iron
+Which planet is closest to the Sun?;Earth;Venus;Mars;Mercury;Mercury
+Who invented the first practical telephone?;Nikola Tesla;Thomas Edison;Alexander Graham Bell;Samuel Morse;Alexander Graham Bell
+What is the most abundant element in the Earth’s atmosphere?;Carbon;Oxygen;Nitrogen;Hydrogen;Nitrogen
+What is the main source of energy for the Earth?;The Moon;The Sun;The Wind;The Oceans;The Sun
+What is the boiling point of water in Celsius?;100°C;90°C;110°C;120°C;100°C
+Who is known as the father of modern physics?;Isaac Newton;Albert Einstein;Nikola Tesla;Galileo Galilei;Albert Einstein
+What is the hardest natural substance on Earth?;Gold;Diamond;Iron;Platinum;Diamond
+Which planet is known as the "Red Planet"?;Earth;Venus;Mars;Jupiter;Mars
+Who invented the light bulb?;Nikola Tesla;Thomas Edison;Alexander Graham Bell;Michael Faraday;Thomas Edison
+What is the name of the fictional town in the "Stranger Things" TV series?;Hawkins;Sunnydale;Twin Peaks;Hill Valley;Hawkins
+What is the main ingredient in sushi?;Chicken;Rice;Fish;Noodles;Fish
+In the game "Minecraft," what material do you need to craft a pickaxe?;Wood;Stone;Iron;Diamond;Wood
+What is the main character's name in the "Halo" series?;Master Chief;Samus Aran;Marcus Fenix;Link;Master Chief
+Which of the following is a book by J.R.R. Tolkien?;The Chronicles of Narnia;The Hobbit;The Wheel of Time;Harry Potter;The Hobbit
+Who wrote the book "The Catcher in the Rye"?;J.D. Salinger;George Orwell;Ernest Hemingway;F. Scott Fitzgerald;J.D. Salinger
+Who is the main antagonist in the "Avengers: Endgame" film?;Loki;Ultron;Thanos;Red Skull;Thanos
+What type of animal is "Woolly Mammoth"?;Reptile;Bird;Mammal;Fish;Mammal
+What is the term for a sudden, violent shaking of the ground?;Hurricane;Earthquake;Tornado;Flood;Earthquake
+Which video game character is known for his "blue shell"?;Mario;Sonic;Link;Kirby;Mario
+What is the capital of Brazil?;Rio de Janeiro;Brasilia;São Paulo;Salvador;Brasilia
+Who is the author of the "Percy Jackson" series?;J.K. Rowling;Rick Riordan;C.S. Lewis;Suzanne Collins;Rick Riordan
+In which video game would you find a character named "Donkey Kong"?;Super Mario;Donkey Kong;Zelda;Pac-Man;Donkey Kong
+Who directed the film "Avatar"?;James Cameron;Steven Spielberg;Ridley Scott;George Lucas;James Cameron
+Which of the following characters is a famous detective?;Sherlock Holmes;Dracula;Frankenstein;Hannibal Lecter;Sherlock Holmes
+In "The Lion King," who is Simba's father?;Scar;Mufasa;Zazu;Timon;Mufasa
+What type of tree produces acorns?;Pine;Oak;Maple;Birch;Oak
+What was the first video game console released by Sony?;PlayStation;PlayStation 2;PlayStation 3;PSP;PlayStation
+What is the largest organ in the human body?;Heart;Lung;Brain;Skin;Skin
+What is the fastest land animal?;Elephant;Cheetah;Lion;Horse;Cheetah
+In what movie does the character "Forrest Gump" appear?;Forrest Gump;The Godfather;The Shawshank Redemption;Titanic;Forrest Gump
+What is the main objective in the game "Grand Theft Auto"?;Solve puzzles;Escape from a maze;Complete missions and cause chaos;Build cities;Complete missions and cause chaos
+Who directed the film "The Dark Knight"?;Christopher Nolan;Martin Scorsese;Steven Spielberg;J.J. Abrams;Christopher Nolan
+In which game would you find a character named "Kratos"?;The Witcher;God of War;Halo;Final Fantasy;God of War
+Which book series is set in a dystopian future and features "The Hunger Games"?;Divergent;The Hunger Games;Maze Runner;Ready Player One;The Hunger Games
+What is the name of the fictional wizarding school in "Harry Potter"?;Durmstrang;Beauxbatons;Hogwarts;Ilvermorny;Hogwarts
+In what year did the movie "Titanic" release?;1995;1997;1999;2000;1997
+Who is the author of "The Lord of the Rings"?;George R.R. Martin;J.R.R. Tolkien;J.K. Rowling;C.S. Lewis;J.R.R. Tolkien
+What is the capital of Germany?;Munich;Frankfurt;Berlin;Cologne;Berlin
+What type of animal is "Shere Khan" from "The Jungle Book"?;Lion;Tiger;Bear;Cheetah;Tiger
+Who played the character of Forrest Gump in the movie "Forrest Gump"?;Matt Damon;Tom Hanks;Johnny Depp;Brad Pitt;Tom Hanks
+What is the main source of energy for the Earth's ecosystem?;The Moon;The Earth’s core;The Sun;The Oceans;The Sun
+In the game "Fortnite," what type of game is it primarily?;Action RPG;Battle Royale;Fighting;Simulation;Battle Royale
+Who wrote the book "Brave New World"?;George Orwell;Aldous Huxley;Margaret Atwood;Ray Bradbury;Aldous Huxley
+Who is the author of the "Chronicles of Narnia" series?;J.R.R. Tolkien;C.S. Lewis;George R.R. Martin;J.K. Rowling;C.S. Lewis
+What is the term for a star's explosion at the end of its life?;Supernova;Comet;Black Hole;Asteroid;Supernova
+In the video game "The Sims," what do players control?;Aliens;Cars;People;Animals;People
+What is the longest river in the world?;Amazon River;Yangtze River;Mississippi River;Nile River;Nile River
+Which planet is known for its rings?;Saturn;Jupiter;Venus;Mars;Saturn
+Who is the main character in the "Uncharted" video game series?;Nathan Drake;Lara Croft;Link;Mario;Nathan Drake
+What is the primary ingredient in guacamole?;Tomato;Onion;Avocado;Cucumber;Avocado
+Which film featured a group of survivors fighting for their lives against zombies?;The Walking Dead;World War Z;Dawn of the Dead;28 Days Later;Dawn of the Dead
+What color is the "Hufflepuff" house in Harry Potter?;Green;Yellow;Blue;Red;Yellow
+Which of the following is a genre of video games where players control characters and complete quests?;Platformer;Fighting;RPG;Shooter;RPG
+What is the name of the fictional character who famously says "I’ll be back"?;John McClane;The Terminator;Rocky Balboa;Jack Sparrow;The Terminator
+What is the capital of Japan?;Seoul;Tokyo;Beijing;Osaka;Tokyo
+In the game "The Witcher 3," what is the name of the main character?;Geralt of Rivia;Ciri;Yennefer;Dandelion;Geralt of Rivia
+Who directed the movie "Pulp Fiction"?;Martin Scorsese;Quentin Tarantino;Steven Spielberg;Ridley Scott;Quentin Tarantino
+What is the largest species of shark?;Great White Shark;Hammerhead Shark;Whale Shark;Bull Shark;Whale Shark
+Who wrote "Moby-Dick"?;Herman Melville;Mark Twain;F. Scott Fitzgerald;Ernest Hemingway;Herman Melville
+In what year did World War II end?;1945;1939;1940;1944;1945
+What is the name of the protagonist in the "Assassin's Creed" video game series?;Altair Ibn-La'Ahad;Ezio Auditore;Connor Kenway;Desmond Miles;Ezio Auditore
+What type of animal is a "platypus"?;Mammal;Reptile;Bird;Amphibian;Mammal
+Who wrote the book "The Great Gatsby"?;George Orwell;F. Scott Fitzgerald;J.K. Rowling;Ernest Hemingway;F. Scott Fitzgerald
+What movie features a character named "Darth Vader"?;Star Wars;Star Trek;The Matrix;Blade Runner;Star Wars
+What is the capital of Canada?;Vancouver;Ottawa;Toronto;Montreal;Ottawa
+In which country would you find the Great Barrier Reef?;Australia;New Zealand;Mexico;Indonesia;Australia
+What video game features the characters "Sonic the Hedgehog" and "Dr. Robotnik"?;Super Mario;Sonic the Hedgehog;Zelda;Pac-Man;Sonic the Hedgehog
+What is the term for the Earth's outermost layer?;Mantle;Core;Lithosphere;Atmosphere;Lithosphere
+Who is the author of the "Twilight" series?;Suzanne Collins;J.K. Rowling;Stephenie Meyer;Cassandra Clare;Stephenie Meyer
+Who directed the movie "Inception"?;Christopher Nolan;James Cameron;Steven Spielberg;Quentin Tarantino;Christopher Nolan
+What is the name of the largest planet in our solar system?;Earth;Jupiter;Mars;Saturn;Jupiter
+In what year was the first iPhone released?;2005;2007;2010;2012;2007
+Who was the first president of the United States?;Abraham Lincoln;George Washington;Thomas Jefferson;John Adams;George Washington
+What is the chemical symbol for the element hydrogen?;He;H;O;Hg;H
+What video game is set in the fictional world of Tamriel?;World of Warcraft;The Witcher;Skyrim;Dark Souls;Skyrim
+Who wrote "The Hunger Games" series?;Suzanne Collins;J.K. Rowling;Stephenie Meyer;Rick Riordan;Suzanne Collins
+What is the name of the famous wizard school in "Harry Potter"?;Beauxbatons;Durmstrang;Hogwarts;Ilvermorny;Hogwarts
+What is the largest organ in the human body?;Brain;Heart;Lung;Skin;Skin
+In what year did the Titanic sink?;1912;1911;1905;1915;1912
+What is the capital of France?;London;Berlin;Paris;Rome;Paris
+What is the term for a large body of ice moving slowly over land?;Volcano;Avalanche;Glacier;Tornado;Glacier
+What is the longest running video game franchise?;Super Mario;Call of Duty;The Legend of Zelda;Final Fantasy;Super Mario
+Who wrote "The Catcher in the Rye"?;Harper Lee;J.D. Salinger;George Orwell;F. Scott Fitzgerald;J.D. Salinger
+Which game character is a famous plumber?;Sonic;Link;Mario;Kratos;Mario
+What is the name of the fairy in "Peter Pan"?;Tinkerbell;Cinderella;Ariel;Snow White;Tinkerbell
+What is the name of the robot in "Star Wars" who says, "I am your father"?;R2-D2;C-3PO;BB-8;Darth Vader;Darth Vader
+What is the longest river in the United States?;Mississippi River;Colorado River;Missouri River;Ohio River;Mississippi River
+Who played the character of the Joker in the movie "The Dark Knight"?;Johnny Depp;Tom Hardy;Heath Ledger;Jared Leto;Heath Ledger
+What is the chemical symbol for the element gold?;Ag;Fe;Au;Pb;Au
+What is the name of the main character in the "Legend of Zelda" series?;Link;Mario;Samus;Kratos;Link
+What is the main ingredient in chocolate?;Sugar;Cocoa beans;Vanilla;Milk;Cocoa beans
+What movie features the famous line "Here's looking at you, kid"?;The Godfather;Gone with the Wind;Casablanca;Citizen Kane;Casablanca
+Who directed the movie "Jaws"?;James Cameron;Steven Spielberg;George Lucas;Ridley Scott;Steven Spielberg
+In which country would you find the Eiffel Tower?;Italy;France;Germany;Spain;France
+What is the second largest planet in our solar system?;Saturn;Uranus;Jupiter;Neptune;Saturn
+Who is the creator of the "Star Wars" franchise?;J.R.R. Tolkien;George Lucas;James Cameron;Steven Spielberg;George Lucas
+What is the name of the process by which plants make their own food?;Photosynthesis;Respiration;Transpiration;Fermentation;Photosynthesis
+In which video game would you find the character "Link"?;Super Mario;The Legend of Zelda;Halo;Call of Duty;The Legend of Zelda
+Who was the first human to journey into space?;Buzz Aldrin;Neil Armstrong;Yuri Gagarin;Alan Shepard;Yuri Gagarin
+What is the name of the fictional city in the "Batman" comics?;Gotham City;Metropolis;Star City;Central City;Gotham City
+Who is the author of "1984"?;Aldous Huxley;Ray Bradbury;George Orwell;Margaret Atwood;George Orwell
+What is the currency of Japan?;Yuan;Won;Yen;Ringgit;Yen
+Who painted the "Mona Lisa"?;Pablo Picasso;Leonardo da Vinci;Vincent van Gogh;Michelangelo;Leonardo da Vinci
+In which game would you find a character named "Lara Croft"?;The Witcher;Halo;Tomb Raider;Super Mario;Tomb Raider
+What is the capital of Italy?;Rome;Milan;Venice;Naples;Rome
+What is the largest moon of Saturn?;Titan;Europa;Io;Ganymede;Titan
+In "Game of Thrones," who is the father of Jon Snow?;Rhaegar Targaryen;Ned Stark;Robert Baratheon;Viserys Targaryen;Rhaegar Targaryen
+Who is the author of "The Hobbit"?;C.S. Lewis;J.R.R. Tolkien;George R.R. Martin;J.K. Rowling;J.R.R. Tolkien
+What is the smallest bone in the human body?;Stapes;Femur;Radius;Tibia;Stapes
+Who painted the "Starry Night"?;Claude Monet;Pablo Picasso;Vincent van Gogh;Leonardo da Vinci;Vincent van Gogh
+What is the chemical symbol for oxygen?;O;H;N;C;O
+In what year did the first manned moon landing take place?;1965;1969;1972;1980;1969
+What is the capital of Russia?;St. Petersburg;Moscow;Kiev;Sochi;Moscow
+Which is the longest running animated TV series?;Family Guy;The Simpsons;South Park;Futurama;The Simpsons
+What is the name of the character played by Hugh Jackman in the "X-Men" movies?;Iron Man;Wolverine;Magneto;Professor X;Wolverine
+In the video game "Minecraft," what can you use to make a furnace?;Wood;Stone;Iron;Gold;Stone
+What is the longest bone in the human body?;Femur;Tibia;Radius;Ulna;Femur
+What element does "O" represent on the periodic table?;Oxygen;Osmium;Oganesson;Ozone;Oxygen
+What is the main ingredient in the drink "Mojito"?;Vodka;Gin;Rum;Tequila;Rum
+Who wrote "The Chronicles of Narnia" series?;J.R.R. Tolkien;C.S. Lewis;J.K. Rowling;Philip Pullman;C.S. Lewis
+What is the capital of the United Kingdom?;Dublin;London;Edinburgh;Cardiff;London
+Who is the creator of "The Walking Dead" comics and TV show?;Stephen King;Robert Kirkman;Frank Miller;Neil Gaiman;Robert Kirkman
+What is the largest desert in the world?;Sahara;Gobi;Kalahari;Antarctic Desert;Antarctic Desert
+In which video game do players compete for control of territories on an island?;Fortnite;Call of Duty;Battlegrounds;Halo;Battlegrounds
+What is the main purpose of photosynthesis?;To produce food for the plant;To generate energy for the plant;To help the plant grow;To produce oxygen;To produce food for the plant
+What is the name of the wizard who was Harry Potter's mentor?;Gandalf;Dumbledore;Merlin;Voldemort;Dumbledore
+What is the capital of Spain?;Lisbon;Madrid;Barcelona;Seville;Madrid
+What is the largest island in the world?;Greenland;Australia;New Guinea;Borneo;Greenland
+What type of animal is a "Kangaroo"?;Mammal;Bird;Reptile;Amphibian;Mammal
+Who wrote the play "Romeo and Juliet"?;Christopher Marlowe;William Shakespeare;Oscar Wilde;Charles Dickens;William Shakespeare
+What is the tallest mountain in the world?;K2;Mount Everest;Mount Kilimanjaro;Mount Fuji;Mount Everest
+Who is the protagonist of the "Halo" video game series?;John-117;Marcus Fenix;Kratos;Mario;John-117
+What was the first animated feature-length film?;Snow White and the Seven Dwarfs;Pinocchio;Bambi;Fantasia;Snow White and the Seven Dwarfs
+Who discovered the theory of relativity?;Isaac Newton;Niels Bohr;Albert Einstein;Galileo Galilei;Albert Einstein
+Which of these is the capital of Egypt?;Cairo;Alexandria;Luxor;Aswan;Cairo
+Who was the first woman to fly solo across the Atlantic Ocean?;Amelia Earhart;Valentina Tereshkova;Bessie Coleman;Sally Ride;Amelia Earhart
+What is the capital of Australia?;Sydney;Melbourne;Canberra;Brisbane;Canberra
+What element has the chemical symbol "Na"?;Sodium;Nitrogen;Neon;Nickel;Sodium
+What movie features a character named "Jack Sparrow"?;The Matrix;Pirates of the Caribbean;Indiana Jones;The Godfather;Pirates of the Caribbean
+What is the term for a group of wolves?;Pack;Herd;Flock;Swarm;Pack
+What is the primary color of the "Gryffindor" house in "Harry Potter"?;Blue;Red;Green;Yellow;Red
+In which country was the game "Tetris" invented?;Russia;Japan;USA;Germany;Russia
+Who is the famous artist known for cutting off his own ear?;Vincent van Gogh;Pablo Picasso;Salvador Dalí;Claude Monet;Vincent van Gogh
+What is the capital of India?;New Delhi;Mumbai;Chennai;Kolkata;New Delhi
+What is the highest-grossing animated film of all time?;Frozen;Toy Story 4;The Lion King (2019);Frozen 2;Frozen
+Who created the "Harry Potter" series?;J.R.R. Tolkien;J.K. Rowling;Rick Riordan;Suzanne Collins;J.K. Rowling
+What is the smallest planet in our solar system?;Mercury;Mars;Venus;Earth;Mercury
+What is the capital of Mexico?;Monterrey;Guadalajara;Cancun;Mexico City;Mexico City
+What video game features a character named "Samus Aran"?;Zelda;Metroid;Halo;Donkey Kong;Metroid
+Who invented the telephone?;Nikola Tesla;Alexander Graham Bell;Thomas Edison;Michael Faraday;Alexander Graham Bell
+What is the main function of red blood cells?;Fight infection;Transport oxygen;Regulate temperature;Digest food;Transport oxygen
+What is the capital of South Korea?;Seoul;Busan;Incheon;Jeonju;Seoul
+What is the largest land animal?;Elephant;Rhinoceros;Giraffe;Hippo;Elephant
+What movie did Leonardo DiCaprio win his first Oscar for Best Actor?;The Revenant;Titanic;Inception;The Wolf of Wall Street;The Revenant
+What is the chemical symbol for silver?;Ag;Au;Pb;Cu;Ag
+What is the capital of Germany?;Berlin;Frankfurt;Munich;Hamburg;Berlin
+Who directed the movie "Avatar"?;James Cameron;Steven Spielberg;Ridley Scott;George Lucas;James Cameron
+What is the process by which plants absorb water through their roots?;Transpiration;Photosynthesis;Osmosis;Evaporation;Osmosis
+Who is the author of the "Harry Potter" series?;J.K. Rowling;J.R.R. Tolkien;Suzanne Collins;C.S. Lewis;J.K. Rowling
+What is the largest animal on Earth?;Blue whale;Elephant;Shark;Giraffe;Blue whale
+What is the name of the fictional wizarding school in "Harry Potter"?;Hogwarts;Beauxbatons;Durmstrang;Ilvermorny;Hogwarts
+What is the capital of Canada?;Ottawa;Toronto;Vancouver;Montreal;Ottawa
+In which video game would you find the character "Master Chief"?;Halo;Gears of War;Call of Duty;Destiny;Halo
+What is the symbol for the element carbon?;C;Co;Ca;Cu;C
+Who is the protagonist in the video game series "The Legend of Zelda"?;Link;Mario;Samus;Kratos;Link
+What is the capital of France?;Paris;Rome;London;Berlin;Paris
+What is the largest country in the world by area?;Russia;United States;China;Canada;Russia
+Who is the author of "1984"?;George Orwell;Aldous Huxley;Ray Bradbury;Harper Lee;George Orwell
+What is the main ingredient in guacamole?;Tomato;Avocado;Cucumber;Chili;Avocado
+What is the capital of Japan?;Tokyo;Seoul;Beijing;Osaka;Tokyo
+In which video game would you find a character named "Geralt of Rivia"?;The Witcher;Skyrim;Dragon Age;Dark Souls;The Witcher
+Who wrote "The Catcher in the Rye"?;J.D. Salinger;Harper Lee;Mark Twain;F. Scott Fitzgerald;J.D. Salinger
+What is the largest ocean on Earth?;Atlantic Ocean;Indian Ocean;Southern Ocean;Pacific Ocean;Pacific Ocean
+In which video game would you encounter the character "Mario"?;Super Mario;Sonic;Zelda;Donkey Kong;Super Mario
+What is the capital of Italy?;Rome;Milan;Venice;Florence;Rome
+Who is known as the father of modern physics?;Albert Einstein;Isaac Newton;Niels Bohr;Galileo Galilei;Albert Einstein
+Who wrote the book "To Kill a Mockingbird"?;Harper Lee;Mark Twain;F. Scott Fitzgerald;John Steinbeck;Harper Lee
+What is the chemical symbol for the element gold?;Ag;Hg;Au;Cu;Au
+What is the capital of Australia?;Canberra;Melbourne;Sydney;Perth;Canberra
+What movie features a shark terrorizing a beach town?;Jaws;The Shallows;Sharknado;Deep Blue Sea;Jaws
+In which country would you find the ancient city of Petra?;Egypt;Jordan;Greece;Turkey;Jordan
+Who was the first man to walk on the moon?;Buzz Aldrin;Yuri Gagarin;Neil Armstrong;Alan Shepard;Neil Armstrong
+What is the name of the fictional alien species in "The X-Files"?;Greys;Wraith;Klingons;Predators;Greys
+Who directed the movie "Inception"?;Christopher Nolan;James Cameron;Steven Spielberg;Ridley Scott;Christopher Nolan
+What is the capital of the United States?;New York;Washington, D.C.;Los Angeles;Chicago;Washington, D.C.
+What is the capital of Mexico?;Mexico City;Guadalajara;Monterrey;Cancun;Mexico City
+Who wrote "Pride and Prejudice"?;Charles Dickens;Jane Austen;Virginia Woolf;Emily Brontë;Jane Austen
+What is the tallest mountain in the world?;Mount Everest;K2;Mount Kilimanjaro;Mount Fuji;Mount Everest
+In which video game do players fight with giant robots called Titans?;Titanfall;MechWarrior;Pacific Rim;Overwatch;Titanfall
+What is the symbol for the element hydrogen?;H;He;Hg;Ho;H
+What is the capital of Egypt?;Cairo;Alexandria;Luxor;Giza;Cairo
+In what year did World War II end?;1945;1940;1939;1944;1945
+Who is the main character of the "Spider-Man" comics?;Peter Parker;Bruce Wayne;Clark Kent;Wade Wilson;Peter Parker
+What is the smallest planet in our solar system?;Mercury;Mars;Venus;Earth;Mercury
+What is the capital of South Korea?;Seoul;Busan;Incheon;Daegu;Seoul
+Who is the protagonist of the "Uncharted" video game series?;Nathan Drake;Ellie;Lara Croft;Joel;Nathan Drake
+Who painted the "Sistine Chapel" ceiling?;Leonardo da Vinci;Michelangelo;Pablo Picasso;Claude Monet;Michelangelo
+What is the name of the fictional kingdom in "Frozen"?;Arendelle;Hogwarts;Mordor;Atlantis;Arendelle
+What video game character is known for collecting golden rings?;Sonic the Hedgehog;Mario;Link;Pac-Man;Sonic the Hedgehog
+Who is the creator of the "Star Wars" franchise?;Steven Spielberg;George Lucas;J.J. Abrams;Ridley Scott;George Lucas
+What is the chemical symbol for potassium?;P;K;Na;Mg;K
+What is the capital of China?;Beijing;Shanghai;Hong Kong;Xi'an;Beijing
+Who wrote "The Hobbit" and "The Lord of the Rings"?;George R.R. Martin;C.S. Lewis;J.R.R. Tolkien;J.K. Rowling;J.R.R. Tolkien
+What is the main ingredient in sushi?;Rice;Noodles;Seaweed;Fish;Rice
+What year was the first "Alien" movie released?;1979;1982;1985;1990;1979
+Who directed the 1979 movie "Alien"?;Ridley Scott;James Cameron;John Carpenter;Steven Spielberg;Ridley Scott
+What is the name of the spaceship in "Alien"?;Nostromo;Discovery One;Prometheus;Serenity;Nostromo
+Who played the character Ellen Ripley in the "Alien" franchise?;Sigourney Weaver;Linda Hamilton;Jamie Lee Curtis;Jodie Foster;Sigourney Weaver
+Which "Alien" movie features a battle between the Xenomorphs and Predators?;Alien vs. Predator;Aliens;Alien: Resurrection;Alien 3;Alien vs. Predator
+In "Aliens," what is the name of the colony where the Xenomorphs are found?;LV-426;LV-223;LV-433;Mars;LV-426
+What is the name of the android character in the original "Alien" movie?;Ash;Bishop;David;Walter;Ash
+What is the main theme of the "Alien" franchise?;Survival horror;Sci-fi adventure;Action;Fantasy;Survival horror
+In "Alien: Resurrection," what is the name of the clone of Ripley?;Ripley 8;New Ripley;Ellen II;Ripley Jr.;Ripley 8
+Which character in the "Alien" franchise is known for the quote: "In space, no one can hear you scream"?;Ripley;Ash;Dallas;Bishop;Ripley
+What is the title of Remedy Entertainment’s first major hit game?;Max Payne;Alan Wake;Quantum Break;Control;Max Payne
+In which game does the protagonist struggle with supernatural forces while trying to uncover his missing wife’s fate?;Max Payne;Alan Wake;Quantum Break;Control;Alan Wake
+What is the setting of the game "Control"?;New York City;The Oldest House;The Future;The Deep South;The Oldest House
+Who is the main protagonist in "Max Payne"?;John McClane;Max Payne;Jack Joyce;Alan Wake;Max Payne
+In "Quantum Break," what is the name of the corporation that causes time travel disruptions?;Monarch Solutions;FBC;AWE Corporation;Federal Reserve;Monarch Solutions
+What is the name of the town in "Alan Wake" where the story takes place?;Boulder;Bright Falls;Silent Hill;Greenwood;Bright Falls
+In which game would you find a mysterious supernatural event called the "Dark Presence"?;Alan Wake;Max Payne;Control;Quantum Break;Alan Wake
+What year was "Control" released?;2016;2018;2019;2020;2019
+Who voices the protagonist, Max Payne, in the "Max Payne" series?;Troy Baker;Nolan North;James McCaffrey;Steve Blum;James McCaffrey
+In "Alan Wake," what genre is the main character, Alan Wake, a writer of?;Science fiction;Horror;Thriller;Romance;Thriller
+What is the name of the main protagonist in the "Gears of War" series?;Marcus Fenix;Damon Baird;Dom Santiago;Cole Train;Marcus Fenix
+What alien race threatens humanity in the "Gears of War" franchise?;The Covenant;The Zerg;The Locust Horde;The Xenomorphs;The Locust Horde
+What is the name of Marcus Fenix's father, who is mentioned throughout the series?;Adam Fenix;James Fenix;John Fenix;William Fenix;Adam Fenix
+Which "Gears of War" game first introduced the multiplayer mode called "Horde"?;Gears of War 2;Gears of War 3;Gears of War;Gears of War 4;Gears of War 2
+What is the name of the humanoid creatures created by the Locust Horde in "Gears of War"?;Wretches;Drones;Theron Guards;Snatchers;Drones
+Which game in the "Gears of War" series introduced the character of Kait Diaz?;Gears of War 3;Gears of War 4;Gears 5;Gears of War 2;Gears of War 4
+What is the name of the weapon in "Gears of War" that has a chainsaw attached to it?;Lancer;Hammerburst;Gnasher;Boomshot;Lancer
+What is the name of the city where "Gears of War" begins?;Sera;New Hope;Jacinto;The City of Lights;Jacinto
+Who is Marcus Fenix's best friend and comrade throughout the series?;Cole Train;Dom Santiago;Baird;Sam Byrne;Dom Santiago
+What year was the first "Gears of War" game released?;2005;2006;2007;2008;2006
+What is the capital of Canada?;Ottawa;Toronto;Vancouver;Montreal;Ottawa
+What is the largest animal on Earth?;Elephant;Blue Whale;Shark;Giraffe;Blue Whale
+How many continents are there on Earth?;5;6;7;8;7
+What is the square root of 64?;6;7;8;9;8
+What is the tallest building in the world?;Eiffel Tower;Burj Khalifa;Empire State Building;Shanghai Tower;Burj Khalifa
+What is the capital of the United Kingdom?;London;Edinburgh;Belfast;Cardiff;London
+What is the symbol for the element oxygen?;O;Oz;Ox;Oy;O
+Who invented the telephone?;Thomas Edison;Alexander Graham Bell;Nikola Tesla;Michael Faraday;Alexander Graham Bell
+What is the smallest country in the world by area?;Monaco;Vatican City;San Marino;Liechtenstein;Vatican City
+What is the national flower of Japan?;Rose;Cherry Blossom;Tulip;Orchid;Cherry Blossom
+What is the largest desert in the world?;Sahara;Kalahari;Gobi;Arctic;Sahara
+In which city would you find the famous landmark, the Colosseum?;Rome;Athens;Paris;London;Rome
+What is the chemical symbol for water?;H2O;CO2;O2;NaCl;H2O
+Which planet is known as the Red Planet?;Earth;Mars;Venus;Jupiter;Mars
+What is the longest river in the world?;Amazon River;Nile River;Yangtze River;Mississippi River;Amazon River
+Who wrote the play Romeo and Juliet?;William Shakespeare;Charles Dickens;Jane Austen;Oscar Wilde;William Shakespeare
+What is the name of the largest island in the world?;Greenland;Australia;New Guinea;Borneo;Greenland
+How many sides does a hexagon have?;4;5;6;7;6
+What is the name of the ocean to the west of the United States?;Atlantic Ocean;Indian Ocean;Pacific Ocean;Southern Ocean;Pacific Ocean
+Who painted the "Mona Lisa"?;Vincent van Gogh;Claude Monet;Leonardo da Vinci;Pablo Picasso;Leonardo da Vinci
+What is the capital of Brazil?;Buenos Aires;Rio de Janeiro;Santiago;Brasilia;Brasilia
+In what year did the Titanic sink?;1905;1900;1912;1920;1912
+What is the smallest bone in the human body?;Stapes;Femur;Tibia;Radius;Stapes
+What is the largest species of shark?;Great White Shark;Whale Shark;Hammerhead Shark;Tiger Shark;Whale Shark
+What is the main ingredient in bread?;Wheat;Rice;Corn;Barley;Wheat
+What is the currency of the United States?;Euro;Pound;Yen;Dollar;Dollar
+Which fruit is known for having its seeds on the outside?;Banana;Strawberry;Kiwi;Pineapple;Strawberry
+What is the freezing point of water in Celsius?;0°C;32°F;100°C;212°F;0°C
+Who directed the movie Jurassic Park?;Steven Spielberg;James Cameron;Ridley Scott;George Lucas;Steven Spielberg
+What year was the first Star Wars movie released?;1975;1977;1980;1983;1977
+Who played the role of Jack Dawson in Titanic?;Leonardo DiCaprio;Brad Pitt;Johnny Depp;Tom Cruise;Leonardo DiCaprio
+What is the name of the fictional wizarding school in Harry Potter?;Hogwarts;Beauxbatons;Durmstrang;Ilvermorny;Hogwarts
+Who directed the The Godfather?;Francis Ford Coppola;Martin Scorsese;Stanley Kubrick;Alfred Hitchcock;Francis Ford Coppola
+What is the name of the fictional African country in Black Panther?;Wakanda;Zamunda;Genovia;Elbonia;Wakanda
+What movie features the quote "Here's looking at you, kid"?;Casablanca;Gone with the Wind;The Godfather;Citizen Kane;Casablanca
+Who starred as the titular character in The Terminator?;Bruce Willis;Sylvester Stallone;Arnold Schwarzenegger;Mel Gibson;Arnold Schwarzenegger
+In which movie would you find a character named Forrest Gump?;Forrest Gump;The Shawshank Redemption;Titanic;Cast Away;Forrest Gump
+Who played the role of The Joker in The Dark Knight?;Jack Nicholson;Heath Ledger;Jared Leto;Mark Hamill;Heath Ledger
+What year was The Lion King originally released?;1992;1994;1996;1998;1994
+What is the name of the ship in Alien?;Discovery One;Nostromo;Serenity;Prometheus;Nostromo
+Who is the director of Pulp Fiction?;Quentin Tarantino;Martin Scorsese;Francis Ford Coppola;Guy Ritchie;Quentin Tarantino
+What movie features the quote "I'll be back"?;The Terminator;Die Hard;Lethal Weapon;RoboCop;The Terminator
+What is the name of the main character in The Matrix?;Neo;Trinity;Morpheus;Agent Smith;Neo
+Which movie won the Oscar for Best Picture in 1994?;The Shawshank Redemption;Forrest Gump;Pulp Fiction;The Lion King;Forrest Gump
+Who played the role of the titular character in The Dark Knight Rises?;Christian Bale;Ben Affleck;Robert Pattinson;Michael Keaton;Christian Bale
+In Back to the Future, what year does Marty McFly travel to in the future?;1985;1999;2015;2020;2015
+Which movie features a character named "E.T."?;E.T. the Extra-Terrestrial;Close Encounters of the Third Kind;Star Wars;The Thing;E.T. the Extra-Terrestrial
+What is the name of the fictional planet in Avatar?;Pandora;Tatooine;Naboo;Krypton;Pandora
+In The Godfather, who plays the character of Michael Corleone?;Marlon Brando;Al Pacino;Robert De Niro;Joe Pesci;Al Pacino
+Who directed Inception?;Christopher Nolan;James Cameron;Martin Scorsese;Steven Spielberg;Christopher Nolan
+What is the name of the main character in Indiana Jones?;Harry Potter;Luke Skywalker;Indiana Jones;Jack Sparrow;Indiana Jones
+Who played the role of Elsa in Frozen?;Kristen Bell;Idina Menzel;Amy Adams;Scarlett Johansson;Idina Menzel
+In The Wizard of Oz, what color are Dorothy's shoes?;Red;Silver;Gold;Blue;Red
+Who starred as the lead character in The Hunger Games?;Emma Watson;Jennifer Lawrence;Natalie Portman;Kristen Stewart;Jennifer Lawrence
+What 2010 film is known for its complex plot and visual effects, directed by Christopher Nolan?;Interstellar;Inception;The Prestige;The Dark Knight;Inception
+In Finding Nemo, what is the name of the forgetful fish?;Dory;Marlin;Nemo;Squirt;Dory
+Which actor starred in Pirates of the Caribbean as Captain Jack Sparrow?;Johnny Depp;Orlando Bloom;Hugh Jackman;Matt Damon;Johnny Depp
+In The Shawshank Redemption, what is Andy Dufresne convicted of?;Murder;Theft;Fraud;Arson;Murder
+What planet is known as the "Red Planet"?;Earth;Mars;Jupiter;Saturn;Mars
+What is the chemical symbol for gold?;Ag;Au;Pb;Cu;Au
+What is the boiling point of water in degrees Celsius?;100°C;90°C;110°C;212°C;100°C
+Who developed the theory of evolution by natural selection?;Albert Einstein;Isaac Newton;Charles Darwin;Galileo Galilei;Charles Darwin
+What is the powerhouse of the cell?;Nucleus;Mitochondrion;Ribosome;Golgi apparatus;Mitochondrion
+What type of animal is a Komodo dragon?;Snake;Lizard;Fish;Mammal;Lizard
+What is the chemical formula for carbon dioxide?;CO2;H2O;O2;C6H12O6;CO2
+What is the hardest natural substance on Earth?;Gold;Diamond;Platinum;Iron;Diamond
+What gas do plants absorb from the atmosphere during photosynthesis?;Oxygen;Carbon Dioxide;Nitrogen;Argon;Carbon Dioxide
+What is the largest mammal in the world?;African Elephant;Blue Whale;Giraffe;Shark;Blue Whale
+What is the main gas that makes up the Earth's atmosphere?;Oxygen;Nitrogen;Carbon Dioxide;Hydrogen;Nitrogen
+Who is known as the father of modern physics?;Isaac Newton;Albert Einstein;Niels Bohr;Galileo Galilei;Albert Einstein
+What is the boiling point of water in Fahrenheit?;212°F;100°F;32°F;150°F;212°F
+Which planet is the largest in our solar system?;Earth;Mars;Jupiter;Saturn;Jupiter
+What is the most abundant element in the Earth’s crust?;Oxygen;Silicon;Iron;Calcium;Oxygen
+What type of animal is a dolphin?;Fish;Amphibian;Mammal;Reptile;Mammal
+What is the process by which a caterpillar becomes a butterfly?;Fission;Metamorphosis;Fusion;Evaporation;Metamorphosis
+What is the chemical symbol for sodium?;Na;K;Ca;Mg;Na
+What is the primary source of energy for the Earth?;The Moon;The Sun;The Earth’s core;Wind;The Sun
+Which element has the atomic number 1?;Helium;Oxygen;Hydrogen;Carbon;Hydrogen
+How many bones are in the adult human body?;206;212;220;230;206
+What is the second planet from the Sun?;Mercury;Earth;Venus;Mars;Venus
+What type of rock is formed by cooling and solidification of lava or magma?;Sedimentary;Metamorphic;Igneous;Fossil;Igneous
+What is the powerhouse of the human body?;Heart;Lungs;Brain;Liver;Heart
+What is the chemical symbol for potassium?;K;Na;Ca;Mg;K
+What part of the plant conducts photosynthesis?;Roots;Stem;Leaf;Flower;Leaf
+Who was the first president of the United States?;Thomas Jefferson;George Washington;Abraham Lincoln;John Adams;George Washington
+In what year did the Titanic sink?;1900;1912;1920;1930;1912
+Who was the first emperor of China?;Qin Shi Huang;Kublai Khan;Genghis Khan;Han Wudi;Qin Shi Huang
+What year did World War I begin?;1910;1912;1914;1916;1914
+Who was the first man to walk on the Moon?;Buzz Aldrin;Neil Armstrong;Yuri Gagarin;John Glenn;Neil Armstrong
+In which year did the Berlin Wall fall?;1987;1989;1991;1993;1989
+Who was the leader of the Nazi Party during World War II?;Joseph Stalin;Adolf Hitler;Winston Churchill;Franklin D. Roosevelt;Adolf Hitler
+What was the name of the ship that carried the Pilgrims to America in 1620?;Santa Maria;Mayflower;Titanic;Endeavour;Mayflower
+Who was the British Prime Minister during World War II?;Winston Churchill;Neville Chamberlain;Margaret Thatcher;Tony Blair;Winston Churchill
+In what year did the United States declare independence from Britain?;1770;1774;1776;1781;1776
+Who was the first female monarch of the United Kingdom?;Queen Elizabeth I;Queen Victoria;Queen Elizabeth II;Mary I;Queen Elizabeth I
+Who wrote the Communist Manifesto?;Karl Marx;Vladimir Lenin;Joseph Stalin;Friedrich Engels;Karl Marx
+What year did the French Revolution begin?;1785;1790;1789;1800;1789
+Who was the famous general who led the Confederate Army during the American Civil War?;Abraham Lincoln;Ulysses S. Grant;Robert E. Lee;Thomas Jefferson;Robert E. Lee
+What empire was ruled by Julius Caesar, Augustus, and Nero?;Roman Empire;Ottoman Empire;Mongol Empire;British Empire;Roman Empire
+Which war was fought between the North and South regions of the United States?;World War I;American Civil War;War of 1812;Vietnam War;American Civil War
+What was the name of the first human-made satellite sent into space?;Apollo 11;Sputnik 1;Explorer 1;Hubble;Sputnik 1
+Who was the first emperor of Rome?;Julius Caesar;Nero;Augustus;Caligula;Augustus
+What event triggered the start of World War I?;The bombing of Pearl Harbor;The assassination of Archduke Franz Ferdinand;The signing of the Treaty of Versailles;The invasion of Poland;The assassination of Archduke Franz Ferdinand
+In what year was the Declaration of Independence signed?;1775;1776;1777;1778;1776
+Who was the leader of the Soviet Union during World War II?;Joseph Stalin;Leon Trotsky;Vladimir Lenin;Mikhail Gorbachev;Joseph Stalin
+What was the name of the first permanent English settlement in the Americas?;Jamestown;Plymouth;Roanoke;Salem;Jamestown
+Who was the first woman to fly solo across the Atlantic Ocean?;Amelia Earhart;Bessie Coleman;Sally Ride;Eleanor Roosevelt;Amelia Earhart
+Which battle was the turning point of the American Revolution?;Battle of Saratoga;Battle of Gettysburg;Battle of Yorktown;Battle of Bunker Hill;Battle of Saratoga
+What famous document was signed in 1215 that limited the powers of the English king?;The Magna Carta;The Bill of Rights;The English Petition of Rights;The U.S. Constitution;The Magna Carta
+What was the name of the ship that brought the first African slaves to America?;The Mayflower;The Good Ship Jesus;The Amistad;The White Lion;The White Lion
+Which country was formerly known as Persia?;Iran;Iraq;Syria;Turkey;Iran
+What was the name of the treaty that ended World War I?;Treaty of Paris;Treaty of Versailles;Treaty of Ghent;Treaty of Tordesillas;Treaty of Versailles
+Who was the first person to circumnavigate the globe?;Christopher Columbus;Ferdinand Magellan;Vasco da Gama;Marco Polo;Ferdinand Magellan
+In which battle did Napoleon Bonaparte suffer his final defeat?;Battle of Waterloo;Battle of Austerlitz;Battle of Leipzig;Battle of Trafalgar;Battle of Waterloo	
+Who was the first king of Hungary?;Saint Stephen;László I;Mátyás Corvinus;Béla IV;Saint Stephen
+In what year was the Battle of Mohács, a significant defeat for Hungary?;1456;1526;1556;1601;1526
+What was the name of the kingdom formed by the union of Hungary and Croatia in 1102?;Kingdom of Austria-Hungary;Austro-Hungarian Empire;Kingdom of Hungary and Croatia;Kingdom of Hungary;Kingdom of Hungary and Croatia
+Who was the leader of Hungary during the 1956 Hungarian Revolution?;László Rákosi;Imre Nagy;János Kádár;Mátyás Rákosi;Imre Nagy
+What year did Hungary become a member of the European Union?;1995;2000;2004;2007;2004
+In which year did the Treaty of Trianon, which significantly reduced Hungary's territory, take place?;1918;1920;1930;1945;1920
+Who was the Hungarian king known for his just rule and efforts to strengthen the monarchy in the 15th century?;László I;Mátyás Corvinus;Béla IV;Louis the Great;Mátyás Corvinus
+What city was the capital of Hungary before Budapest became the capital?;Pécs;Szeged;Esztergom;Visegrád;Esztergom
+What event in 1989 marked the beginning of Hungary's transition to democracy?;The Hungarian Revolution of 1956;The fall of the Berlin Wall;The establishment of the first free elections;The signing of the Helsinki Accords;The fall of the Berlin Wall
+What famous Hungarian inventor is known for creating the first practical television?;László József;George Szell;Nikola Tesla;Károly Zipernowsky;Károly Zipernowsky
+Who was the first woman to be awarded the title of "Hungarian Hero" after the 1956 revolution?;Mária Bódy;Ilona Pászthy;Piroska Farkas;Anna Kéthly;Anna Kéthly
+What was the name of the kingdom that existed in Hungary and Transylvania from 1526 to 1711?;Kingdom of Hungary;Habsburg Kingdom;Ottoman Hungary;Austrian-Hungarian Empire;Ottoman Hungary
+What Hungarian king built the famous Corvin Castle?;Matthias Corvinus;Béla III;László I;Lajos Kossuth;Matthias Corvinus
+What famous Hungarian leader fought for independence from the Austro-Hungarian Empire in 1848?;Lajos Kossuth;Gyula Andrássy;Ferenc Rákóczi;Miklós Zrínyi;Lajos Kossuth
+In what year did Hungary gain independence from Austria, leading to the formation of Austria-Hungary?;1867;1848;1918;1939;1867
+Who was the Hungarian emperor during the late 18th century who implemented major reforms?;Joseph II;Franz Joseph I;Charles I;Ferdinand I;Joseph II
+What famous Hungarian composer was known for his symphonies and piano works, including Rhapsody in C# minor?;Béla Bartók;Franz Liszt;Zoltán Kodály;Ernő Dohnányi;Franz Liszt
+What Hungarian poet and writer is considered the national poet of Hungary and was a key figure in the Hungarian literary movement of the 19th century?;Endre Ady;Sándor Petőfi;Miklós Zrínyi;József Attila;Sándor Petőfi
+Which Hungarian scientist is known for his work on the development of the atomic bomb as part of the Manhattan Project?;Leó Szilárd;Albert Szent-Györgyi;Zoltán Bay;László Tisza;Leó Szilárd
+What year was the Hungarian Revolution of 1848, part of the broader European revolutions?;1846;1848;1850;1860;1848
+Who was the Hungarian king responsible for the establishment of the Royal Hungarian Diet in 1867?;Joseph II;Ferenc József;Mátyás Corvinus;László I;Ferenc József
+What Hungarian hero led the anti-Habsburg uprisings in the early 18th century?;Lajos Kossuth;Imre Thököly;Mátyás Rákóczi;János Hunyadi;Imre Thököly
+In what year did Hungary become a part of the Austro-Hungarian Empire?;1711;1848;1867;1918;1867
+What is the name of the Hungarian national anthem?;Szózat;Nemzeti dal;Himnusz;Pesti város;Himnusz
+Who was the leader of the Hungarian Soviet Republic, which lasted for several months in 1919?;Béla Kun;Miklós Horthy;Ferenc Kossuth;Lajos Kossuth;Béla Kun
+What famous Hungarian artist is known for his surrealist works, including The Persistence of Memory?;Zoltán Kodály;József Szájer;László Moholy-Nagy;Salvador Dalí;László Moholy-Nagy
+Which Hungarian military leader achieved fame during the Ottoman wars and fought in the Battle of Mohács?;János Hunyadi;Zrínyi Miklós;László I;Mátyás Corvinus;János Hunyadi
+Who was the Hungarian monarch that began the Habsburg dynasty in Hungary?;Béla IV;Ferdinand I;Mátyás Corvinus;Charles I;Ferdinand I
+What was the name of the Hungarian revolutionary who was executed after the 1956 revolution?;László Rákosi;Imre Nagy;János Kádár;Miklós Horthy;Imre Nagy
+What Hungarian inventor was a pioneer in electrical engineering and is often associated with the development of the alternating current system?;Nikola Tesla;Leó Szilárd;Károly Zipernowsky;János Csonka;Nikola Tesla
+What was the capital of Hungary before it was moved to Budapest?;Esztergom;Visegrád;Szeged;Pécs;Esztergom
+Who was the leader of Hungary during the interwar period and played a role in the establishment of the Kingdom of Hungary after World War I?;Miklós Horthy;László Károlyi;Ferenc József;Zoltán Tildy;Miklós Horthy
+What battle in 1241 was a significant defeat for the Hungarian army against the Mongol forces?;Battle of Mohács;Battle of Szentgotthárd;Battle of Buda;Battle of Muhi;Battle of Muhi
+What year did Hungary officially become a republic after the fall of the monarchy?;1918;1920;1945;1956;1918
+What Hungarian king is famous for his military campaigns and the expansion of Hungary in the 15th century?;Mátyás Corvinus;László I;Béla IV;Louis the Great;Mátyás Corvinus
+Who was the Hungarian revolutionary who was instrumental in the 1848 Hungarian Revolution and the War of Independence?;Lajos Kossuth;József Antall;Imre Nagy;Ferenc Rákóczi;Lajos Kossuth
+Which Hungarian noble family played a key role in Hungarian history, particularly in the 16th century, and has an iconic castle in the Carpathians?;Báthory;Hunyadi;Rákóczi;Zrínyi;Zrínyi
+Which Hungarian scientist discovered vitamin C and won the Nobel Prize in Physiology or Medicine in 1937?;Albert Szent-Györgyi;László József;Ferenc Kossuth;János Szentágothai;Albert Szent-Györgyi
+Who was the first Hungarian Nobel Prize laureate in Literature?;Imre Kertész;Sándor Petőfi;József Attila;Kálmán Mikszáth;Imre Kertész
+In which year did Hungary become a member of NATO?;1990;1997;2004;2001;1999
+Who was the last king of Hungary before the monarchy was abolished in 1946?;Charles IV;Ferdinand I;Louis II;Joseph II;Charles IV
+What famous Hungarian writer is known for his novel The Melancholy of Resistance?;György Lukács;Imre Kertész;Miklós Mészöly;László Krasznahorkai;László Krasznahorkai
+Who was the Hungarian general who led the troops of the Kingdom of Hungary during the Battle of Mohács?;János Hunyadi;Ferenc Rákóczi;László I;Pál Kinizsi;János Hunyadi
+What was the name of the Hungarian political party that led the revolution of 1956?;Hungarian Communist Party;Workers' Party of Hungary;Hungarian Socialist Workers' Party;Petőfi Party;Hungarian Workers' Party
+What was the name of the treaty that concluded Hungary's participation in World War I, leading to the creation of the Kingdom of Hungary under the Habsburgs?;Treaty of Versailles;Treaty of Trianon;Treaty of Prague;Treaty of Szatmár;Treaty of Trianon
+What year did Hungary join the Schengen Area?;2002;2004;2007;2010;2007
+What was the name of the Hungarian prince who led a major revolt against Habsburg rule in 1703?;Imre Thököly;Ferenc Rákóczi II;Mátyás Corvinus;Károlyi Sándor;Ferenc Rákóczi II
+Which Hungarian writer is considered the father of modern Hungarian literature and wrote The Tragedy of Man?;Sándor Petőfi;József Attila;Károly Kisfaludy;Imre Kertész;Károly Kisfaludy
+Who was the famous Hungarian mathematician known for his work in set theory and combinatorics?;László Lovász;János Bolyai;Alfréd Rényi;Katalin Benczúr;Alfréd Rényi
+What Hungarian philosopher is known for his ideas on history and the theory of dialectical materialism?;György Lukács;Imre Lakatos;Mihály Szerb;László Sólyom;György Lukács
+What major event in 1989 led to the end of Hungary's communist regime?;The 1956 Revolution;The fall of the Berlin Wall;The Hungarian Revolution;The creation of the Iron Curtain;The fall of the Berlin Wall
+Who was the Hungarian politician who became the first freely elected president of Hungary after the fall of communism?;Ferenc Kossuth;László Sólyom;János Kádár;Mihály Károlyi;László Sólyom
+Which Hungarian scientist developed the first practical theory of the structure of the atom?;Leó Szilárd;Albert Szent-Györgyi;Eugene Wigner;János Neumann;Leó Szilárd
+What Hungarian king was known for his military campaigns against the Ottoman Empire in the 16th century?;László I;János Hunyadi;Mátyás Corvinus;Louis II;János Hunyadi
+Which Hungarian politician was a key figure in the establishment of the Austro-Hungarian Empire in 1867?;László Kossuth;Ferenc Deák;Miklós Horthy;Károlyi Sándor;Ferenc Deák
+What was the name of the Hungarian poet and revolutionary who wrote The National Song, a key work in Hungary’s 1848 Revolution?;Sándor Petőfi;József Attila;Kálmán Mikszáth;Miklós Zrínyi;Sándor Petőfi

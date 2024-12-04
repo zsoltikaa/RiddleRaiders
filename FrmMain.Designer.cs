@@ -39,8 +39,19 @@ namespace RiddleRaiders
             pbxEnemy = new PictureBox();
             pbxPlayer = new PictureBox();
             rtbChat = new RichTextBox();
+            tblQuestionPanel = new TableLayoutPanel();
+            tblPowerPanel = new TableLayoutPanel();
+            tblAnswerPanel = new TableLayoutPanel();
+            btnAnswer4 = new Button();
+            btnAnswer3 = new Button();
+            btnAnswer1 = new Button();
+            btnAnswer2 = new Button();
+            lblQuestion = new Label();
+            pnlTimer = new Panel();
             ((System.ComponentModel.ISupportInitialize)pbxEnemy).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxPlayer).BeginInit();
+            tblQuestionPanel.SuspendLayout();
+            tblAnswerPanel.SuspendLayout();
             SuspendLayout();
             // 
             // lblTitle
@@ -86,9 +97,9 @@ namespace RiddleRaiders
             lblVersion.ForeColor = Color.White;
             lblVersion.Location = new Point(12, 698);
             lblVersion.Name = "lblVersion";
-            lblVersion.Size = new Size(184, 61);
+            lblVersion.Size = new Size(193, 61);
             lblVersion.TabIndex = 3;
-            lblVersion.Text = "v. 1.0.0.1";
+            lblVersion.Text = "v. 1.0.0.2";
             // 
             // pbxEnemy
             // 
@@ -115,7 +126,7 @@ namespace RiddleRaiders
             rtbChat.BackColor = Color.White;
             rtbChat.BorderStyle = BorderStyle.FixedSingle;
             rtbChat.Enabled = false;
-            rtbChat.Font = new System.Drawing.Font("Monocraft", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rtbChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rtbChat.Location = new Point(504, 351);
             rtbChat.Name = "rtbChat";
             rtbChat.Size = new Size(258, 152);
@@ -123,12 +134,118 @@ namespace RiddleRaiders
             rtbChat.Text = "";
             rtbChat.Visible = false;
             // 
+            // tblQuestionPanel
+            // 
+            tblQuestionPanel.ColumnCount = 1;
+            tblQuestionPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tblQuestionPanel.Controls.Add(tblPowerPanel, 0, 1);
+            tblQuestionPanel.Controls.Add(tblAnswerPanel, 0, 2);
+            tblQuestionPanel.Controls.Add(lblQuestion, 0, 0);
+            tblQuestionPanel.Controls.Add(pnlTimer, 0, 3);
+            tblQuestionPanel.Location = new Point(261, 31);
+            tblQuestionPanel.Name = "tblQuestionPanel";
+            tblQuestionPanel.RowCount = 4;
+            tblQuestionPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
+            tblQuestionPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tblQuestionPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 45F));
+            tblQuestionPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tblQuestionPanel.Size = new Size(901, 276);
+            tblQuestionPanel.TabIndex = 7;
+            tblQuestionPanel.Visible = false;
+            // 
+            // tblPowerPanel
+            // 
+            tblPowerPanel.ColumnCount = 3;
+            tblPowerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tblPowerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tblPowerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tblPowerPanel.Location = new Point(3, 72);
+            tblPowerPanel.Name = "tblPowerPanel";
+            tblPowerPanel.RowCount = 1;
+            tblPowerPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tblPowerPanel.Size = new Size(895, 49);
+            tblPowerPanel.TabIndex = 0;
+            // 
+            // tblAnswerPanel
+            // 
+            tblAnswerPanel.ColumnCount = 2;
+            tblAnswerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tblAnswerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tblAnswerPanel.Controls.Add(btnAnswer4, 1, 1);
+            tblAnswerPanel.Controls.Add(btnAnswer3, 0, 1);
+            tblAnswerPanel.Controls.Add(btnAnswer1, 0, 0);
+            tblAnswerPanel.Controls.Add(btnAnswer2, 1, 0);
+            tblAnswerPanel.Location = new Point(3, 127);
+            tblAnswerPanel.Name = "tblAnswerPanel";
+            tblAnswerPanel.RowCount = 2;
+            tblAnswerPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tblAnswerPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tblAnswerPanel.Size = new Size(895, 118);
+            tblAnswerPanel.TabIndex = 1;
+            // 
+            // btnAnswer4
+            // 
+            btnAnswer4.Location = new Point(450, 62);
+            btnAnswer4.Name = "btnAnswer4";
+            btnAnswer4.Size = new Size(441, 53);
+            btnAnswer4.TabIndex = 3;
+            btnAnswer4.Text = "Answer4";
+            btnAnswer4.UseVisualStyleBackColor = true;
+            // 
+            // btnAnswer3
+            // 
+            btnAnswer3.Location = new Point(3, 62);
+            btnAnswer3.Name = "btnAnswer3";
+            btnAnswer3.Size = new Size(441, 53);
+            btnAnswer3.TabIndex = 2;
+            btnAnswer3.Text = "Answer3";
+            btnAnswer3.UseVisualStyleBackColor = true;
+            // 
+            // btnAnswer1
+            // 
+            btnAnswer1.Location = new Point(3, 3);
+            btnAnswer1.Name = "btnAnswer1";
+            btnAnswer1.Size = new Size(441, 53);
+            btnAnswer1.TabIndex = 0;
+            btnAnswer1.Text = "Answer1";
+            btnAnswer1.UseVisualStyleBackColor = true;
+            // 
+            // btnAnswer2
+            // 
+            btnAnswer2.Location = new Point(450, 3);
+            btnAnswer2.Name = "btnAnswer2";
+            btnAnswer2.Size = new Size(441, 53);
+            btnAnswer2.TabIndex = 1;
+            btnAnswer2.Text = "Answer2";
+            btnAnswer2.UseVisualStyleBackColor = true;
+            // 
+            // lblQuestion
+            // 
+            lblQuestion.Anchor = AnchorStyles.None;
+            lblQuestion.AutoSize = true;
+            lblQuestion.Font = new System.Drawing.Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            lblQuestion.Location = new Point(352, 19);
+            lblQuestion.Name = "lblQuestion";
+            lblQuestion.Size = new Size(197, 30);
+            lblQuestion.TabIndex = 2;
+            lblQuestion.Text = "This is the question.";
+            lblQuestion.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pnlTimer
+            // 
+            pnlTimer.BackColor = Color.DarkGray;
+            pnlTimer.Location = new Point(3, 251);
+            pnlTimer.Name = "pnlTimer";
+            pnlTimer.Size = new Size(895, 22);
+            pnlTimer.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (System.Drawing.Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1366, 768);
+            Controls.Add(tblQuestionPanel);
             Controls.Add(rtbChat);
             Controls.Add(pbxEnemy);
             Controls.Add(pbxPlayer);
@@ -143,6 +260,9 @@ namespace RiddleRaiders
             Text = "Riddle Raiders";
             ((System.ComponentModel.ISupportInitialize)pbxEnemy).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbxPlayer).EndInit();
+            tblQuestionPanel.ResumeLayout(false);
+            tblQuestionPanel.PerformLayout();
+            tblAnswerPanel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -157,5 +277,14 @@ namespace RiddleRaiders
         private PictureBox pbxEnemy;
         private PictureBox pbxPlayer;
         private RichTextBox rtbChat;
+        private TableLayoutPanel tblQuestionPanel;
+        private TableLayoutPanel tblPowerPanel;
+        private TableLayoutPanel tblAnswerPanel;
+        private Label lblQuestion;
+        private Button btnAnswer4;
+        private Button btnAnswer3;
+        private Button btnAnswer1;
+        private Button btnAnswer2;
+        private Panel pnlTimer;
     }
 }

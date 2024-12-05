@@ -8,9 +8,9 @@ namespace RiddleRaiders
 {
     internal class Question
     {
-        private readonly string question;
-        private readonly string[] answers;
-        private readonly string right_answer;
+        public readonly string question;
+        public readonly string[] answers;
+        public readonly string right_answer;
 
         public Question(string line)
         {

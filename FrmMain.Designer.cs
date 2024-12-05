@@ -48,6 +48,8 @@ namespace RiddleRaiders
             btnAnswer2 = new Button();
             lblQuestion = new Label();
             pnlTimer = new Panel();
+            lblPlayerHP = new Label();
+            lblEnemyHP = new Label();
             ((System.ComponentModel.ISupportInitialize)pbxEnemy).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxPlayer).BeginInit();
             tblQuestionPanel.SuspendLayout();
@@ -185,39 +187,43 @@ namespace RiddleRaiders
             // 
             // btnAnswer4
             // 
+            btnAnswer4.BackColor = Color.Gainsboro;
             btnAnswer4.Location = new Point(450, 62);
             btnAnswer4.Name = "btnAnswer4";
             btnAnswer4.Size = new Size(441, 53);
             btnAnswer4.TabIndex = 3;
             btnAnswer4.Text = "Answer4";
-            btnAnswer4.UseVisualStyleBackColor = true;
+            btnAnswer4.UseVisualStyleBackColor = false;
             // 
             // btnAnswer3
             // 
+            btnAnswer3.BackColor = Color.Gainsboro;
             btnAnswer3.Location = new Point(3, 62);
             btnAnswer3.Name = "btnAnswer3";
             btnAnswer3.Size = new Size(441, 53);
             btnAnswer3.TabIndex = 2;
             btnAnswer3.Text = "Answer3";
-            btnAnswer3.UseVisualStyleBackColor = true;
+            btnAnswer3.UseVisualStyleBackColor = false;
             // 
             // btnAnswer1
             // 
+            btnAnswer1.BackColor = Color.Gainsboro;
             btnAnswer1.Location = new Point(3, 3);
             btnAnswer1.Name = "btnAnswer1";
             btnAnswer1.Size = new Size(441, 53);
             btnAnswer1.TabIndex = 0;
             btnAnswer1.Text = "Answer1";
-            btnAnswer1.UseVisualStyleBackColor = true;
+            btnAnswer1.UseVisualStyleBackColor = false;
             // 
             // btnAnswer2
             // 
+            btnAnswer2.BackColor = Color.Gainsboro;
             btnAnswer2.Location = new Point(450, 3);
             btnAnswer2.Name = "btnAnswer2";
             btnAnswer2.Size = new Size(441, 53);
             btnAnswer2.TabIndex = 1;
             btnAnswer2.Text = "Answer2";
-            btnAnswer2.UseVisualStyleBackColor = true;
+            btnAnswer2.UseVisualStyleBackColor = false;
             // 
             // lblQuestion
             // 
@@ -239,12 +245,36 @@ namespace RiddleRaiders
             pnlTimer.Size = new Size(895, 22);
             pnlTimer.TabIndex = 3;
             // 
+            // lblPlayerHP
+            // 
+            lblPlayerHP.BackColor = Color.FromArgb(200, 255, 255, 255);
+            lblPlayerHP.Location = new Point(390, 722);
+            lblPlayerHP.Name = "lblPlayerHP";
+            lblPlayerHP.Size = new Size(133, 23);
+            lblPlayerHP.TabIndex = 8;
+            lblPlayerHP.Text = "player hp:";
+            lblPlayerHP.TextAlign = ContentAlignment.MiddleCenter;
+            lblPlayerHP.Visible = false;
+            // 
+            // lblEnemyHP
+            // 
+            lblEnemyHP.BackColor = Color.FromArgb(200, 255, 255, 255);
+            lblEnemyHP.Location = new Point(924, 722);
+            lblEnemyHP.Name = "lblEnemyHP";
+            lblEnemyHP.Size = new Size(133, 23);
+            lblEnemyHP.TabIndex = 9;
+            lblEnemyHP.Text = "enemy hp:";
+            lblEnemyHP.TextAlign = ContentAlignment.MiddleCenter;
+            lblEnemyHP.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (System.Drawing.Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1366, 768);
+            Controls.Add(lblEnemyHP);
+            Controls.Add(lblPlayerHP);
             Controls.Add(tblQuestionPanel);
             Controls.Add(rtbChat);
             Controls.Add(pbxEnemy);
@@ -286,5 +316,7 @@ namespace RiddleRaiders
         private Button btnAnswer1;
         private Button btnAnswer2;
         private Panel pnlTimer;
+        private Label lblPlayerHP;
+        private Label lblEnemyHP;
     }
 }

@@ -22,5 +22,13 @@ namespace AdventureQuiz
             this.imagePath = imagePath;
             this.position = position;
         }
+
+        public void TakeDamage(int damage)
+        {
+
+            health -= damage;
+
+        }
+
     }
 }

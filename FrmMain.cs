@@ -1,4 +1,5 @@
 using AdventureQuiz;
+using RiddleRaiders.Properties;
 using Timer = System.Windows.Forms.Timer;
 
 namespace RiddleRaiders
@@ -18,6 +19,7 @@ namespace RiddleRaiders
         private Player player;
         private List<Question> questionList = new List<Question>();
         private Question currentQuestion;
+        private int originalTimerWidth;
         public Form1()
         {
 
@@ -25,17 +27,52 @@ namespace RiddleRaiders
 
             InitGame();
 
+            originalTimerWidth = pnlTimer.Width;
+
             btnExit.Click += BtnExitClick;
 
             btnPlay.Click += BtnPlayClick;
 
             textTimer = new Timer();
-            textTimer.Interval = 30; 
+            textTimer.Interval = 30;
             textTimer.Tick += TextTimerTick;
 
             questionTimer = new Timer();
             questionTimer.Interval = 5;
             questionTimer.Tick += QuestionTimerTick;
+
+            btnAnswer1.Click += BtnAnswerClick;
+            btnAnswer2.Click += BtnAnswerClick;
+            btnAnswer3.Click += BtnAnswerClick;
+            btnAnswer4.Click += BtnAnswerClick;
+
+        }
+
+        private void BtnAnswerClick(object sender, EventArgs e)
+        {
+            
+            Button btn = sender as Button;
+
+            if (btn != null)
+            {
+                if (btn.Text == currentQuestion.right_answer)
+                {
+                    currentScene.enemy.TakeDamage(1);
+                    pnlTimer.Width = originalTimerWidth;
+                    GetRandomQuestion();
+                    btn.BackColor = Color.Green;
+                }
+                else
+                {
+                    player.TakeDamage(1);
+                    pnlTimer.Width = originalTimerWidth;
+                    GetRandomQuestion();
+                    btn.BackColor = Color.Red;
+                }
+            }
+
+            lblPlayerHP.Text = $"HP: {player.health}";
+            lblEnemyHP.Text = $"HP: {currentScene.enemy.health}";
 
         }
 
@@ -43,9 +80,28 @@ namespace RiddleRaiders
         {
             pnlTimer.Width -= 2;
 
-            if (pnlTimer.Width < 0)
+            if (pnlTimer.Width <= 0)
             {
-                player.health--;
+                player.TakeDamage(1);
+                lblPlayerHP.Text = $"HP: {player.health}";
+                if (player.health <= 0)
+                {
+                    textTimer.Stop();
+                    questionTimer.Stop();
+                    DialogResult result = MessageBox.Show
+                        (
+                        caption: "GAME OVER!",
+                        text: "You didn't manage to get through the challanges. \nYou'll be sent back to the menu. ",
+                        buttons: MessageBoxButtons.OK
+                        );
+                    if (result == DialogResult.OK)
+                    {
+                        ShowMenu();
+                    }
+                }
+                Thread.Sleep(500);
+                pnlTimer.Width = originalTimerWidth;
+                GetRandomQuestion();
             }
         }
 
@@ -55,17 +111,24 @@ namespace RiddleRaiders
             if (currentCharIndex < text.Length)
             {
                 rtbChat.AppendText(text[currentCharIndex].ToString());
-                rtbChat.ScrollToCaret(); 
+                rtbChat.ScrollToCaret();
                 currentCharIndex++;
             }
             else
             {
-                textTimer.Stop();
+                textTimer.Stop();              
                 Thread.Sleep(2000);
                 rtbChat.Visible = false;
+                rtbChat.Text = "";
                 tblQuestionPanel.Visible = true;
+                lblEnemyHP.Visible = true;
+                lblPlayerHP.Visible = true;
+
+
 
                 questionTimer.Start();
+
+                GetRandomQuestion();
             }
 
         }
@@ -77,7 +140,7 @@ namespace RiddleRaiders
 
             resourceDir = "../../../Resources/";
 
-            player = new Player("Player", 5, 1, $"{resourceDir}player.png");
+            player = new Player("Player", 1, 1, $"{resourceDir}player.png");
 
             FillScenes();
 
@@ -85,15 +148,8 @@ namespace RiddleRaiders
 
             pbxPlayer.Visible = false;
 
-            pbxEnemy.Visible = false;
-        }
+            pbxEnemy.Visible = false;         
 
-        private void EngageEnemy()
-        {
-            while(currentScene.enemy.health > 0)
-            {
-                
-            }
         }
 
         private void BtnPlayClick(object? sender, EventArgs e)
@@ -162,6 +218,9 @@ namespace RiddleRaiders
 
             currentScene = sceneList[level];
 
+            lblPlayerHP.Text = $"HP: {player.health}";
+            lblEnemyHP.Text = $"HP: {currentScene.enemy.health}";
+
             UpdateScene();
 
         }
@@ -193,12 +252,62 @@ namespace RiddleRaiders
 
         }
 
-        private void GenerateRandomQuestion()
+        private void UpdateQuestion()
+        {
+
+            lblQuestion.Text = currentQuestion.question;
+
+            btnAnswer1.Text = currentQuestion.answers[0];
+
+            btnAnswer2.Text = currentQuestion.answers[1];
+
+            btnAnswer3.Text = currentQuestion.answers[2];
+
+            btnAnswer4.Text = currentQuestion.answers[3];
+
+        }
+
+        private void GetRandomQuestion()
         {
             int questionIndex = rnd.Next(0, questionList.Count);
             currentQuestion = questionList[questionIndex];
             questionList.RemoveAt(questionIndex);
+            ResetButtonColor();
+            UpdateQuestion();            
         }
-        
+
+        private void ShowMenu()
+        {
+
+            level = -1;
+
+            lblTitle.Visible = true;
+
+            this.BackgroundImage = Image.FromFile($"{resourceDir}menu_island.jpg");
+
+            pbxEnemy.Visible = false;
+            pbxPlayer.Visible = false;
+
+            lblPlayerHP.Visible = false;
+            lblEnemyHP.Visible = false;
+
+            tblQuestionPanel.Visible = false;
+            
+            btnPlay.Visible = true;
+            btnExit.Visible = true;
+            lblVersion.Visible = true;         
+
+        }
+
+        private void ResetButtonColor()
+        {
+
+            btnAnswer1.BackColor = Color.Gainsboro;
+            btnAnswer2.BackColor = Color.Gainsboro;
+            btnAnswer3.BackColor = Color.Gainsboro;
+            btnAnswer4.BackColor = Color.Gainsboro;
+
+        }
+
     }
 }

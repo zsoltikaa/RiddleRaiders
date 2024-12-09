@@ -8,7 +8,7 @@ namespace RiddleRaiders
     {
         private static Random rnd = new Random();
 
-        private const int PLAYER_HEALTH = 5;
+        private const int PLAYER_HEALTH = 10;
 
         private int level;
         private Scene currentScene;
@@ -195,11 +195,11 @@ namespace RiddleRaiders
 
             sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 3, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodge—it’d be a shame to ruin such dramatic fashion with my blood."));
 
-            sceneList.Add(new Scene($"{resourceDir}mountain.jpg", "Mountain", new Position(350, 390), new Enemy("Long Arms", 4, 3, $"{resourceDir}long_arms.png", new Position(800, 350)), "Nice arms! \nDo they come with a user manual, or are you just winging it and hoping for the best? \nLet me guess—those things are for hugging... real aggressively, right?"));
+            sceneList.Add(new Scene($"{resourceDir}mountain.jpg", "Mountain", new Position(350, 390), new Enemy("Long Arms", 4, 2, $"{resourceDir}long_arms.png", new Position(800, 350)), "Nice arms! \nDo they come with a user manual, or are you just winging it and hoping for the best? \nLet me guess—those things are for hugging... real aggressively, right?"));
 
             sceneList.Add(new Scene($"{resourceDir}cave.jpg", "Cave", new Position(380, 500), new Enemy("Long Sword", 5, 3, $"{resourceDir}long_sword.png", new Position(760, 445)), "Wow, nice sword!\n Compensating for something? Or is the dramatic lightning effect just to distract from the fact you haven’t smiled in centuries?"));
 
-            sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 6, 4, $"{resourceDir}final_boss.png", new Position(760, 445)), "Whoa, looking nice!\n Is the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
+            sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 6, 5, $"{resourceDir}final_boss.png", new Position(760, 445)), "Whoa, looking nice!\n Is the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
         }
 
         private void FillQuestions()

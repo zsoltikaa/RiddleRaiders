@@ -77,7 +77,11 @@ namespace RiddleRaiders
                 lblEnemyHP.Text = $"HP: {currentScene.enemy.health}";
 
                 CheckPlayerDeath();
-                CheckEnemyDeath();
+                if (currentScene.enemy.health <= 0)
+                {
+                    await Task.Delay(1000);
+                    CheckEnemyDeath();
+                }
 
                 await Task.Delay(1000);
                 GetRandomQuestion();
@@ -86,7 +90,6 @@ namespace RiddleRaiders
                 btnAnswer2.Enabled = true;
                 btnAnswer3.Enabled = true;
                 btnAnswer4.Enabled = true;
-                questionTimer?.Start();
             }
         }
 
@@ -96,6 +99,7 @@ namespace RiddleRaiders
 
             if (pnlTimer.Width <= 0)
             {
+                questionTimer.Stop();
                 player.TakeDamage(1);
                 lblPlayerHP.Text = $"HP: {player.health}";
                 CheckPlayerDeath();
@@ -188,7 +192,7 @@ namespace RiddleRaiders
         private void FillScenes()
         {
             sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission. \nPrepare yourself, creature!"));
-            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 476), new Enemy("Black Guy", 3, 1, $"{resourceDir}black_guy.png", new Position(900, 234)), "That scythe looks heavy.\n Bet you can't even swing it properly!\n Though, if you can, I'll be sure to dodge—it’d be a shame to ruin such dramatic fashion with my blood."));
+            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 3, 1, $"{resourceDir}black_guy.png", new Position(800, 425)), "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodge—it’d be a shame to ruin such dramatic fashion with my blood."));
         }
 
         private void FillQuestions()
@@ -267,6 +271,7 @@ namespace RiddleRaiders
             pnlTimer.Width = originalTimerWidth;
             ResetButtonColor();
             UpdateQuestion();
+            questionTimer.Start();
         }
 
         private void ShowMenu()
@@ -319,16 +324,13 @@ namespace RiddleRaiders
 
         private void CheckEnemyDeath()
         {
-            if(currentScene.enemy.health <= 0)
+            if (level == sceneList.Count - 1)
             {
-                if(level == sceneList.Count - 1)
-                {
-                    this.Close();
-                }
-                else
-                {
-                    ChangeLevel();
-                }
+                this.Close();
+            }
+            else
+            {
+                ChangeLevel();
             }
         }
     }

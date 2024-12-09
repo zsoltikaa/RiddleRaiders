@@ -60,7 +60,6 @@ Which book series is set in a world where wizards attend Hogwarts School of Witc
 What is the most watched film of all time?;Titanic;Avengers: Endgame;The Lion King;Star Wars: The Force Awakens;Avengers: Endgame
 What is the name of the artificial intelligence in the movie "2001: A Space Odyssey"?;HAL 9000;Siri;Cortana;Alexa;HAL 9000
 Who directed the movie "Inception"?;Steven Spielberg;Christopher Nolan;Martin Scorsese;Quentin Tarantino;Christopher Nolan
-Which video game is known for the battle royale mode called "Fortnite"?;Minecraft;Call of Duty;Fortnite;Apex Legends;Fortnite
 What is the name of the planet in the "Avatar" movie?;Pandora;Mars;Earth;Titan;Pandora
 Who wrote the novel "1984"?;Aldous Huxley;Ray Bradbury;George Orwell;William Golding;George Orwell
 What is the main objective of the game "Minecraft"?;Explore and fight monsters;Build structures and explore;Collect all the items;Complete quests;Build structures and explore

@@ -60,11 +60,11 @@ namespace RiddleRaiders
             // 
             lblTitle.AutoSize = true;
             lblTitle.BackColor = Color.Transparent;
-            lblTitle.Font = new System.Drawing.Font("Rage Italic", 99.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 99.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTitle.ForeColor = SystemColors.ButtonHighlight;
             lblTitle.Location = new Point(315, 47);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(805, 168);
+            lblTitle.Size = new Size(936, 152);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Riddle Raiders";
             // 
@@ -72,7 +72,7 @@ namespace RiddleRaiders
             // 
             btnPlay.BackColor = Color.FromArgb(190, 255, 255, 255);
             btnPlay.FlatStyle = FlatStyle.Popup;
-            btnPlay.Font = new System.Drawing.Font("Harrington", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnPlay.Location = new Point(529, 340);
             btnPlay.Name = "btnPlay";
             btnPlay.Size = new Size(362, 95);
@@ -84,7 +84,7 @@ namespace RiddleRaiders
             // 
             btnExit.BackColor = Color.FromArgb(190, 255, 255, 255);
             btnExit.FlatStyle = FlatStyle.Popup;
-            btnExit.Font = new System.Drawing.Font("Harrington", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnExit.Location = new Point(529, 457);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(362, 95);
@@ -248,9 +248,10 @@ namespace RiddleRaiders
             // lblPlayerHP
             // 
             lblPlayerHP.BackColor = Color.FromArgb(200, 255, 255, 255);
-            lblPlayerHP.Location = new Point(390, 722);
+            lblPlayerHP.Font = new System.Drawing.Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            lblPlayerHP.Location = new Point(-1, 722);
             lblPlayerHP.Name = "lblPlayerHP";
-            lblPlayerHP.Size = new Size(133, 23);
+            lblPlayerHP.Size = new Size(168, 47);
             lblPlayerHP.TabIndex = 8;
             lblPlayerHP.Text = "player hp:";
             lblPlayerHP.TextAlign = ContentAlignment.MiddleCenter;
@@ -259,9 +260,10 @@ namespace RiddleRaiders
             // lblEnemyHP
             // 
             lblEnemyHP.BackColor = Color.FromArgb(200, 255, 255, 255);
-            lblEnemyHP.Location = new Point(924, 722);
+            lblEnemyHP.Font = new System.Drawing.Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            lblEnemyHP.Location = new Point(1198, 722);
             lblEnemyHP.Name = "lblEnemyHP";
-            lblEnemyHP.Size = new Size(133, 23);
+            lblEnemyHP.Size = new Size(168, 47);
             lblEnemyHP.TabIndex = 9;
             lblEnemyHP.Text = "enemy hp:";
             lblEnemyHP.TextAlign = ContentAlignment.MiddleCenter;

@@ -41,7 +41,7 @@ namespace RiddleRaiders
             rtbChat = new RichTextBox();
             tblQuestionPanel = new TableLayoutPanel();
             tblPowerPanel = new TableLayoutPanel();
-            btnFullHealthPup = new Button();
+            btnHealthPup = new Button();
             btnHalfPup = new Button();
             btnStopTimePup = new Button();
             tblAnswerPanel = new TableLayoutPanel();
@@ -165,7 +165,7 @@ namespace RiddleRaiders
             tblPowerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tblPowerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tblPowerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tblPowerPanel.Controls.Add(btnFullHealthPup, 2, 0);
+            tblPowerPanel.Controls.Add(btnHealthPup, 2, 0);
             tblPowerPanel.Controls.Add(btnHalfPup, 1, 0);
             tblPowerPanel.Controls.Add(btnStopTimePup, 0, 0);
             tblPowerPanel.Location = new Point(3, 72);
@@ -177,13 +177,13 @@ namespace RiddleRaiders
             // 
             // btnFullHealthPup
             // 
-            btnFullHealthPup.Font = new System.Drawing.Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            btnFullHealthPup.Location = new Point(599, 3);
-            btnFullHealthPup.Name = "btnFullHealthPup";
-            btnFullHealthPup.Size = new Size(292, 43);
-            btnFullHealthPup.TabIndex = 2;
-            btnFullHealthPup.Text = "+2 Health";
-            btnFullHealthPup.UseVisualStyleBackColor = true;
+            btnHealthPup.Font = new System.Drawing.Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            btnHealthPup.Location = new Point(599, 3);
+            btnHealthPup.Name = "btnFullHealthPup";
+            btnHealthPup.Size = new Size(292, 43);
+            btnHealthPup.TabIndex = 2;
+            btnHealthPup.Text = "+2 Health";
+            btnHealthPup.UseVisualStyleBackColor = true;
             // 
             // btnHalfPup
             // 
@@ -360,7 +360,7 @@ namespace RiddleRaiders
         private Panel pnlTimer;
         private Label lblPlayerHP;
         private Label lblEnemyHP;
-        private Button btnFullHealthPup;
+        private Button btnHealthPup;
         private Button btnHalfPup;
         private Button btnStopTimePup;
     }

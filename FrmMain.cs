@@ -10,6 +10,13 @@ namespace RiddleRaiders
 
         private const int PLAYER_HEALTH = 10;
 
+        private const int MAX_POWERUP_PER_LEVEL = 3;
+        private const int POWERUP_DROP_CHANCE = 40;
+
+        PowerUp pUpHalf = new PowerUp(0);
+        PowerUp pUpStopTime = new PowerUp(0);
+        PowerUp pUpHealth = new PowerUp(0);
+
         private int level;
         private Scene currentScene;
         private List<Scene> sceneList = new List<Scene>();
@@ -49,12 +56,14 @@ namespace RiddleRaiders
             btnAnswer4.Click += BtnAnswerClick;
             btnHalfPup.Click += BtnHalfPupClick;
             btnStopTimePup.Click += BtnStopTimePupClick;
-            btnFullHealthPup.Click += BtnFullHealthPupClick;
+            btnHealthPup.Click += BtnHealthPupClick;
 
         }
 
-        private void BtnFullHealthPupClick(object sender, EventArgs e)
+        private void BtnHealthPupClick(object sender, EventArgs e)
         {
+            pUpHealth.owned--;
+            RefreshPowerUpButtons();
             if (player.health < PLAYER_HEALTH)
             {
                 player.health = Math.Min(player.health + 2, PLAYER_HEALTH); 
@@ -64,6 +73,9 @@ namespace RiddleRaiders
 
         private void BtnStopTimePupClick(object sender, EventArgs e)
         {
+            pUpStopTime.owned--;
+            RefreshPowerUpButtons();
+            btnStopTimePup.Enabled = false;
 
             questionTimer.Stop();
 
@@ -77,6 +89,10 @@ namespace RiddleRaiders
 
         private void BtnHalfPupClick(object sender, EventArgs e)
         {
+            pUpHalf.owned--;
+            RefreshPowerUpButtons();
+            btnHalfPup.Enabled = false;
+
             List<int> wrongAnswers = new List<int>();
             for (int i = 0; i < currentQuestion.answers.Length; i++)
             {
@@ -294,6 +310,8 @@ namespace RiddleRaiders
             textTimer.Stop();
             questionTimer.Stop();
 
+            GivePowerUps(MAX_POWERUP_PER_LEVEL, POWERUP_DROP_CHANCE);
+
             UpdateScene();
         }
 
@@ -345,8 +363,9 @@ namespace RiddleRaiders
             currentQuestion = questionList[questionIndex];
             questionList.RemoveAt(questionIndex);
             pnlTimer.Width = originalTimerWidth;
-            ResetButtonColor();
+            ResetAnswerButtons();
             UpdateQuestion();
+            RefreshPowerUps();
             questionTimer.Start();
         }
 
@@ -371,12 +390,17 @@ namespace RiddleRaiders
             lblVersion.Visible = true;
         }
 
-        private void ResetButtonColor()
+        private void ResetAnswerButtons()
         {
             btnAnswer1.BackColor = Color.Gainsboro;
             btnAnswer2.BackColor = Color.Gainsboro;
             btnAnswer3.BackColor = Color.Gainsboro;
             btnAnswer4.BackColor = Color.Gainsboro;
+
+            btnAnswer1.Visible = true;
+            btnAnswer2.Visible = true;
+            btnAnswer3.Visible = true;
+            btnAnswer4.Visible = true;
         }
 
         private void CheckPlayerDeath()
@@ -409,6 +433,33 @@ namespace RiddleRaiders
             {
                 ChangeLevel();
             }
+        }
+
+        private void RefreshPowerUps()
+        {
+            btnHalfPup.Enabled = pUpHalf.owned > 0 ? true : false;
+            btnStopTimePup.Enabled = pUpStopTime.owned > 0 ? true : false;
+            btnHealthPup.Enabled = pUpHealth.owned > 0 ? true : false;
+
+            RefreshPowerUpButtons();
+        }
+
+        private void GivePowerUps(int max, int chancePercentage)
+        {
+            Random rng = new Random();
+
+            pUpHalf.owned += rng.Next(1, 100) <= chancePercentage ? rng.Next(1, max) : 0;
+            pUpStopTime.owned += rng.Next(1, 100) <= chancePercentage ? rng.Next(1, max) : 0;
+            pUpHealth.owned += rng.Next(1, 100) <= chancePercentage ? rng.Next(1, max) : 0;
+
+            RefreshPowerUps();
+        }
+
+        private void RefreshPowerUpButtons()
+        {
+            btnHalfPup.Text = pUpHalf.owned > 0 ? $"Half Answers x{pUpHalf.owned}" : "Half Answers";
+            btnStopTimePup.Text = pUpStopTime.owned > 0 ? $"Stop Time (5s) x{pUpStopTime.owned}" : "Stop Time (5s)";
+            btnHealthPup.Text = pUpHealth.owned > 0 ? $" + 2 Health x{pUpHealth.owned}" : "+2 Health";
         }
 
     }

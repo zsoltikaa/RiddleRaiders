@@ -41,6 +41,9 @@ namespace RiddleRaiders
             rtbChat = new RichTextBox();
             tblQuestionPanel = new TableLayoutPanel();
             tblPowerPanel = new TableLayoutPanel();
+            btnFullHealthPup = new Button();
+            btnHalfPup = new Button();
+            btnStopTimePup = new Button();
             tblAnswerPanel = new TableLayoutPanel();
             btnAnswer4 = new Button();
             btnAnswer3 = new Button();
@@ -53,6 +56,7 @@ namespace RiddleRaiders
             ((System.ComponentModel.ISupportInitialize)pbxEnemy).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxPlayer).BeginInit();
             tblQuestionPanel.SuspendLayout();
+            tblPowerPanel.SuspendLayout();
             tblAnswerPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -161,12 +165,45 @@ namespace RiddleRaiders
             tblPowerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tblPowerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tblPowerPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tblPowerPanel.Controls.Add(btnFullHealthPup, 2, 0);
+            tblPowerPanel.Controls.Add(btnHalfPup, 1, 0);
+            tblPowerPanel.Controls.Add(btnStopTimePup, 0, 0);
             tblPowerPanel.Location = new Point(3, 72);
             tblPowerPanel.Name = "tblPowerPanel";
             tblPowerPanel.RowCount = 1;
             tblPowerPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tblPowerPanel.Size = new Size(895, 49);
             tblPowerPanel.TabIndex = 0;
+            // 
+            // btnFullHealthPup
+            // 
+            btnFullHealthPup.Font = new System.Drawing.Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            btnFullHealthPup.Location = new Point(599, 3);
+            btnFullHealthPup.Name = "btnFullHealthPup";
+            btnFullHealthPup.Size = new Size(292, 43);
+            btnFullHealthPup.TabIndex = 2;
+            btnFullHealthPup.Text = "+2 Health";
+            btnFullHealthPup.UseVisualStyleBackColor = true;
+            // 
+            // btnHalfPup
+            // 
+            btnHalfPup.Font = new System.Drawing.Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            btnHalfPup.Location = new Point(301, 3);
+            btnHalfPup.Name = "btnHalfPup";
+            btnHalfPup.Size = new Size(292, 43);
+            btnHalfPup.TabIndex = 1;
+            btnHalfPup.Text = "Half Answers";
+            btnHalfPup.UseVisualStyleBackColor = true;
+            // 
+            // btnStopTimePup
+            // 
+            btnStopTimePup.Font = new System.Drawing.Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            btnStopTimePup.Location = new Point(3, 3);
+            btnStopTimePup.Name = "btnStopTimePup";
+            btnStopTimePup.Size = new Size(292, 43);
+            btnStopTimePup.TabIndex = 0;
+            btnStopTimePup.Text = "Stop Time (5s)";
+            btnStopTimePup.UseVisualStyleBackColor = true;
             // 
             // tblAnswerPanel
             // 
@@ -182,6 +219,7 @@ namespace RiddleRaiders
             tblAnswerPanel.RowCount = 2;
             tblAnswerPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tblAnswerPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tblAnswerPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tblAnswerPanel.Size = new Size(895, 118);
             tblAnswerPanel.TabIndex = 1;
             // 
@@ -295,6 +333,7 @@ namespace RiddleRaiders
             ((System.ComponentModel.ISupportInitialize)pbxPlayer).EndInit();
             tblQuestionPanel.ResumeLayout(false);
             tblQuestionPanel.PerformLayout();
+            tblPowerPanel.ResumeLayout(false);
             tblAnswerPanel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -321,5 +360,8 @@ namespace RiddleRaiders
         private Panel pnlTimer;
         private Label lblPlayerHP;
         private Label lblEnemyHP;
+        private Button btnFullHealthPup;
+        private Button btnHalfPup;
+        private Button btnStopTimePup;
     }
 }

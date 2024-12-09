@@ -47,7 +47,59 @@ namespace RiddleRaiders
             btnAnswer2.Click += BtnAnswerClick;
             btnAnswer3.Click += BtnAnswerClick;
             btnAnswer4.Click += BtnAnswerClick;
+            btnHalfPup.Click += BtnHalfPupClick;
+            btnStopTimePup.Click += BtnStopTimePupClick;
+            btnFullHealthPup.Click += BtnFullHealthPupClick;
 
+        }
+
+        private void BtnFullHealthPupClick(object sender, EventArgs e)
+        {
+            if (player.health < PLAYER_HEALTH)
+            {
+                player.health = Math.Min(player.health + 2, PLAYER_HEALTH); 
+                lblPlayerHP.Text = $"HP: {player.health}";
+            }
+        }
+
+        private void BtnStopTimePupClick(object sender, EventArgs e)
+        {
+
+            questionTimer.Stop();
+
+            Task.Delay(5000).ContinueWith(t =>
+            {
+
+                Invoke(() => questionTimer.Start());
+
+            });
+        }
+
+        private void BtnHalfPupClick(object sender, EventArgs e)
+        {
+            List<int> wrongAnswers = new List<int>();
+            for (int i = 0; i < currentQuestion.answers.Length; i++)
+            {
+                if (currentQuestion.answers[i] != currentQuestion.right_answer)
+                {
+                    wrongAnswers.Add(i);
+                }
+            }
+
+            Random rnd = new Random();
+            int answerToRemove1 = wrongAnswers[rnd.Next(wrongAnswers.Count)];
+            wrongAnswers.Remove(answerToRemove1);
+            int answerToRemove2 = wrongAnswers[rnd.Next(wrongAnswers.Count)];
+
+            if (answerToRemove1 == 0) btnAnswer1.Visible = false;
+            if (answerToRemove1 == 1) btnAnswer2.Visible = false;
+            if (answerToRemove1 == 2) btnAnswer3.Visible = false;
+            if (answerToRemove1 == 3) btnAnswer4.Visible = false;
+
+            if (answerToRemove2 == 0) btnAnswer1.Visible = false;
+            if (answerToRemove2 == 1) btnAnswer2.Visible = false;
+            if (answerToRemove2 == 2) btnAnswer3.Visible = false;
+            if (answerToRemove2 == 3) btnAnswer4.Visible = false;
         }
 
         private async void BtnAnswerClick(object sender, EventArgs e)
@@ -358,5 +410,6 @@ namespace RiddleRaiders
                 ChangeLevel();
             }
         }
+
     }
 }

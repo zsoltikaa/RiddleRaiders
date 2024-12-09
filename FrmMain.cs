@@ -8,6 +8,8 @@ namespace RiddleRaiders
     {
         private static Random rnd = new Random();
 
+        private const int PLAYER_HEALTH = 5;
+
         private int level;
         private Scene currentScene;
         private List<Scene> sceneList = new List<Scene>();
@@ -48,35 +50,47 @@ namespace RiddleRaiders
 
         }
 
-        private void BtnAnswerClick(object sender, EventArgs e)
+        private async void BtnAnswerClick(object sender, EventArgs e)
         {
-            
             Button btn = sender as Button;
 
             if (btn != null)
             {
+                btnAnswer1.Enabled = false;
+                btnAnswer2.Enabled = false;
+                btnAnswer3.Enabled = false;
+                btnAnswer4.Enabled = false;
+                questionTimer?.Stop();
+
                 if (btn.Text == currentQuestion.right_answer)
                 {
-                    currentScene.enemy.TakeDamage(1);
-                    pnlTimer.Width = originalTimerWidth;
-                    GetRandomQuestion();
+                    currentScene.enemy.TakeDamage(player.damage);
                     btn.BackColor = Color.Green;
                 }
                 else
                 {
-                    player.TakeDamage(1);
-                    pnlTimer.Width = originalTimerWidth;
-                    GetRandomQuestion();
+                    player.TakeDamage(currentScene.enemy.damage);
                     btn.BackColor = Color.Red;
                 }
+
+                lblPlayerHP.Text = $"HP: {player.health}";
+                lblEnemyHP.Text = $"HP: {currentScene.enemy.health}";
+
+                CheckPlayerDeath();
+                CheckEnemyDeath();
+
+                await Task.Delay(1000);
+                GetRandomQuestion();
+
+                btnAnswer1.Enabled = true;
+                btnAnswer2.Enabled = true;
+                btnAnswer3.Enabled = true;
+                btnAnswer4.Enabled = true;
+                questionTimer?.Start();
             }
-
-            lblPlayerHP.Text = $"HP: {player.health}";
-            lblEnemyHP.Text = $"HP: {currentScene.enemy.health}";
-
         }
 
-        private void QuestionTimerTick(object sender, EventArgs e)
+        private async void QuestionTimerTick(object sender, EventArgs e)
         {
             pnlTimer.Width -= 2;
 
@@ -84,30 +98,15 @@ namespace RiddleRaiders
             {
                 player.TakeDamage(1);
                 lblPlayerHP.Text = $"HP: {player.health}";
-                if (player.health <= 0)
-                {
-                    textTimer.Stop();
-                    questionTimer.Stop();
-                    DialogResult result = MessageBox.Show
-                        (
-                        caption: "GAME OVER!",
-                        text: "You didn't manage to get through the challanges. \nYou'll be sent back to the menu. ",
-                        buttons: MessageBoxButtons.OK
-                        );
-                    if (result == DialogResult.OK)
-                    {
-                        ShowMenu();
-                    }
-                }
-                Thread.Sleep(500);
+                CheckPlayerDeath();
+                await Task.Delay(500);
                 pnlTimer.Width = originalTimerWidth;
                 GetRandomQuestion();
             }
         }
 
-        private void TextTimerTick(object? sender, EventArgs e)
+        private async void TextTimerTick(object? sender, EventArgs e)
         {
-
             if (currentCharIndex < text.Length)
             {
                 rtbChat.AppendText(text[currentCharIndex].ToString());
@@ -116,26 +115,22 @@ namespace RiddleRaiders
             }
             else
             {
-                textTimer.Stop();              
-                Thread.Sleep(2000);
+                textTimer.Stop();
+                await Task.Delay(2000);  // Replace Thread.Sleep with async delay
                 rtbChat.Visible = false;
                 rtbChat.Text = "";
                 tblQuestionPanel.Visible = true;
                 lblEnemyHP.Visible = true;
                 lblPlayerHP.Visible = true;
 
-
-
                 questionTimer.Start();
 
                 GetRandomQuestion();
             }
-
         }
 
         private void InitGame()
         {
-
             level = -1;
 
             resourceDir = "../../../Resources/";
@@ -148,12 +143,12 @@ namespace RiddleRaiders
 
             pbxPlayer.Visible = false;
 
-            pbxEnemy.Visible = false;         
-
+            pbxEnemy.Visible = false;
         }
 
         private void BtnPlayClick(object? sender, EventArgs e)
         {
+            player.health = PLAYER_HEALTH;
 
             btnPlay.Visible = false;
             btnExit.Visible = false;
@@ -173,12 +168,10 @@ namespace RiddleRaiders
             pbxPlayer.Visible = true;
 
             pbxEnemy.Visible = true;
-
         }
 
         private void BtnExitClick(object? sender, EventArgs e)
         {
-
             DialogResult result = MessageBox.Show(
                 caption: "RiddleRaiders ",
                 text: "Do you want to exit the game? ",
@@ -190,14 +183,12 @@ namespace RiddleRaiders
             {
                 Application.Exit();
             }
-
         }
 
         private void FillScenes()
         {
-
             sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission. \nPrepare yourself, creature!"));
-
+            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 476), new Enemy("Black Guy", 3, 1, $"{resourceDir}black_guy.png", new Position(900, 234)), "That scythe looks heavy.\n Bet you can't even swing it properly!\n Though, if you can, I'll be sure to dodge—it’d be a shame to ruin such dramatic fashion with my blood."));
         }
 
         private void FillQuestions()
@@ -213,21 +204,22 @@ namespace RiddleRaiders
 
         private void ChangeLevel()
         {
-
             level += 1;
 
             currentScene = sceneList[level];
 
-            lblPlayerHP.Text = $"HP: {player.health}";
-            lblEnemyHP.Text = $"HP: {currentScene.enemy.health}";
+            tblQuestionPanel.Visible = false;
+            lblEnemyHP.Visible = false;
+            lblPlayerHP.Visible = false;
+
+            textTimer.Stop();
+            questionTimer.Stop();
 
             UpdateScene();
-
         }
 
         private void UpdateScene()
         {
-
             this.BackgroundImage = Image.FromFile(currentScene.backgroundImage);
 
             Image img = Image.FromFile(currentScene.enemy.imagePath);
@@ -248,13 +240,14 @@ namespace RiddleRaiders
 
             currentCharIndex = 0;
 
-            textTimer.Start();
+            lblPlayerHP.Text = $"HP: {player.health}";
+            lblEnemyHP.Text = $"HP: {currentScene.enemy.health}";
 
+            textTimer.Start();
         }
 
         private void UpdateQuestion()
         {
-
             lblQuestion.Text = currentQuestion.question;
 
             btnAnswer1.Text = currentQuestion.answers[0];
@@ -264,7 +257,6 @@ namespace RiddleRaiders
             btnAnswer3.Text = currentQuestion.answers[2];
 
             btnAnswer4.Text = currentQuestion.answers[3];
-
         }
 
         private void GetRandomQuestion()
@@ -272,13 +264,13 @@ namespace RiddleRaiders
             int questionIndex = rnd.Next(0, questionList.Count);
             currentQuestion = questionList[questionIndex];
             questionList.RemoveAt(questionIndex);
+            pnlTimer.Width = originalTimerWidth;
             ResetButtonColor();
-            UpdateQuestion();            
+            UpdateQuestion();
         }
 
         private void ShowMenu()
         {
-
             level = -1;
 
             lblTitle.Visible = true;
@@ -292,22 +284,52 @@ namespace RiddleRaiders
             lblEnemyHP.Visible = false;
 
             tblQuestionPanel.Visible = false;
-            
+
             btnPlay.Visible = true;
             btnExit.Visible = true;
-            lblVersion.Visible = true;         
-
+            lblVersion.Visible = true;
         }
 
         private void ResetButtonColor()
         {
-
             btnAnswer1.BackColor = Color.Gainsboro;
             btnAnswer2.BackColor = Color.Gainsboro;
             btnAnswer3.BackColor = Color.Gainsboro;
             btnAnswer4.BackColor = Color.Gainsboro;
-
         }
 
+        private void CheckPlayerDeath()
+        {
+            if (player.health <= 0)
+            {
+                textTimer.Stop();
+                questionTimer.Stop();
+                DialogResult result = MessageBox.Show
+                    (
+                    caption: "GAME OVER!",
+                    text: "You didn't manage to get through the challenges. \nYou'll be sent back to the menu. ",
+                    buttons: MessageBoxButtons.OK
+                    );
+                if (result == DialogResult.OK)
+                {
+                    ShowMenu();
+                }
+            }
+        }
+
+        private void CheckEnemyDeath()
+        {
+            if(currentScene.enemy.health <= 0)
+            {
+                if(level == sceneList.Count - 1)
+                {
+                    this.Close();
+                }
+                else
+                {
+                    ChangeLevel();
+                }
+            }
+        }
     }
 }

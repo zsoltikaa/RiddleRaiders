@@ -63,10 +63,10 @@ namespace RiddleRaiders
         private void BtnHealthPupClick(object sender, EventArgs e)
         {
             pUpHealth.owned--;
-            RefreshPowerUpButtons();
+            RefreshPowerUps();
             if (player.health < PLAYER_HEALTH)
             {
-                player.health = Math.Min(player.health + 2, PLAYER_HEALTH); 
+                player.health = Math.Min(player.health + 2, PLAYER_HEALTH);
                 lblPlayerHP.Text = $"HP: {player.health}";
             }
         }
@@ -74,7 +74,7 @@ namespace RiddleRaiders
         private void BtnStopTimePupClick(object sender, EventArgs e)
         {
             pUpStopTime.owned--;
-            RefreshPowerUpButtons();
+            RefreshPowerUps();
             btnStopTimePup.Enabled = false;
 
             questionTimer.Stop();
@@ -90,7 +90,7 @@ namespace RiddleRaiders
         private void BtnHalfPupClick(object sender, EventArgs e)
         {
             pUpHalf.owned--;
-            RefreshPowerUpButtons();
+            RefreshPowerUps();
             btnHalfPup.Enabled = false;
 
             List<int> wrongAnswers = new List<int>();
@@ -151,6 +151,8 @@ namespace RiddleRaiders
                     CheckEnemyDeath();
                 }
 
+                questionTimer.Stop();
+
                 await Task.Delay(1000);
                 GetRandomQuestion();
 
@@ -185,7 +187,7 @@ namespace RiddleRaiders
                 rtbChat.ScrollToCaret();
                 currentCharIndex++;
             }
-            else
+            else if (currentScene.enemy != null)
             {
                 textTimer.Stop();
                 await Task.Delay(2000);
@@ -259,15 +261,17 @@ namespace RiddleRaiders
 
         private void FillScenes()
         {
-            sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission. \nPrepare yourself, creature!"));
+            sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 1, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission. \nPrepare yourself, creature!"));
 
-            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 3, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodge—it’d be a shame to ruin such dramatic fashion with my blood."));
+            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 1, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodge—it’d be a shame to ruin such dramatic fashion with my blood."));
 
-            sceneList.Add(new Scene($"{resourceDir}mountain.jpg", "Mountain", new Position(350, 390), new Enemy("Long Arms", 4, 2, $"{resourceDir}long_arms.png", new Position(800, 350)), "Nice arms! \nDo they come with a user manual, or are you just winging it and hoping for the best? \nLet me guess—those things are for hugging... real aggressively, right?"));
+            sceneList.Add(new Scene($"{resourceDir}mountain.jpg", "Mountain", new Position(350, 390), new Enemy("Long Arms", 1, 2, $"{resourceDir}long_arms.png", new Position(800, 350)), "Nice arms! \nDo they come with a user manual, or are you just winging it and hoping for the best? \nLet me guess—those things are for hugging... real aggressively, right?"));
 
-            sceneList.Add(new Scene($"{resourceDir}cave.jpg", "Cave", new Position(380, 500), new Enemy("Long Sword", 5, 3, $"{resourceDir}long_sword.png", new Position(760, 445)), "Wow, nice sword!\n Compensating for something? Or is the dramatic lightning effect just to distract from the fact you haven’t smiled in centuries?"));
+            sceneList.Add(new Scene($"{resourceDir}cave.jpg", "Cave", new Position(380, 500), new Enemy("Long Sword", 1, 3, $"{resourceDir}long_sword.png", new Position(760, 445)), "Wow, nice sword!\nCompensating for something? Or is the dramatic lightning effect just to distract from the fact you haven’t smiled in centuries?"));
 
-            sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 6, 5, $"{resourceDir}final_boss.png", new Position(760, 445)), "Whoa, looking nice!\n Is the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
+            sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 1, 5, $"{resourceDir}final_boss.png", new Position(760, 445)), "Whoa, looking nice!\nIs the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
+
+            sceneList.Add(new Scene($"{resourceDir}game_over.jpg", "Game Over", new Position(380, 500), null, "Congratulations!\nYou successfully defeated every opponent that came in your way. Lara had managed to obtain the almighty treasure."));
         }
 
         private void FillQuestions()
@@ -317,19 +321,9 @@ namespace RiddleRaiders
 
         private void UpdateScene()
         {
-            this.BackgroundImage = Image.FromFile(currentScene.backgroundImage);
-
-            Image img = Image.FromFile(currentScene.enemy.imagePath);
-
-            pbxEnemy.Image = img;
-
-            pbxEnemy.Width = img.Width;
-
-            pbxEnemy.Height = img.Height;
+            BackgroundImage = Image.FromFile(currentScene.backgroundImage);
 
             pbxPlayer.Location = new Point(currentScene.playerPosition.x, currentScene.playerPosition.y);
-
-            pbxEnemy.Location = new Point(currentScene.enemy.position.x, currentScene.enemy.position.y);
 
             rtbChat.Visible = true;
 
@@ -337,8 +331,22 @@ namespace RiddleRaiders
 
             currentCharIndex = 0;
 
-            lblPlayerHP.Text = $"HP: {player.health}";
-            lblEnemyHP.Text = $"HP: {currentScene.enemy.health}";
+            if (currentScene.enemy != null)
+            {
+                Image img = Image.FromFile(currentScene.enemy.imagePath);
+                pbxEnemy.Location = new Point(currentScene.enemy.position.x, currentScene.enemy.position.y);
+                pbxEnemy.Image = img;
+                pbxEnemy.Width = img.Width;
+                pbxEnemy.Height = img.Height;
+                lblPlayerHP.Text = $"HP: {player.health}";
+                lblEnemyHP.Text = $"HP: {currentScene.enemy.health}";
+            }
+            else
+            {
+                pbxEnemy.Visible = false;
+                pbxPlayer.Visible = false;
+
+            }
 
             textTimer.Start();
         }
@@ -358,10 +366,10 @@ namespace RiddleRaiders
 
         private void GetRandomQuestion()
         {
-            Shuffle(questionList);
             int questionIndex = rnd.Next(0, questionList.Count);
             currentQuestion = questionList[questionIndex];
             questionList.RemoveAt(questionIndex);
+            Shuffle(questionList);
             pnlTimer.Width = originalTimerWidth;
             ResetAnswerButtons();
             UpdateQuestion();

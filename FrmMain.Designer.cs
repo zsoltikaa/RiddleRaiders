@@ -64,11 +64,11 @@ namespace RiddleRaiders
             // 
             lblTitle.AutoSize = true;
             lblTitle.BackColor = Color.Transparent;
-            lblTitle.Font = new System.Drawing.Font("Bell MT", 100.200005F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitle.Font = new System.Drawing.Font("Blackadder ITC", 101.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lblTitle.ForeColor = SystemColors.ButtonHighlight;
             lblTitle.Location = new Point(315, 47);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(824, 153);
+            lblTitle.Size = new Size(801, 174);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Riddle Raiders";
             // 
@@ -175,11 +175,11 @@ namespace RiddleRaiders
             tblPowerPanel.Size = new Size(895, 49);
             tblPowerPanel.TabIndex = 0;
             // 
-            // btnFullHealthPup
+            // btnHealthPup
             // 
             btnHealthPup.Font = new System.Drawing.Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
             btnHealthPup.Location = new Point(599, 3);
-            btnHealthPup.Name = "btnFullHealthPup";
+            btnHealthPup.Name = "btnHealthPup";
             btnHealthPup.Size = new Size(292, 43);
             btnHealthPup.TabIndex = 2;
             btnHealthPup.Text = "+2 Health";

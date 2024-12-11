@@ -1,12 +1,10 @@
-using AdventureQuiz;
-using RiddleRaiders.Properties;
-using Timer = System.Windows.Forms.Timer;
-using NAudio.Wave;
-
 namespace RiddleRaiders
 {
-    public partial class Form1 : Form
+    using AdventureQuiz;
+    using NAudio.Wave;
+    using Timer = System.Windows.Forms.Timer;
 
+    public partial class Form1 : Form
     {
         private static Random rnd = new Random();
 
@@ -20,7 +18,7 @@ namespace RiddleRaiders
         private const int PLAYER_HEALTH = 10;
 
         private const int MAX_POWERUP_PER_LEVEL = 3;
-        private const int POWERUP_DROP_CHANCE = 100;
+        private const int POWERUP_DROP_CHANCE = 20;
 
         private bool wasWrong = false;
         private bool isTimeStopped = false;
@@ -43,6 +41,7 @@ namespace RiddleRaiders
         private int originalTimerWidth;
         private bool isMuted = false;
         private string currentLanguage = "EN";
+
         public Form1()
         {
 
@@ -79,16 +78,16 @@ namespace RiddleRaiders
 
         private void BtnMuteClick(object sender, EventArgs e)
         {
-            
+
             if (isMuted)
             {
-                if (currentScene != null && currentScene.enemy != null) 
+                if (currentScene != null && currentScene.enemy != null)
                 {
                     PlayMusic(combatMusicPath, 0.02f);
                 }
                 else
                 {
-                    PlayMusic(menuMusicPath, 0.5f); 
+                    PlayMusic(menuMusicPath, 0.5f);
                 }
             }
             else
@@ -97,10 +96,12 @@ namespace RiddleRaiders
             }
 
             isMuted = !isMuted;
+
         }
 
         private void BtnHealthPupClick(object sender, EventArgs e)
         {
+
             pUpHealth.owned--;
             RefreshPowerUps();
             if (player.health < PLAYER_HEALTH)
@@ -108,10 +109,12 @@ namespace RiddleRaiders
                 player.health = Math.Min(player.health + 2, PLAYER_HEALTH);
                 lblPlayerHP.Text = $"HP: {player.health}";
             }
+
         }
 
         private void BtnStopTimePupClick(object sender, EventArgs e)
         {
+
             pUpStopTime.owned--;
             RefreshPowerUps();
             btnStopTimePup.Enabled = false;
@@ -128,10 +131,12 @@ namespace RiddleRaiders
                     isTimeStopped = false;
                 }
             });
+
         }
 
         private void BtnHalfPupClick(object sender, EventArgs e)
         {
+
             pUpHalf.owned--;
             RefreshPowerUps();
             btnHalfPup.Enabled = false;
@@ -159,10 +164,12 @@ namespace RiddleRaiders
             if (answerToRemove2 == 1) btnAnswer2.Visible = false;
             if (answerToRemove2 == 2) btnAnswer3.Visible = false;
             if (answerToRemove2 == 3) btnAnswer4.Visible = false;
+
         }
 
         private async void BtnAnswerClick(object sender, EventArgs e)
         {
+
             questionTimer.Stop();
             Button btn = sender as Button;
 
@@ -203,10 +210,12 @@ namespace RiddleRaiders
                 btnAnswer3.Enabled = true;
                 btnAnswer4.Enabled = true;
             }
+
         }
 
         private async void QuestionTimerTick(object sender, EventArgs e)
         {
+
             pnlTimer.Width -= 2;
 
             if (pnlTimer.Width <= 0)
@@ -219,13 +228,15 @@ namespace RiddleRaiders
                 pnlTimer.Width = originalTimerWidth;
                 GetRandomQuestion();
             }
+
         }
 
         private async void TextTimerTick(object? sender, EventArgs e)
         {
+
             if (currentCharIndex < text.Length)
             {
-                
+
                 if (level == sceneList.Count - 1)
                 {
                     lblGameOver.Text += text[currentCharIndex];
@@ -252,10 +263,12 @@ namespace RiddleRaiders
 
                 GetRandomQuestion();
             }
+
         }
 
         private void InitGame()
         {
+
             level = -1;
 
             resourceDir = "../../../Resources/";
@@ -271,10 +284,12 @@ namespace RiddleRaiders
             pbxEnemy.Visible = false;
 
             PlayMusic(menuMusicPath, 0.8f);
+
         }
 
         private void BtnPlayClick(object? sender, EventArgs e)
         {
+
             StopMusic();
 
             player.health = PLAYER_HEALTH;
@@ -310,6 +325,7 @@ namespace RiddleRaiders
 
         private void BtnExitClick(object? sender, EventArgs e)
         {
+
             DialogResult result = MessageBox.Show(
                 caption: "Riddle Raiders ",
                 text: "Do you want to exit the game? ",
@@ -321,10 +337,12 @@ namespace RiddleRaiders
             {
                 Application.Exit();
             }
+
         }
 
         private void FillScenes()
         {
+
             sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission. \nPrepare yourself, creature!"));
 
             sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 3, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodge—it’d be a shame to ruin such dramatic fashion with my blood."));
@@ -336,10 +354,12 @@ namespace RiddleRaiders
             sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 6, 5, $"{resourceDir}final_boss.png", new Position(760, 445)), "Whoa, looking nice!\nIs the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
 
             sceneList.Add(new Scene($"{resourceDir}game_over.jpg", "Game Over", new Position(581, 462), null, "Congratulations!\nYou successfully defeated every opponent that came in your way. \nLara had managed to obtain the almighty treasure."));
+
         }
 
         private void FillQuestions()
         {
+
             using (StreamReader sr = new StreamReader($"{resourceDir}questionsEN.txt"))
             {
                 while (!sr.EndOfStream)
@@ -349,6 +369,7 @@ namespace RiddleRaiders
             }
 
             Shuffle(questionList);
+
         }
 
         public static void Shuffle<T>(List<T> list)
@@ -375,7 +396,7 @@ namespace RiddleRaiders
                 }
             }
 
-            int extraShuffles = rng.Next(3, 6); 
+            int extraShuffles = rng.Next(3, 6);
 
             for (int i = 0; i < extraShuffles; i++)
 
@@ -391,6 +412,7 @@ namespace RiddleRaiders
 
         private void ChangeLevel()
         {
+
             level += 1;
 
             currentScene = sceneList[level];
@@ -405,10 +427,12 @@ namespace RiddleRaiders
             GivePowerUps(MAX_POWERUP_PER_LEVEL, POWERUP_DROP_CHANCE);
 
             UpdateScene();
+
         }
 
         private void UpdateScene()
         {
+
             BackgroundImage = Image.FromFile(currentScene.backgroundImage);
 
             pbxPlayer.Location = new Point(currentScene.playerPosition.x, currentScene.playerPosition.y);
@@ -448,10 +472,12 @@ namespace RiddleRaiders
             }
 
             textTimer.Start();
+
         }
 
         private void UpdateQuestion()
         {
+
             lblQuestion.Text = currentQuestion.question;
 
             btnAnswer1.Text = currentQuestion.answers[0];
@@ -461,10 +487,12 @@ namespace RiddleRaiders
             btnAnswer3.Text = currentQuestion.answers[2];
 
             btnAnswer4.Text = currentQuestion.answers[3];
+
         }
 
         private void GetRandomQuestion()
         {
+
             int questionIndex = rnd.Next(0, questionList.Count);
             currentQuestion = questionList[questionIndex];
             questionList.RemoveAt(questionIndex);
@@ -475,10 +503,12 @@ namespace RiddleRaiders
             RefreshPowerUps();
             questionTimer.Start();
             isTimeStopped = false;
+
         }
 
         private void ShowMenu()
         {
+
             level = -1;
 
             lblTitle.Visible = true;
@@ -498,10 +528,12 @@ namespace RiddleRaiders
             lblVersion.Visible = true;
 
             PlayMusic(menuMusicPath, 0.8f);
+
         }
 
         private void ResetAnswerButtons()
         {
+
             btnAnswer1.BackColor = Color.FromArgb(255, 214, 192, 179);
             btnAnswer2.BackColor = Color.FromArgb(255, 214, 192, 179);
             btnAnswer3.BackColor = Color.FromArgb(255, 214, 192, 179);
@@ -511,10 +543,12 @@ namespace RiddleRaiders
             btnAnswer2.Visible = true;
             btnAnswer3.Visible = true;
             btnAnswer4.Visible = true;
+
         }
 
         private void CheckPlayerDeath()
         {
+
             if (player.health <= 0)
             {
                 textTimer.Stop();
@@ -531,10 +565,12 @@ namespace RiddleRaiders
                     ShowMenu();
                 }
             }
+
         }
 
         private void CheckEnemyDeath()
         {
+
             if (level == sceneList.Count - 1)
             {
                 StopMusic();
@@ -544,19 +580,23 @@ namespace RiddleRaiders
             {
                 ChangeLevel();
             }
+
         }
 
         private void RefreshPowerUps()
         {
+
             btnHalfPup.Enabled = pUpHalf.owned > 0 ? true : false;
             btnStopTimePup.Enabled = pUpStopTime.owned > 0 ? true : false;
             btnHealthPup.Enabled = pUpHealth.owned > 0 ? true : false;
 
             RefreshPowerUpButtons();
+
         }
 
         private void GivePowerUps(int max, int chancePercentage)
         {
+
             Random rng = new Random();
 
             pUpHalf.owned += rng.Next(1, 100) <= chancePercentage ? rng.Next(1, max) : 0;
@@ -564,20 +604,24 @@ namespace RiddleRaiders
             pUpHealth.owned += rng.Next(1, 100) <= chancePercentage ? rng.Next(1, max) : 0;
 
             RefreshPowerUps();
+
         }
 
         private void RefreshPowerUpButtons()
         {
+
             btnHalfPup.Text = pUpHalf.owned > 0 ? $"Half Answers x{pUpHalf.owned}" : "Half Answers";
             btnStopTimePup.Text = pUpStopTime.owned > 0 ? $"Stop Time (5s) x{pUpStopTime.owned}" : "Stop Time (5s)";
             btnHealthPup.Text = pUpHealth.owned > 0 ? $" + 2 Health x{pUpHealth.owned}" : "+2 Health";
+
         }
 
         private void PlayMusic(string musicPath, float volume)
         {
+
             StopMusic();
 
-            if (isMuted) volume = 0f; 
+            if (isMuted) volume = 0f;
 
             audioFileReader = new AudioFileReader(musicPath)
             {
@@ -596,10 +640,12 @@ namespace RiddleRaiders
                 }
             };
             musicPlayer.Play();
+
         }
 
         private void StopMusic()
         {
+
             if (musicPlayer != null)
             {
                 musicPlayer.Stop();

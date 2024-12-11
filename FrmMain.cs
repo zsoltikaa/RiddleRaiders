@@ -70,12 +70,13 @@ namespace RiddleRaiders
             btnHalfPup.Click += BtnHalfPupClick;
             btnStopTimePup.Click += BtnStopTimePupClick;
             btnHealthPup.Click += BtnHealthPupClick;
-            btnMute.Click += BtnMuteClick; ;
+            btnMute.Click += BtnMuteClick;
 
         }
 
         private void BtnMuteClick(object sender, EventArgs e)
         {
+            
             if (isMuted)
             {
                 if (currentScene != null && currentScene.enemy != null) 
@@ -89,7 +90,7 @@ namespace RiddleRaiders
             }
             else
             {
-                PlayMusic(menuMusicPath, 0f); 
+                PlayMusic(menuMusicPath, 0f);
             }
 
             isMuted = !isMuted;
@@ -217,8 +218,16 @@ namespace RiddleRaiders
         {
             if (currentCharIndex < text.Length)
             {
-                rtbChat.AppendText(text[currentCharIndex].ToString());
-                rtbChat.ScrollToCaret();
+                
+                if (level == sceneList.Count - 1)
+                {
+                    lblGameOver.Text += text[currentCharIndex];
+                }
+                else
+                {
+                    rtbChat.AppendText(text[currentCharIndex].ToString());
+                    rtbChat.ScrollToCaret();
+                }
                 currentCharIndex++;
             }
             else if (currentScene.enemy != null)
@@ -414,9 +423,13 @@ namespace RiddleRaiders
             }
             else
             {
+                StopMusic();
                 pbxEnemy.Visible = false;
                 pbxPlayer.Visible = false;
-
+                rtbChat.Visible = false;
+                lblGameOver.Text = String.Empty;
+                lblGameOver.Visible = true;
+                rtbChat.Text = String.Empty;
             }
 
             textTimer.Start();

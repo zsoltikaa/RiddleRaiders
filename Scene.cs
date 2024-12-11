@@ -12,7 +12,7 @@ namespace AdventureQuiz
         public readonly string sceneName;
         public readonly Position playerPosition;
         public readonly Enemy enemy;
-        public readonly string chat;
+        public string chat;
 
         public Scene(string backgroundImage, string sceneName, Position playerPosition, Enemy enemy, string chat)
         {

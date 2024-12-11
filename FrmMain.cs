@@ -15,10 +15,12 @@ namespace RiddleRaiders
 
         private string menuMusicPath = "../../../Resources/menu_music.mp3";
 
+        private string combatMusicPath = "../../../Resources/combat_music.mp3";
+
         private const int PLAYER_HEALTH = 1;
 
         private const int MAX_POWERUP_PER_LEVEL = 3;
-        private const int POWERUP_DROP_CHANCE = 10;
+        private const int POWERUP_DROP_CHANCE = 20;
 
         PowerUp pUpHalf = new PowerUp(0);
         PowerUp pUpStopTime = new PowerUp(0);
@@ -36,6 +38,7 @@ namespace RiddleRaiders
         private List<Question> questionList = new List<Question>();
         private Question currentQuestion;
         private int originalTimerWidth;
+        private bool isMuted = false;
         public Form1()
         {
 
@@ -64,7 +67,22 @@ namespace RiddleRaiders
             btnHalfPup.Click += BtnHalfPupClick;
             btnStopTimePup.Click += BtnStopTimePupClick;
             btnHealthPup.Click += BtnHealthPupClick;
+            btnMute.Click += BtnMuteClick; ;
 
+        }
+
+        private void BtnMuteClick(object sender, EventArgs e)
+        {
+            if (isMuted)
+            {
+                PlayMusic(menuMusicPath, 0.8f);
+            }
+            else
+            {
+                PlayMusic(menuMusicPath, 0f);
+            }
+
+            isMuted = !isMuted;
         }
 
         private void BtnHealthPupClick(object sender, EventArgs e)
@@ -226,7 +244,7 @@ namespace RiddleRaiders
 
             pbxEnemy.Visible = false;
 
-            PlayMusic(menuMusicPath);
+            PlayMusic(menuMusicPath, 0.8f);
         }
 
         private void BtnPlayClick(object? sender, EventArgs e)
@@ -242,6 +260,8 @@ namespace RiddleRaiders
 
             ChangeLevel();
 
+            PlayMusic(combatMusicPath, 0.02f);
+
             Image img = Image.FromFile(player.imagePath);
 
             pbxPlayer.Image = img;
@@ -253,6 +273,9 @@ namespace RiddleRaiders
             pbxPlayer.Visible = true;
 
             pbxEnemy.Visible = true;
+
+            btnMute.Visible = false;
+
         }
 
         private void BtnExitClick(object? sender, EventArgs e)
@@ -408,7 +431,7 @@ namespace RiddleRaiders
             btnExit.Visible = true;
             lblVersion.Visible = true;
 
-            PlayMusic(menuMusicPath);
+            PlayMusic(menuMusicPath, 0.8f);
         }
 
         private void ResetAnswerButtons()
@@ -448,6 +471,7 @@ namespace RiddleRaiders
         {
             if (level == sceneList.Count - 1)
             {
+                StopMusic();
                 this.Close();
             }
             else
@@ -483,14 +507,14 @@ namespace RiddleRaiders
             btnHealthPup.Text = pUpHealth.owned > 0 ? $" + 2 Health x{pUpHealth.owned}" : "+2 Health";
         }
 
-        private void PlayMusic(string musicPath)
+        private void PlayMusic(string musicPath, float volume)
         {
             StopMusic();
 
             audioFileReader = new AudioFileReader(musicPath)
             {
-                Volume = 0.08f 
-            };
+                Volume = volume
+            };  
 
             musicPlayer = new WaveOutEvent();
 
@@ -522,7 +546,6 @@ namespace RiddleRaiders
                 audioFileReader = null;
             }
         }
-
 
     }
 }

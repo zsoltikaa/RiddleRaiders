@@ -53,6 +53,7 @@ namespace RiddleRaiders
             pnlTimer = new Panel();
             lblPlayerHP = new Label();
             lblEnemyHP = new Label();
+            btnMute = new Button();
             ((System.ComponentModel.ISupportInitialize)pbxEnemy).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxPlayer).BeginInit();
             tblQuestionPanel.SuspendLayout();
@@ -307,12 +308,23 @@ namespace RiddleRaiders
             lblEnemyHP.TextAlign = ContentAlignment.MiddleCenter;
             lblEnemyHP.Visible = false;
             // 
+            // btnMute
+            // 
+            btnMute.BackColor = Color.White;
+            btnMute.Image = (System.Drawing.Image)resources.GetObject("btnMute.Image");
+            btnMute.Location = new Point(1294, 696);
+            btnMute.Name = "btnMute";
+            btnMute.Size = new Size(60, 60);
+            btnMute.TabIndex = 10;
+            btnMute.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (System.Drawing.Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1366, 768);
+            Controls.Add(btnMute);
             Controls.Add(lblEnemyHP);
             Controls.Add(lblPlayerHP);
             Controls.Add(tblQuestionPanel);
@@ -363,5 +375,6 @@ namespace RiddleRaiders
         private Button btnHealthPup;
         private Button btnHalfPup;
         private Button btnStopTimePup;
+        private Button btnMute;
     }
 }

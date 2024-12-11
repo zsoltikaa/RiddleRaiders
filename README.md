@@ -121,7 +121,15 @@ We welcome contributions to **Riddle Raiders**! To contribute:
     
 5.  Submit a pull request with a description of your changes.
 
-    
+##Contact
+-----------
+
+If you have any questions, feel free to contact us:
+
+- **GitHub:** [zsoltikaa](https://github.com/zsoltikaa)
+- **GitHub:** [immortalized](https://github.com/immortalized)
+
+
 License 📄
 ----------
 

@@ -1,6 +1,9 @@
 Riddle Raiders 🎮🛡️
 ====================
 
+![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/zsoltikaa/Autopia)
+
 Welcome to **Riddle Raiders**, an exciting action-packed adventure game where wit and strength collide. Battle against formidable enemies, answer tricky riddles, and collect power-ups to enhance your skills. Will you be able to defeat all the enemies and uncover the treasure hidden deep within the jungle? There's only one way to find out!
 
 

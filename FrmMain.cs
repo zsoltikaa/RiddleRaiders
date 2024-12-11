@@ -57,7 +57,7 @@ namespace RiddleRaiders
             textTimer.Tick += TextTimerTick;
 
             questionTimer = new Timer();
-            questionTimer.Interval = 5;
+            questionTimer.Interval = 7;
             questionTimer.Tick += QuestionTimerTick;
 
             btnAnswer1.Click += BtnAnswerClick;
@@ -436,10 +436,10 @@ namespace RiddleRaiders
 
         private void ResetAnswerButtons()
         {
-            btnAnswer1.BackColor = Color.Gainsboro;
-            btnAnswer2.BackColor = Color.Gainsboro;
-            btnAnswer3.BackColor = Color.Gainsboro;
-            btnAnswer4.BackColor = Color.Gainsboro;
+            btnAnswer1.BackColor = Color.FromArgb(255, 214, 192, 179);
+            btnAnswer2.BackColor = Color.FromArgb(255, 214, 192, 179);
+            btnAnswer3.BackColor = Color.FromArgb(255, 214, 192, 179);
+            btnAnswer4.BackColor = Color.FromArgb(255, 214, 192, 179);
 
             btnAnswer1.Visible = true;
             btnAnswer2.Visible = true;

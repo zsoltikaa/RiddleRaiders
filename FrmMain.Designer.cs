@@ -131,9 +131,9 @@ namespace RiddleRaiders
             // rtbChat
             // 
             rtbChat.BackColor = Color.White;
-            rtbChat.BorderStyle = BorderStyle.FixedSingle;
             rtbChat.Enabled = false;
             rtbChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            rtbChat.ForeColor = Color.Black;
             rtbChat.Location = new Point(504, 351);
             rtbChat.Name = "rtbChat";
             rtbChat.Size = new Size(258, 152);
@@ -143,6 +143,7 @@ namespace RiddleRaiders
             // 
             // tblQuestionPanel
             // 
+            tblQuestionPanel.BackColor = Color.FromArgb(171, 136, 109);
             tblQuestionPanel.ColumnCount = 1;
             tblQuestionPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tblQuestionPanel.Controls.Add(tblPowerPanel, 0, 1);
@@ -178,33 +179,42 @@ namespace RiddleRaiders
             // 
             // btnHealthPup
             // 
+            btnHealthPup.BackColor = Color.FromArgb(214, 192, 179);
+            btnHealthPup.FlatStyle = FlatStyle.Flat;
             btnHealthPup.Font = new System.Drawing.Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            btnHealthPup.ForeColor = Color.FromArgb(73, 54, 40);
             btnHealthPup.Location = new Point(599, 3);
             btnHealthPup.Name = "btnHealthPup";
             btnHealthPup.Size = new Size(292, 43);
             btnHealthPup.TabIndex = 2;
             btnHealthPup.Text = "+2 Health";
-            btnHealthPup.UseVisualStyleBackColor = true;
+            btnHealthPup.UseVisualStyleBackColor = false;
             // 
             // btnHalfPup
             // 
+            btnHalfPup.BackColor = Color.FromArgb(214, 192, 179);
+            btnHalfPup.FlatStyle = FlatStyle.Flat;
             btnHalfPup.Font = new System.Drawing.Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            btnHalfPup.ForeColor = Color.FromArgb(73, 54, 40);
             btnHalfPup.Location = new Point(301, 3);
             btnHalfPup.Name = "btnHalfPup";
             btnHalfPup.Size = new Size(292, 43);
             btnHalfPup.TabIndex = 1;
             btnHalfPup.Text = "Half Answers";
-            btnHalfPup.UseVisualStyleBackColor = true;
+            btnHalfPup.UseVisualStyleBackColor = false;
             // 
             // btnStopTimePup
             // 
+            btnStopTimePup.BackColor = Color.FromArgb(214, 192, 179);
+            btnStopTimePup.FlatStyle = FlatStyle.Flat;
             btnStopTimePup.Font = new System.Drawing.Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            btnStopTimePup.ForeColor = Color.FromArgb(73, 54, 40);
             btnStopTimePup.Location = new Point(3, 3);
             btnStopTimePup.Name = "btnStopTimePup";
             btnStopTimePup.Size = new Size(292, 43);
             btnStopTimePup.TabIndex = 0;
             btnStopTimePup.Text = "Stop Time (5s)";
-            btnStopTimePup.UseVisualStyleBackColor = true;
+            btnStopTimePup.UseVisualStyleBackColor = false;
             // 
             // tblAnswerPanel
             // 
@@ -226,7 +236,9 @@ namespace RiddleRaiders
             // 
             // btnAnswer4
             // 
-            btnAnswer4.BackColor = Color.Gainsboro;
+            btnAnswer4.BackColor = Color.FromArgb(214, 192, 179);
+            btnAnswer4.FlatStyle = FlatStyle.Flat;
+            btnAnswer4.ForeColor = Color.FromArgb(73, 54, 40);
             btnAnswer4.Location = new Point(450, 62);
             btnAnswer4.Name = "btnAnswer4";
             btnAnswer4.Size = new Size(441, 53);
@@ -236,7 +248,9 @@ namespace RiddleRaiders
             // 
             // btnAnswer3
             // 
-            btnAnswer3.BackColor = Color.Gainsboro;
+            btnAnswer3.BackColor = Color.FromArgb(214, 192, 179);
+            btnAnswer3.FlatStyle = FlatStyle.Flat;
+            btnAnswer3.ForeColor = Color.FromArgb(73, 54, 40);
             btnAnswer3.Location = new Point(3, 62);
             btnAnswer3.Name = "btnAnswer3";
             btnAnswer3.Size = new Size(441, 53);
@@ -246,7 +260,9 @@ namespace RiddleRaiders
             // 
             // btnAnswer1
             // 
-            btnAnswer1.BackColor = Color.Gainsboro;
+            btnAnswer1.BackColor = Color.FromArgb(214, 192, 179);
+            btnAnswer1.FlatStyle = FlatStyle.Flat;
+            btnAnswer1.ForeColor = Color.FromArgb(73, 54, 40);
             btnAnswer1.Location = new Point(3, 3);
             btnAnswer1.Name = "btnAnswer1";
             btnAnswer1.Size = new Size(441, 53);
@@ -256,7 +272,9 @@ namespace RiddleRaiders
             // 
             // btnAnswer2
             // 
-            btnAnswer2.BackColor = Color.Gainsboro;
+            btnAnswer2.BackColor = Color.FromArgb(214, 192, 179);
+            btnAnswer2.FlatStyle = FlatStyle.Flat;
+            btnAnswer2.ForeColor = Color.FromArgb(73, 54, 40);
             btnAnswer2.Location = new Point(450, 3);
             btnAnswer2.Name = "btnAnswer2";
             btnAnswer2.Size = new Size(441, 53);
@@ -269,6 +287,7 @@ namespace RiddleRaiders
             lblQuestion.Anchor = AnchorStyles.None;
             lblQuestion.AutoSize = true;
             lblQuestion.Font = new System.Drawing.Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            lblQuestion.ForeColor = Color.FromArgb(73, 54, 40);
             lblQuestion.Location = new Point(352, 19);
             lblQuestion.Name = "lblQuestion";
             lblQuestion.Size = new Size(197, 30);
@@ -278,7 +297,7 @@ namespace RiddleRaiders
             // 
             // pnlTimer
             // 
-            pnlTimer.BackColor = Color.DarkGray;
+            pnlTimer.BackColor = Color.FromArgb(73, 54, 40);
             pnlTimer.Location = new Point(3, 251);
             pnlTimer.Name = "pnlTimer";
             pnlTimer.Size = new Size(895, 22);
@@ -286,8 +305,9 @@ namespace RiddleRaiders
             // 
             // lblPlayerHP
             // 
-            lblPlayerHP.BackColor = Color.FromArgb(200, 255, 255, 255);
+            lblPlayerHP.BackColor = Color.FromArgb(214, 192, 179);
             lblPlayerHP.Font = new System.Drawing.Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            lblPlayerHP.ForeColor = Color.FromArgb(73, 54, 40);
             lblPlayerHP.Location = new Point(-1, 722);
             lblPlayerHP.Name = "lblPlayerHP";
             lblPlayerHP.Size = new Size(168, 47);
@@ -298,8 +318,9 @@ namespace RiddleRaiders
             // 
             // lblEnemyHP
             // 
-            lblEnemyHP.BackColor = Color.FromArgb(200, 255, 255, 255);
+            lblEnemyHP.BackColor = Color.FromArgb(214, 192, 179);
             lblEnemyHP.Font = new System.Drawing.Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            lblEnemyHP.ForeColor = Color.FromArgb(73, 54, 40);
             lblEnemyHP.Location = new Point(1198, 722);
             lblEnemyHP.Name = "lblEnemyHP";
             lblEnemyHP.Size = new Size(168, 47);
@@ -311,6 +332,7 @@ namespace RiddleRaiders
             // btnMute
             // 
             btnMute.BackColor = Color.White;
+            btnMute.FlatStyle = FlatStyle.Popup;
             btnMute.Image = (System.Drawing.Image)resources.GetObject("btnMute.Image");
             btnMute.Location = new Point(1294, 696);
             btnMute.Name = "btnMute";

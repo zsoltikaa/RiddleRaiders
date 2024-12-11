@@ -20,7 +20,10 @@ namespace RiddleRaiders
         private const int PLAYER_HEALTH = 10;
 
         private const int MAX_POWERUP_PER_LEVEL = 3;
-        private const int POWERUP_DROP_CHANCE = 20;
+        private const int POWERUP_DROP_CHANCE = 100;
+
+        private bool wasWrong = false;
+        private bool isTimeStopped = false;
 
         PowerUp pUpHalf = new PowerUp(0);
         PowerUp pUpStopTime = new PowerUp(0);
@@ -114,12 +117,16 @@ namespace RiddleRaiders
             btnStopTimePup.Enabled = false;
 
             questionTimer.Stop();
+            isTimeStopped = true;
 
             Task.Delay(5000).ContinueWith(t =>
             {
 
-                Invoke(() => questionTimer.Start());
-
+                if (!isTimeStopped)
+                {
+                    Invoke(() => questionTimer.Start());
+                    isTimeStopped = false;
+                }
             });
         }
 
@@ -165,7 +172,6 @@ namespace RiddleRaiders
                 btnAnswer2.Enabled = false;
                 btnAnswer3.Enabled = false;
                 btnAnswer4.Enabled = false;
-                questionTimer?.Stop();
 
                 if (btn.Text == currentQuestion.right_answer)
                 {
@@ -175,6 +181,7 @@ namespace RiddleRaiders
                 else
                 {
                     player.TakeDamage(currentScene.enemy.damage);
+                    if (!wasWrong) wasWrong = true;
                     btn.BackColor = Color.Red;
                 }
 
@@ -241,6 +248,7 @@ namespace RiddleRaiders
                 lblPlayerHP.Visible = true;
 
                 questionTimer.Start();
+                isTimeStopped = false;
 
                 GetRandomQuestion();
             }
@@ -327,7 +335,7 @@ namespace RiddleRaiders
 
             sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 6, 5, $"{resourceDir}final_boss.png", new Position(760, 445)), "Whoa, looking nice!\nIs the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
 
-            sceneList.Add(new Scene($"{resourceDir}game_over.jpg", "Game Over", new Position(380, 500), null, "Congratulations!\nYou successfully defeated every opponent that came in your way. \nLara had managed to obtain the almighty treasure."));
+            sceneList.Add(new Scene($"{resourceDir}game_over.jpg", "Game Over", new Position(581, 462), null, "Congratulations!\nYou successfully defeated every opponent that came in your way. \nLara had managed to obtain the almighty treasure."));
         }
 
         private void FillQuestions()
@@ -425,7 +433,14 @@ namespace RiddleRaiders
             {
                 StopMusic();
                 pbxEnemy.Visible = false;
-                pbxPlayer.Visible = false;
+                if (!wasWrong)
+                {
+                    Image notsafe4work = Image.FromFile($"{resourceDir}lara_croft_nsfw.png");
+                    pbxPlayer.Image = notsafe4work;
+                    pbxPlayer.Width = notsafe4work.Width;
+                    pbxPlayer.Height = notsafe4work.Height;
+                }
+                pbxPlayer.Visible = !wasWrong;
                 rtbChat.Visible = false;
                 lblGameOver.Text = String.Empty;
                 lblGameOver.Visible = true;
@@ -459,6 +474,7 @@ namespace RiddleRaiders
             UpdateQuestion();
             RefreshPowerUps();
             questionTimer.Start();
+            isTimeStopped = false;
         }
 
         private void ShowMenu()

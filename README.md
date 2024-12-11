@@ -76,17 +76,7 @@ Screenshots 📸
 
 ![](https://github.com/zsoltikaa/RiddleRaiders/blob/master/Screenshots/combat.png)
 
-
-Controls 🎮
------------
-
-*   **Mouse**: Click to answer questions and interact with power-ups.
     
-*   **Keyboard**: Use **arrow keys** to navigate the main menu.
-    
-*   **Space**: Skip through text and move forward in conversations.
-    
-
 Power-Ups ⚡
 -----------
 

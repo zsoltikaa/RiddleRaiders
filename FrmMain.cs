@@ -17,7 +17,7 @@ namespace RiddleRaiders
 
         private string combatMusicPath = "../../../Resources/combat_music.mp3";
 
-        private const int PLAYER_HEALTH = 1;
+        private const int PLAYER_HEALTH = 100;
 
         private const int MAX_POWERUP_PER_LEVEL = 3;
         private const int POWERUP_DROP_CHANCE = 20;
@@ -75,11 +75,18 @@ namespace RiddleRaiders
         {
             if (isMuted)
             {
-                PlayMusic(menuMusicPath, 0.8f);
+                if (currentScene != null && currentScene.enemy != null) 
+                {
+                    PlayMusic(combatMusicPath, 0.02f);
+                }
+                else
+                {
+                    PlayMusic(menuMusicPath, 0.5f); 
+                }
             }
             else
             {
-                PlayMusic(menuMusicPath, 0f);
+                PlayMusic(menuMusicPath, 0f); 
             }
 
             isMuted = !isMuted;
@@ -145,6 +152,7 @@ namespace RiddleRaiders
 
         private async void BtnAnswerClick(object sender, EventArgs e)
         {
+            questionTimer.Stop();
             Button btn = sender as Button;
 
             if (btn != null)
@@ -175,8 +183,6 @@ namespace RiddleRaiders
                     await Task.Delay(1000);
                     CheckEnemyDeath();
                 }
-
-                questionTimer.Stop();
 
                 await Task.Delay(1000);
                 GetRandomQuestion();
@@ -511,10 +517,12 @@ namespace RiddleRaiders
         {
             StopMusic();
 
+            if (isMuted) volume = 0f; 
+
             audioFileReader = new AudioFileReader(musicPath)
             {
                 Volume = volume
-            };  
+            };
 
             musicPlayer = new WaveOutEvent();
 
@@ -526,7 +534,6 @@ namespace RiddleRaiders
                     audioFileReader.Position = 0;
                     musicPlayer.Play();
                 }
-               
             };
             musicPlayer.Play();
         }

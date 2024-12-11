@@ -17,7 +17,7 @@ namespace RiddleRaiders
 
         private string combatMusicPath = "../../../Resources/combat_music.mp3";
 
-        private const int PLAYER_HEALTH = 100;
+        private const int PLAYER_HEALTH = 10;
 
         private const int MAX_POWERUP_PER_LEVEL = 3;
         private const int POWERUP_DROP_CHANCE = 20;
@@ -39,8 +39,11 @@ namespace RiddleRaiders
         private Question currentQuestion;
         private int originalTimerWidth;
         private bool isMuted = false;
+        private string currentLanguage = "EN";
         public Form1()
         {
+
+            this.StartPosition = FormStartPosition.CenterScreen;
 
             InitializeComponent();
 
@@ -282,6 +285,10 @@ namespace RiddleRaiders
 
             btnMute.Visible = false;
 
+            btnEN.Visible = false;
+
+            btnHU.Visible = false;
+
         }
 
         private void BtnExitClick(object? sender, EventArgs e)
@@ -301,22 +308,22 @@ namespace RiddleRaiders
 
         private void FillScenes()
         {
-            sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 1, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission. \nPrepare yourself, creature!"));
+            sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission. \nPrepare yourself, creature!"));
 
-            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 1, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodge—it’d be a shame to ruin such dramatic fashion with my blood."));
+            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 3, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodge—it’d be a shame to ruin such dramatic fashion with my blood."));
 
-            sceneList.Add(new Scene($"{resourceDir}mountain.jpg", "Mountain", new Position(350, 390), new Enemy("Long Arms", 1, 2, $"{resourceDir}long_arms.png", new Position(800, 350)), "Nice arms! \nDo they come with a user manual, or are you just winging it and hoping for the best? \nLet me guess—those things are for hugging... real aggressively, right?"));
+            sceneList.Add(new Scene($"{resourceDir}mountain.jpg", "Mountain", new Position(350, 390), new Enemy("Long Arms", 4, 2, $"{resourceDir}long_arms.png", new Position(800, 350)), "Nice arms! \nDo they come with a user manual, or are you just winging it and hoping for the best? \nLet me guess—those things are for hugging... real aggressively, right?"));
 
-            sceneList.Add(new Scene($"{resourceDir}cave.jpg", "Cave", new Position(380, 500), new Enemy("Long Sword", 1, 3, $"{resourceDir}long_sword.png", new Position(760, 445)), "Wow, nice sword!\nCompensating for something? Or is the dramatic lightning effect just to distract from the fact you haven’t smiled in centuries?"));
+            sceneList.Add(new Scene($"{resourceDir}cave.jpg", "Cave", new Position(380, 500), new Enemy("Long Sword", 5, 3, $"{resourceDir}long_sword.png", new Position(760, 445)), "Wow, nice sword!\nCompensating for something? Or is the dramatic lightning effect just to distract from the fact you haven’t smiled in centuries?"));
 
-            sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 1, 5, $"{resourceDir}final_boss.png", new Position(760, 445)), "Whoa, looking nice!\nIs the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
+            sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 6, 5, $"{resourceDir}final_boss.png", new Position(760, 445)), "Whoa, looking nice!\nIs the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
 
             sceneList.Add(new Scene($"{resourceDir}game_over.jpg", "Game Over", new Position(380, 500), null, "Congratulations!\nYou successfully defeated every opponent that came in your way. \nLara had managed to obtain the almighty treasure."));
         }
 
         private void FillQuestions()
         {
-            using (StreamReader sr = new StreamReader($"{resourceDir}questions.txt"))
+            using (StreamReader sr = new StreamReader($"{resourceDir}questionsEN.txt"))
             {
                 while (!sr.EndOfStream)
                 {
@@ -329,8 +336,11 @@ namespace RiddleRaiders
 
         public static void Shuffle<T>(List<T> list)
         {
+
             Random rng = new Random();
+
             int n = list.Count;
+
             while (n > 1)
             {
                 n--;
@@ -338,7 +348,28 @@ namespace RiddleRaiders
                 T value = list[k];
                 list[k] = list[n];
                 list[n] = value;
+
+                if (rng.NextDouble() > 0.5)
+                {
+                    int m = rng.Next(n);
+                    T temp = list[m];
+                    list[m] = list[k];
+                    list[k] = temp;
+                }
             }
+
+            int extraShuffles = rng.Next(3, 6); 
+
+            for (int i = 0; i < extraShuffles; i++)
+
+            {
+                int index1 = rng.Next(list.Count);
+                int index2 = rng.Next(list.Count);
+                T temp2 = list[index1];
+                list[index1] = list[index2];
+                list[index2] = temp2;
+            }
+
         }
 
         private void ChangeLevel()

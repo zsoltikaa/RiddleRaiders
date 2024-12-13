@@ -124,10 +124,6 @@ namespace RiddleRaiders
                 lblVersion.Text = "v. 1.0.0.7";
                 btnPlay.Text = "Play";
                 btnExit.Text = "Exit";
-                btnHalfPup.Text = "Half Answers";
-                btnStopTimePup.Text = "Stop Time (5s)";
-                btnHealthPup.Text = "+2 Health";
-                lblPlayerHP.Text = $"HP: {player.health}";
             }
             else if (currentLanguage == "HU")
             {
@@ -135,10 +131,6 @@ namespace RiddleRaiders
                 lblVersion.Text = "v. 1.0.0.7";
                 btnPlay.Text = "Játék";
                 btnExit.Text = "Kilépés";
-                btnHalfPup.Text = "Felezés";
-                btnStopTimePup.Text = "Idõmegállítás (5s)";
-                btnHealthPup.Text = "+2 Élet";
-                lblPlayerHP.Text = $"HP: {player.health}";
             }
         }
 
@@ -344,7 +336,7 @@ namespace RiddleRaiders
 
             FillScenes();
 
-            FillQuestions();
+            SetLanguage("EN");
 
             pbxPlayer.Visible = false;
 
@@ -438,21 +430,6 @@ namespace RiddleRaiders
             sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 6, 5, $"{resourceDir}final_boss.png", new Position(760, 445)), "Whoa, looking nice!\nIs the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
 
             sceneList.Add(new Scene($"{resourceDir}game_over.jpg", "Game Over", new Position(581, 462), null, "Congratulations!\nYou successfully defeated every opponent that came in your way. \nLara had managed to obtain the almighty treasure."));
-
-        }
-
-        private void FillQuestions()
-        {
-
-            using (StreamReader sr = new StreamReader($"{resourceDir}questionsEN.txt"))
-            {
-                while (!sr.EndOfStream)
-                {
-                    questionList.Add(new Question(sr.ReadLine()));
-                }
-            }
-
-            Shuffle(questionList);
 
         }
 

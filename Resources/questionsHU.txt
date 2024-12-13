@@ -83,7 +83,6 @@ Mi a neve a kitalált városnak a "Batman" képregényekben?;Gotham City;Metropo
 Melyik magyar tudós ismert a Manhattan-tervben végzett munkájáról és az atomreaktorok fejlesztésében játszott szerepéről?;Leó Szilárd;Szent-Györgyi Albert;Bay Zoltán;Tisza László;Leó Szilárd
 Ki ismert mint a modern fizika atyja?;Isaac Newton;Albert Einstein;Niels Bohr;Galileo Galilei;Albert Einstein
 Melyik elemet képviseli az "O" a periódusos rendszerben?;Oxigén;Ozmium;Oganesszon;Ózon;Oxigén
-
 Mi a neve a "Halo" videójáték főszereplőjének?;Marcus Fenix;Master Chief;Samus Aran;Link;Master Chief
 Melyik videojátékban található a "Geralt of Rivia" karakter?;The Witcher;Skyrim;Dragon Age;Dark Souls;The Witcher
 Mi a Föld legkemikább természetes anyaga?;Arany;Gyémánt;Vas;Platina;Gyémánt

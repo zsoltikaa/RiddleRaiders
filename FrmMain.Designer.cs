@@ -109,7 +109,7 @@ namespace RiddleRaiders
             lblVersion.Name = "lblVersion";
             lblVersion.Size = new Size(348, 61);
             lblVersion.TabIndex = 3;
-            lblVersion.Text = "v. 1.0.0.5";
+            lblVersion.Text = "v. 1.0.0.7";
             // 
             // pbxEnemy
             // 

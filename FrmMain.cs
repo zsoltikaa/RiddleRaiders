@@ -392,10 +392,27 @@ namespace RiddleRaiders
 
         private void BtnExitClick(object? sender, EventArgs e)
         {
+            string caption, text;
+
+            if (currentLanguage == "EN")
+            {
+                caption = "Riddle Raiders";
+                text = "Do you want to exit the game?";
+            }
+            else if (currentLanguage == "HU")
+            {
+                caption = "Riddle Raiders";
+                text = "Ki szeretnél lépni a játékból?";
+            }
+            else
+            {
+                caption = "Riddle Raiders";
+                text = "Do you want to exit the game?";
+            }
 
             DialogResult result = MessageBox.Show(
-                caption: "Riddle Raiders ",
-                text: "Do you want to exit the game? ",
+                caption: caption,
+                text: text,
                 buttons: MessageBoxButtons.YesNo,
                 icon: MessageBoxIcon.Question
             );
@@ -404,8 +421,8 @@ namespace RiddleRaiders
             {
                 Application.Exit();
             }
-
         }
+
 
         private void FillScenes()
         {

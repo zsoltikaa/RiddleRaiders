@@ -620,18 +620,39 @@ namespace RiddleRaiders
             {
                 textTimer.Stop();
                 questionTimer.Stop();
+
+                string caption, text;
+
+                if (currentLanguage == "EN")
+                {
+                    caption = "GAME OVER!";
+                    text = "You didn't manage to get through the challenges. \nYou'll be sent back to the menu.";
+                }
+                else if (currentLanguage == "HU")
+                {
+                    caption = "JÁTÉK VÉGE!";
+                    text = "Nem sikerült átverekedned magad a kihívásokon. \nVisszakerülsz a menübe.";
+                }
+                else
+                {
+                    caption = "GAME OVER!";
+                    text = "You didn't manage to get through the challenges. \nYou'll be sent back to the menu.";
+                }
+
                 DialogResult result = MessageBox.Show
                     (
-                    caption: "GAME OVER!",
-                    text: "You didn't manage to get through the challenges. \nYou'll be sent back to the menu. ",
+                    caption: caption,
+                    text: text,
                     buttons: MessageBoxButtons.OK,
                     icon: MessageBoxIcon.Asterisk
                     );
+
                 if (result == DialogResult.OK)
                 {
                     ShowMenu();
                 }
             }
+
 
         }
 

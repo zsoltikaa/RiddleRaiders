@@ -68,11 +68,11 @@ namespace RiddleRaiders
             // 
             lblTitle.AutoSize = true;
             lblTitle.BackColor = Color.Transparent;
-            lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 101.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitle.Font = new System.Drawing.Font("Brush Script MT", 101.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lblTitle.ForeColor = SystemColors.ButtonHighlight;
             lblTitle.Location = new Point(315, 47);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(948, 154);
+            lblTitle.Size = new Size(761, 166);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Riddle Raiders";
             // 
@@ -80,7 +80,7 @@ namespace RiddleRaiders
             // 
             btnPlay.BackColor = Color.FromArgb(190, 255, 255, 255);
             btnPlay.FlatStyle = FlatStyle.Popup;
-            btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnPlay.Font = new System.Drawing.Font("Brush Script MT", 48F, FontStyle.Italic);
             btnPlay.Location = new Point(529, 340);
             btnPlay.Name = "btnPlay";
             btnPlay.Size = new Size(362, 95);
@@ -92,7 +92,7 @@ namespace RiddleRaiders
             // 
             btnExit.BackColor = Color.FromArgb(190, 255, 255, 255);
             btnExit.FlatStyle = FlatStyle.Popup;
-            btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnExit.Font = new System.Drawing.Font("Brush Script MT", 48F, FontStyle.Italic);
             btnExit.Location = new Point(529, 457);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(362, 95);
@@ -107,7 +107,7 @@ namespace RiddleRaiders
             lblVersion.ForeColor = Color.White;
             lblVersion.Location = new Point(12, 698);
             lblVersion.Name = "lblVersion";
-            lblVersion.Size = new Size(193, 61);
+            lblVersion.Size = new Size(348, 61);
             lblVersion.TabIndex = 3;
             lblVersion.Text = "v. 1.0.0.5";
             // 
@@ -368,7 +368,7 @@ namespace RiddleRaiders
             lblGameOver.BackColor = Color.Transparent;
             lblGameOver.Font = new System.Drawing.Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 238);
             lblGameOver.ForeColor = Color.FromArgb(106, 130, 102);
-            lblGameOver.Location = new Point(10, 60);
+            lblGameOver.Location = new Point(10, 73);
             lblGameOver.Name = "lblGameOver";
             lblGameOver.Size = new Size(1345, 168);
             lblGameOver.TabIndex = 13;

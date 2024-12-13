@@ -73,8 +73,75 @@ namespace RiddleRaiders
             btnStopTimePup.Click += BtnStopTimePupClick;
             btnHealthPup.Click += BtnHealthPupClick;
             btnMute.Click += BtnMuteClick;
+            btnEN.Click += BtnENClick;
+            btnHU.Click += BtnHUClick;
 
         }
+
+        private void BtnENClick(object sender, EventArgs e)
+        {
+            SetLanguage("EN");
+        }
+
+        private void BtnHUClick(object sender, EventArgs e)
+        {
+            SetLanguage("HU");
+        }
+
+        private void SetLanguage(string language)
+        {
+            currentLanguage = language;
+
+            questionList.Clear();
+
+            string questionFilePath = $"{resourceDir}questions{currentLanguage}.txt";
+
+            if (File.Exists(questionFilePath))
+            {
+                using (StreamReader sr = new StreamReader(questionFilePath))
+                {
+                    while (!sr.EndOfStream)
+                    {
+                        questionList.Add(new Question(sr.ReadLine()));
+                    }
+                }
+                Shuffle(questionList);
+            }
+            else
+            {
+                MessageBox.Show($"The questions file for {currentLanguage} is missing!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            UpdateUIText();
+
+        }
+
+        private void UpdateUIText()
+        {
+            if (currentLanguage == "EN")
+            {
+                lblTitle.Text = "Riddle Raiders";
+                lblVersion.Text = "v. 1.0.0.7";
+                btnPlay.Text = "Play";
+                btnExit.Text = "Exit";
+                btnHalfPup.Text = "Half Answers";
+                btnStopTimePup.Text = "Stop Time (5s)";
+                btnHealthPup.Text = "+2 Health";
+                lblPlayerHP.Text = $"HP: {player.health}";
+            }
+            else if (currentLanguage == "HU")
+            {
+                lblTitle.Text = "Riddle Raiders";
+                lblVersion.Text = "v. 1.0.0.7";
+                btnPlay.Text = "Játék";
+                btnExit.Text = "Kilépés";
+                btnHalfPup.Text = "Felezés";
+                btnStopTimePup.Text = "Idõmegállítás (5s)";
+                btnHealthPup.Text = "+2 Élet";
+                lblPlayerHP.Text = $"HP: {player.health}";
+            }
+        }
+
 
         private void BtnMuteClick(object sender, EventArgs e)
         {
@@ -610,9 +677,18 @@ namespace RiddleRaiders
         private void RefreshPowerUpButtons()
         {
 
-            btnHalfPup.Text = pUpHalf.owned > 0 ? $"Half Answers x{pUpHalf.owned}" : "Half Answers";
-            btnStopTimePup.Text = pUpStopTime.owned > 0 ? $"Stop Time (5s) x{pUpStopTime.owned}" : "Stop Time (5s)";
-            btnHealthPup.Text = pUpHealth.owned > 0 ? $" + 2 Health x{pUpHealth.owned}" : "+2 Health";
+            if (currentLanguage == "EN")
+            {
+                btnHalfPup.Text = pUpHalf.owned > 0 ? $"Half Answers x{pUpHalf.owned}" : "Half Answers";
+                btnStopTimePup.Text = pUpStopTime.owned > 0 ? $"Stop Time (5s) x{pUpStopTime.owned}" : "Stop Time (5s)";
+                btnHealthPup.Text = pUpHealth.owned > 0 ? $"+2 Health x{pUpHealth.owned}" : "+2 Health";
+            }
+            else if (currentLanguage == "HU")
+            {
+                btnHalfPup.Text = pUpHalf.owned > 0 ? $"Felezõ x{pUpHalf.owned}" : "Felezõ";
+                btnStopTimePup.Text = pUpStopTime.owned > 0 ? $"Idõmegállítás (5s) x{pUpStopTime.owned}" : "Idõmegállítás (5s)";
+                btnHealthPup.Text = pUpHealth.owned > 0 ? $"+2 Élet x{pUpHealth.owned}" : "+2 Élet";
+            }
 
         }
 

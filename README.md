@@ -18,6 +18,8 @@ Features ✨
     
 *   **Immersive Soundtrack**: Listen to atmospheric music as you journey through different environments, from jungles to ancient dungeons.
 
+*   **Language Selection**: Play the game in English or Hungarian with full translations of text, including questions, buttons, and game instructions.
+
         
 Gameplay Overview 🎮
 --------------------

@@ -81,11 +81,13 @@ namespace RiddleRaiders
         private void BtnENClick(object sender, EventArgs e)
         {
             SetLanguage("EN");
+            FillScenes();
         }
 
         private void BtnHUClick(object sender, EventArgs e)
         {
             SetLanguage("HU");
+            FillScenes();
         }
 
         private void SetLanguage(string language)
@@ -419,18 +421,18 @@ namespace RiddleRaiders
 
         private void FillScenes()
         {
+            sceneList.Clear();
+            sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), currentLanguage == "HU"? "Úgy tûnik, ennyi volt...\nLehet, hogy mutáns szörnyeteg vagy, de nem hagyom, hogy az utamba állj a küldetésemben.\nKészülj, teremtmény!" : "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission.\nPrepare yourself, creature!"));
 
-            sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission. \nPrepare yourself, creature!"));
+            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 3, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), currentLanguage == "HU" ? "Az a kasza elég nehéznek tûnik.\nFogadok, hogy még meglengetni sem tudod rendesen!\nDe ha mégis, biztos kitérek—kár lenne elrontani egy ilyen drámai divatot a véremmel." : "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodge—it’d be a shame to ruin such dramatic fashion with my blood"));
 
-            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 3, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodge—it’d be a shame to ruin such dramatic fashion with my blood."));
+            sceneList.Add(new Scene($"{resourceDir}mountain.jpg", "Mountain", new Position(350, 390), new Enemy("Long Arms", 4, 2, $"{resourceDir}long_arms.png", new Position(800, 350)), currentLanguage == "HU" ? "Szép karok!\nVan hozzájuk használati útmutató, vagy csak improvizálsz és reménykedsz a legjobbakban?\nHadd találjam ki—azok a dolgok ölelésre valók... nagyon agresszívan, igaz?" : "Nice arms! \nDo they come with a user manual, or are you just winging it and hoping for the best? \nLet me guess—those things are for hugging... real aggressively, right?"));
 
-            sceneList.Add(new Scene($"{resourceDir}mountain.jpg", "Mountain", new Position(350, 390), new Enemy("Long Arms", 4, 2, $"{resourceDir}long_arms.png", new Position(800, 350)), "Nice arms! \nDo they come with a user manual, or are you just winging it and hoping for the best? \nLet me guess—those things are for hugging... real aggressively, right?"));
+            sceneList.Add(new Scene($"{resourceDir}cave.jpg", "Cave", new Position(380, 500), new Enemy("Long Sword", 5, 3, $"{resourceDir}long_sword.png", new Position(760, 445)), currentLanguage == "HU" ? "Hû, szép kard!\nValamit kompenzálsz vele? Vagy a drámai villámhatás csak arra szolgál, hogy elterelje a figyelmet arról, hogy évszázadok óta nem mosolyogtál?" : "Wow, nice sword!\nCompensating for something? Or is the dramatic lightning effect just to distract from the fact you haven’t smiled in centuries?"));
 
-            sceneList.Add(new Scene($"{resourceDir}cave.jpg", "Cave", new Position(380, 500), new Enemy("Long Sword", 5, 3, $"{resourceDir}long_sword.png", new Position(760, 445)), "Wow, nice sword!\nCompensating for something? Or is the dramatic lightning effect just to distract from the fact you haven’t smiled in centuries?"));
+            sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 6, 5, $"{resourceDir}final_boss.png", new Position(760, 445)), currentLanguage == "HU" ? "Hûha, jól nézel ki!\nA kard arra van, hogy levágd a tested elrohadt részeit? Vagy csak arra, hogy szórakozz az utolsó pillanataidban?" : "Whoa, looking nice!\nIs the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
 
-            sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 6, 5, $"{resourceDir}final_boss.png", new Position(760, 445)), "Whoa, looking nice!\nIs the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
-
-            sceneList.Add(new Scene($"{resourceDir}game_over.jpg", "Game Over", new Position(581, 462), null, "Congratulations!\nYou successfully defeated every opponent that came in your way. \nLara had managed to obtain the almighty treasure."));
+            sceneList.Add(new Scene($"{resourceDir}game_over.jpg", "Game Over", new Position(581, 462), null, currentLanguage == "HU" ? "Gratulálok!\nSikeresen legyõztél minden ellenfelet, aki az utadba került.\nLara megszerezte a mindenható kincset." : "Congratulations!\nYou successfully defeated every opponent that came in your way. \nLara had managed to obtain the almighty treasure."));
 
         }
 

@@ -497,3 +497,503 @@ Mi a főszereplő neve a "Halo" sorozatban?;Master Chief;Samus Aran;Marcus Fenix
 Melyik filmben szerepel egy cápa, amely terrorizálja a tengerparti várost?;Cápa;A sekély víz;Sharknado;Deep Blue Sea;Cápa
 Mi a neve a robotnak a "Star Wars"-ban, aki azt mondja: "Én vagyok az apád"?;R2-D2;C-3PO;BB-8;Darth Vader;Darth Vader
 Ki találta fel a villanykörtét?;Nikola Tesla;Thomas Edison;Alexander Graham Bell;Michael Faraday;Thomas Edison
+Melyik évben fedezték fel az amerikai kontinens?;1492;1493;1494;1500;1492
+Melyik híres építmény található Indiában?;Kolosseum;Szuezi-csatorna;Tádzs Mahal;Chichen Itza;Tádzs Mahal
+Mi a Föld legnagyobb óceánja?;Atlanti-óceán;Indiai-óceán;Csendes-óceán;Jég-óceán;Csendes-óceán
+Mi a fő összetevője a "Caipirinha" italnak?;Rum;Vodka;Gin;Tequila;Cachaça
+Ki volt az első nő, aki Nobel-díjat nyert?;Marie Curie;Rosalind Franklin;Ada Lovelace;Dorothy Hodgkin;Marie Curie
+Melyik híres festő festette a "Mona Lisát"?;Vincent van Gogh;Leonardo da Vinci;Claude Monet;Pablo Picasso;Leonardo da Vinci
+Mi az emberi test legnagyobb szervje?;Szív;Bélrendszer;Bőr;Máj;Bőr
+Mi a legnagyobb állat, amely valaha a Földön élt?;Bálnák;Dínók;Elefántok;Hippók;Kék bálna
+Mi a legismertebb spanyol futballklub?;FC Barcelona;Atlético Madrid;Real Madrid;Valencia CF;Real Madrid
+Mi a legnagyobb édesvízi tó a világon?;Balaton;Tanganika-tó;Viktória-tó;Genezáret-tó;Lake Baikal
+Mi az a folyamat, amikor a víz gőzzé válik?;Levegőzés;Párolgás;Fagyás;Kondenzáció;Párolgás
+Melyik hónapban kezdődik a tavaszi napéjegyenlőség?;Január;Március;Június;Szeptember;Március
+Melyik híres ókori császár volt ismert a Colosseum építtetéséről?;Julius Caesar;Nero;Augustus;Traianus;Nero
+Mi a Föld második legnagyobb kontinense?;Ázsia;Afrika;Észak-Amerika;Antarktisz;Afrika
+Mi a kémiai képlete a víznek?;CO2;H2O;O2;H2;H2O
+Mi az az állat, amely képes elektromos impulzusokat kibocsátani?;Bálna;Sün;Elektróhal;Delfin;Elektróhal
+Melyik híres gépész találta fel a repülőt?;Leonardo da Vinci;Nikola Tesla;Wright testvérek;Samuel Morse;Wright testvérek
+Mi volt a híres ókori egyiptomi fáraó, akinek a neve a piramisok építése alatt maradt fenn?;Ramszesz II.;Tutanhamon;Széperhathor;Djoser;Cheops
+Mi a legnagyobb sziget a Földön?;Grönland;Új-Guinea;Borneó;Baffin-sziget;Grönland
+Melyik bolygó rendelkezik a legnagyobb vörös viharokkal?;Mars;Jupiter;Vénusz;Merkúr;Jupiter
+Mi a Föld legnagyobb szárazföldi területe?;Eurázsia;Afrika;Amerika;Antarktisz;Eurázsia
+Mi a címzett neve a híres regényben, a "Nagy Gatsby"-ben?;Nick Carraway;Tom Buchanan;Jay Gatsby;Daisy Buchanan;Nick Carraway
+Mi az a kémiai elem, amely az emberi vér hemoglobinjában található?;Vas;Kalcium;Magnézium;Réz;Vas
+Mi az a sziget, amely Olaszország déli partjainál található és vulkánjai híresek?;Sicília;Szardínia;Kapri;Elba;Sicília
+Melyik csillagjegy tartozik a februári hónaphoz?;Skorpió;Vízöntő;Kos;Bak;Vízöntő
+Mi a legnagyobb híres dínó, amely valaha élt?;Tyrannosaurus rex;Brachiosaurus;Triceratops;Stegosaurus;Brachiosaurus
+Melyik híres amerikai elnök mondta a "népnek a nép által a népért" híres mondatot?;George Washington;Abraham Lincoln;Thomas Jefferson;Theodore Roosevelt;Abraham Lincoln
+Melyik híres felfedező fedezte fel Amerikát 1492-ben?;Ferdinand Magellan;Marco Polo;Christopher Columbus;John Cabot;Christopher Columbus
+Mi volt az első film, amely elnyerte az Oscar-díjat a legjobb film kategóriában?;Casablanca;Szárnyas fejvadász;Az aranypolgár;Hogyan nyertem a háborút;Csendes-óceáni háború
+Mi a kémiai jele a higanynak?;Hg;Ag;Fe;Pb;Hg
+Milyen állat a koala?;Fóka;Macska;Kenguru;Emu;Kenguru
+Melyik városban található a híres Akropolisz?;Róma;Athén;Luxor;Jeruzsálem;Athén
+Mi a híres római gladiátorok neve?;Nero;Spartacus;Marcus Aurelius;Caligula;Spartacus
+Ki volt a híres amerikai elnök, aki felszabadította a rabszolgákat?;Abraham Lincoln;George Washington;Theodore Roosevelt;Franklin D. Roosevelt;Abraham Lincoln
+Mi az a természetes erőforrás, amelyet az emberek a földalatti bányászat során nyernek ki?;Kőolaj;Víz;Napenergia;Szén;Szén
+Mi az a nagy hódító, aki Római Birodalomhoz hasonlóan népszerűségre tett szert?;Cyrus;Alexandrosz;Szulejmán;Károly;Alexandrosz
+Ki volt az első ember a Holdon?;Neil Armstrong;Yuri Gagarin;Buzz Aldrin;Valentina Tereskova;Neil Armstrong
+Mi az első emberi szerv, amely kifejlődik a magzati fejlődés során?;Szív;Agy;Tüdő;Bélrendszer;Szív
+Melyik város a híres, velencei csatornáiról ismert?;Milánó;Róma;Párizs;Velence;Velence
+Melyik híres ókori római császár építtette a híres Hadrianus falat?;Julius Caesar;Nero;Hadrianus;Traianus;Hadrianus
+Milyen állat az alpaka?;Kecske;Ló;Tehén;Lámák;Lámák
+Mi a Föld atmoszférájának legnagyobb gáz összetevője?;Ozon;Nitrogén;Oxigén;Szén-dioxid;Nitrogén
+Melyik híres építmény található Londonban?;Eiffel-torony;Big Ben;Colosseum;Pyramid;Big Ben
+Ki írta a híres regényt, a "1984"-et?;Aldous Huxley;Ray Bradbury;George Orwell;H.G. Wells;George Orwell
+Mi a legnagyobb szárazföldi állat a világon?;Elefánt;Zsiráf;Oroszlán;Tigris;Elefánt
+Melyik népszerű programozási nyelvet használják weboldalak fejlesztésére?;Python;JavaScript;C++;Ruby;JavaScript
+Milyen sportágat játszanak az "All Blacks" csapata?;Rögbi;Foci;Kosárlabda;Jégkorong;Rögbi
+Mi a világ legnagyobb kiterjedésű sivataga?;Sahara;Gobi;Kalahári;Atacama;Sahara
+Mi a híres torony neve, amely a Pisa városában található és ferde?;Eiffel-torony;Big Ben;Pisa-i ferde torony;Leaning Tower;Pisa-i ferde torony
+Mi a legnagyobb ismert óceán a Földön?;Csendes-óceán;Atlanti-óceán;Indiai-óceán;Jég-óceán;Csendes-óceán
+Mi a híres festő, aki a "Csillagos Éj" című festményét készítette?;Claude Monet;Pablo Picasso;Vincent van Gogh;Salvador Dalí;Vincent van Gogh
+Mi a kémiai jele a nátriumnak?;Na;Ni;N;Ne;Na
+Milyen állat a penguin?;Madár;Ember;Hal;Kétéltű;Madár
+Melyik híres felfedező fedezte fel Indiát 1498-ban?;Marco Polo;Ferdinand Magellan;Vasco da Gama;Christopher Columbus;Vasco da Gama
+Mi az a folyamat, amikor a növények táplálékot állítanak elő?;Fotoszintézis;Oxigéntermelés;Párolgás;Reakció;Fotoszintézis
+Mi a hivatalos nyelve Brazíliának?;Spanyol;Francia;Portugál;Angol;Portugál
+Mi volt a neve annak a híres történelmi személynek, aki 476-ban elűzte a római császárt, és ezzel véget vetett a Római Birodalom nyugati felének?;Attila;Julius Caesar;Odoaker;Nero;Odoaker
+Mi a legnagyobb ismert édesvízi tó a világon?;Viktória-tó;Tanganika-tó;Genezáret-tó;Baikal-tó;Baikal-tó
+Mi volt a híres ókori egyiptomi fáraó, akinek a neve a piramisok építése alatt maradt fenn?;Cleopatra;Tutanhamon;Ramszesz II.;Cheops;Cheops
+Mi a legismertebb, szabályozott atomreaktor típus?;Fúziós reaktor;Vízreaktor;Neutronos reaktor;Befogadó reaktor;Vízreaktor
+Melyik híres könyv írója a "Harry Potter" sorozat?;J.R.R. Tolkien;J.K. Rowling;George Orwell;C.S. Lewis;J.K. Rowling
+Mi a legnagyobb dínó, amely valaha a Földön élt?;Brachiosaurus;Tyrannosaurus rex;Stegosaurus;Diplodocus;Brachiosaurus
+Melyik ókori kultúra használta először a papirusz tekercseket?;Római;Görög;Egyiptomi;Perzsa;Egyiptomi
+Mi a legnagyobb, ismert megnövelt belső űrállomás?;Nemzetközi Űrállomás;Hubble Űrtávcső;Venera 7;Apollo 11;Nemzetközi Űrállomás
+Mi a legnagyobb földalatti víztározó a világon?;Giza piramisai;Atitlán-tó;Grönlandi jégtakaró;Pechora olajmezők;Grönlandi jégtakaró
+Mi a híres, sokak által szeretett tenger gyümölcse a sushi ételben?;Rák;Hal;Máj;Tengeri uborka;Hal
+Melyik híres angol író írta a "Szépség és a szörnyeteg" című könyvet?;William Shakespeare;Oscar Wilde;Charles Dickens;J.K. Rowling;Oscar Wilde
+Mi a legnagyobb édesvízi hal, amely a Földön él?;Tigris cápa;Jávai hering;Mocsári lápi harcsa;Cápa;Mocsári lápi harcsa
+Melyik állat képes repülni, de nem madár?;Béka;Delfin;Denevér;Kenguru;Denevér
+Mi a Föld második legnagyobb óceánja?;Indiai-óceán;Atlanti-óceán;Csendes-óceán;Jég-óceán;Atlanti-óceán
+Mi a híres új-zélandi állat, amely kizárólag ott él?;Tasmaniai ördög;Kiwibird;Egyiptomi királyhal;Koala;Kiwibird
+Mi a híres angol csatornán található híres alagút neve, amely Angliát köti össze Franciaországgal?;Csendes-óceáni alagút;Eurotunnel;Lámpás alagút;La Manche alagút;Eurotunnel
+Melyik híres festő alkotta meg a "Guernica" című festményt?;Claude Monet;Pablo Picasso;Vincent van Gogh;Frida Kahlo;Pablo Picasso
+Melyik híres biológus alkotta meg az evolúció elméletét?;Isaac Newton;Charles Darwin;Gregor Mendel;Albert Einstein;Charles Darwin
+Mi a világ legnagyobb aktív vulkánja?;Vezúv;Sakurajima;Kilauea;Etna;Kilauea
+Melyik híres görög filozófus mondta a "Mindent tudok, hogy semmit sem tudok" idézetet?;Arisztotelész;Szókratész;Platón;Püthagorasz;Szókratész
+Mi a világ legmagasabb hegye?;Mount Everest;K2;Kangchenjunga;Makalu;Mount Everest
+Melyik híres román császár építtette a híres Hadrianus falat?;Nero;Augustus;Hadrianus;Traianus;Hadrianus
+Mi a világ leghosszabb folyója?;Amazonas;Nílus;Mississippi;Jangce;Amazonas
+Mi a híres, észak-amerikai vízesés neve, amely Kanada és az Egyesült Államok határán található?;Niagara-vízesés;Victoria-vízesés;Iguaçu-vízesés;Angel-vízesés;Niagara-vízesés
+Mi a legismertebb francia étel, amely fánkszerű és krémes töltelékkel rendelkezik?;Éclair;Croissant;Baguette;Tart;Éclair
+Mi a fő összetevője a "Margarita" koktélnak?;Rum;Tequila;Vodka;Gin;Tequila
+Mi az a híres római császár, aki elrendelte a híres római Colosseum építését?;Augustus;Julius Caesar;Nero;Vespasianus;Vespasianus
+Mi volt a híres ókori római császár, aki keresztényként ismertté vált?;Nero;Julius Caesar;Constantinus;Traianus;Constantinus
+Mi az a híres amerikai nemzeti park, amely híres a gejzíreiről?;Yellowstone;Yosemite;Grand Canyon;Everglades;Yellowstone
+Mi a híres angol író, aki a "Két város története" című könyvet írta?;George Orwell;Charles Dickens;Jane Austen;Virginia Woolf;Charles Dickens
+Melyik híres író alkotta meg a "Sherlock Holmes" karakterét?;Agatha Christie;J.R.R. Tolkien;Arthur Conan Doyle;Dan Brown;Arthur Conan Doyle
+Mi a világ legnagyobb állata?;Elefánt;Kék bálna;Zsiráf;Hippopotámus;Kék bálna
+Mi volt a híres háború neve, amely 1914 és 1918 között zajlott?;Második világháború;Francia háború;Krími háború;Első világháború;Első világháború
+Melyik híres festő festette a "Szent Anna, Szűz Mária és a kis Jézus" című festményt?;Leonardo da Vinci;Michelangelo;Rafael;Caravaggio;Leonardo da Vinci
+Mi az a híres építmény, amely Párizsban található és az Eiffel toronynál is magasabb?;Notre-Dame;Louvre;Sagrada Família;Moulin Rouge;Notre-Dame
+Melyik ókori civilizáció építette a híres piramisokat Egyiptomban?;Perzsa;Asszír;Római;Egyiptomi;Egyiptomi
+Mi a híres londoni híres temető neve?;Westminster Abbey;Greenwich;Highgate;Reichstag;Highgate
+Mi volt az első állandó angol település az Egyesült Államokban?;Salem;Jamestown;Roanoke;Plymouth;Jamestown
+Melyik híres művész festette a "Csillagos Éj" című festményt?;Claude Monet;Vincent van Gogh;Salvador Dalí;Michelangelo;Vincent van Gogh
+Mi a híres olasz ételek egyik neve, amely olasz tészta ételt jelent?;Spaghetti;Sushi;Tacos;Gyros;Spaghetti
+Mi a híres amerikai haditengerészeti csata neve a második világháború idején?;Pearl Harbor;Normandia;Stalingrad;Midway;Pearl Harbor
+Mi volt a híres orosz császár neve, aki az 1700-as évek elején modernizálta az orosz birodalmat?;Cáron;János;Nikolaj;Péter;Péter
+Mi volt az első emberi űrhajós neve, aki 1961-ben elérte az űrt?;Yuri Gagarin;Neil Armstrong;Buzz Aldrin;Valentina Tereskova;Yuri Gagarin
+Mi volt a híres francia király, aki 14 évesen trónra lépett és hosszú uralkodása alatt élt?;Viktor Emánuel;Lajos XIV.;Napóleon;Lajos XVI.;Lajos XIV.
+Mi a híres izraeli település, amely a legszentebb zsidó város?;Eilat;Jeruzsálem;Tel Aviv;Haifa;Jeruzsálem
+Mi a világ legnagyobb repülőgépe?;Airbus A380;Boeing 747;Lockheed Martin C-5M;Antonov An-225;Antonov An-225
+Mi a világ legnagyobb szigetországának neve?;Fülöp-szigetek;Madagaszkár;Indonézia;Németország;Indonézia
+Mi a híres francia étel, amely palacsintaszerű, sós töltelékkel készül?;Croissant;Quiche;Crepe;Baguette;Crepe
+Mi az a híres csillag, amely a Naprendszer középpontjában található?;Betelgeuse;Nap;Proxima Centauri;Rigel;Nap
+Melyik híres festő készítette el a "Utazás a holdra" című festményt?;Claude Monet;Leonardo da Vinci;Jules Verne;Salvador Dalí;Leonardo da Vinci
+Mi volt a híres szovjet űrhajós neve, aki az első emberként járt az űrben?;Yuri Gagarin;Valentina Tereskova;Neil Armstrong;Vladimir Putin;Yuri Gagarin
+Mi a világ legnagyobb városa terület alapján?;Tokió;Moszkva;New York;São Paulo;Moszkva
+Mi a legnépszerűbb elektronikai termék, amit az Apple gyárt?;Samsung Galaxy;iPhone;PlayStation;Nintendo Switch;iPhone
+Mi volt a híres római császár, aki a híres Colosseumot építtette?;Nero;Hadrianus;Vespasianus;Julius Caesar;Vespasianus
+Mi volt az első űrhajó, amely elérte a Holdat?;Viking 1;Apollo 11;Soyuz 9;Luna 2;Apollo 11
+Mi volt a híres, középkori angol uralkodó neve, aki híres a "Robin Hood" történetben?;Edward III.;Richard I.;Henry VIII.;John Király;Richard I.
+Mi a híres görög filozófus, aki az "ideák" elméletét alkotta meg?;Püthagorasz;Szókratész;Platón;Arisztotelész;Platón
+Mi a leghíresebb angol színház, amely a londoni West Enden található?;Globe Színház;Royal Opera House;National Theatre;Theatre Royal;Globe Színház
+Melyik híres természeti jelenség neve, amely akkor keletkezik, amikor a napfény esőcseppeken áthalad?;Szivárvány;Napfénygyűrű;Felhőszakadás;Napfogyatkozás;Szivárvány
+Mi a híres olasz étel, amely tésztát, paradicsomot, mozzarellát és bazsalikomot tartalmaz?;Lasagne;Carbonara;Pizza Margherita;Risotto;Pizza Margherita
+Mi a leghíresebb mexikói ünnep, amelyet évente november 1-jén és 2-án ünnepelnek?;Cinco de Mayo;Día de los Muertos;Las Posadas;Fiesta de la Virgen;Día de los Muertos
+Melyik híres olasz császár irányította az ókori Római Birodalmat, amikor a birodalom elérte legnagyobb kiterjedését?;Nero;Julius Caesar;Augustus;Hadrianus;Traianus
+Mi a híres brit zenekar, amely a "Yesterday" című dalt készítette?;The Beatles;The Rolling Stones;Led Zeppelin;Pink Floyd;The Beatles
+Melyik híres építmény található Egyiptomban, és az egyik hét csoda közé tartozik?;Kheopsz-piramis;Colosseum;Eiffel-torony;Chichén Itzá;Kheopsz-piramis
+Mi volt az első emberi űrhajós, aki a Holdra lépett?;Yuri Gagarin;Buzz Aldrin;Neil Armstrong;Valentina Tereskova;Neil Armstrong
+Mi a híres francia szakácsművészeti technika, amely a húsok, halak és zöldségek lassú főzésére vonatkozik?;Sous-vide;Flambé;Rôtissage;Braise;Braise
+Mi volt a híres görög matematikus, aki a Pitagorasz-tételt alkotta meg?;Platón;Arisztotelész;Püthagorasz;Euklidesz;Püthagorasz
+Mi a világ legnagyobb aktív vulkánja, amely Hawaii szigetén található?;Kīlauea;Etna;Sakurajima;Stromboli;Kīlauea
+Mi a híres angol író, aki a "Hamlet" című drámát írta?;William Shakespeare;George Orwell;Jane Austen;Charles Dickens;William Shakespeare
+Mi a híres orosz író, aki a "Háború és béke" című regényt alkotta meg?;Dostojevszkij;Tolsztoj;Csehov;Gorkij;Tolsztoj
+Mi a világ legnagyobb sivataga?;Sahara;Kalahári;Gobi;Atacama;Sahara
+Mi a híres ókori római császár, aki az egyik legismertebb római fórumot építtette?;Julius Caesar;Nero;Traianus;Augustus;Traianus
+Mi a híres japán étel, amely nyers halból, rizsből és más tenger gyümölcseiből készül?;Sushi;Tempura;Ramen;Udon;Sushi
+Mi volt a híres római császár neve, aki megszületett a híres Colosseumot?;Hadrianus;Nero;Vespasianus;Julius Caesar;Vespasianus	
+Mi a legnagyobb város az Egyesült Államokban?;New York;Los Angeles;Chicago;Houston;New York
+Mi a világ legnagyobb kontinense?;Ázsia;Afrika;Európa;Észak-Amerika;Ázsia
+Melyik híres angol író alkotta meg a "Harry Potter" könyvsorozatot?;J.R.R. Tolkien;J.K. Rowling;Agatha Christie;C.S. Lewis;J.K. Rowling
+Mi a világ legnagyobb tengere?;Fekete-tenger;Karib-tenger;Csendes-óceán;Mediterrán-tenger;Csendes-óceán
+Melyik híres amerikai elnök volt az Egyesült Államok 16. elnöke?;George Washington;Abraham Lincoln;Thomas Jefferson;Theodore Roosevelt;Abraham Lincoln
+Mi a híres nyári olimpiai sportág, amelyben golyókat használnak?;Futball;Röplabda;Kosárlabda;Kézilabda;Kosárlabda
+Mi volt az első emberi űrhajó, amely elérte a Marsot?;Viking 1;Sojuz 7;Spirit;Curiosity;Viking 1
+Mi a híres amerikai város, amely a "Hollywood" nevet viseli?;San Francisco;Los Angeles;Las Vegas;Chicago;Los Angeles
+Mi a híres japán festő, aki az "A macska és a hó" című festményét alkotta meg?;Hokusai;Yoshitoshi;Utagawa Kuniyoshi;Katsushika Hokusai;Katsushika Hokusai
+Mi a legnagyobb óceán a világon?;Atlanti-óceán;Csendes-óceán;Indiai-óceán;Jég-óceán;Csendes-óceán
+Mi a híres japán ételek közül a nyers halból készült étel neve?;Tempura;Sushi;Ramen;Udon;Sushi
+Melyik híres római császár irányította a birodalmat, amikor az elérte legnagyobb területét?;Julius Caesar;Nero;Traianus;Hadrianus;Traianus
+Mi a legmagasabb hegy a világon?;Mount Everest;K2;Kangchenjunga;Makalu;Mount Everest
+Mi a híres francia étel, amelyet sokszor különböző típusú sajtokkal és tésztákkal készítenek?;Pizza;Quiche;Baguette;Ratatouille;Quiche
+Mi a legnagyobb élő állat a földön?;Elefánt;Zsiráf;Kék bálna;Hippopotámus;Kék bálna
+Melyik ország híres arról, hogy itt található a híres Taj Mahal?;Kína;India;Banglades;Pakisztán;India
+Mi a híres olasz étel, amely különféle tészták és szószok kombinációja?;Pizza;Lasagna;Ravioli;Risotto;Lasagna
+Mi a híres történelmi személy neve, aki felfedezte Amerika?;Marco Polo;Cristoforo Colombo;Vasco da Gama;Magellán;Cristoforo Colombo
+Mi a híres olasz művész, aki a Mona Lisát festette?;Vincent van Gogh;Michelangelo;Leonardo da Vinci;Rafael;Leonardo da Vinci
+Mi a legnagyobb folyó a világon?;Amazonas;Nílus;Gangesz;Jangce;Amazonas
+Mi a híres francia csatorna neve, amely Angliát és Franciaországot köti össze?;Eurotunnel;La Manche;Bristol-csatorna;Kelták-csatorna;La Manche
+Mi a világ legkisebb országának neve?;Vatikán;Monaco;San Marino;Liechtenstein;Vatikán
+Melyik híres könyvben találkozhatunk Sherlock Holmes karakterével?;A gyűrűk ura;Harry Potter;Sherlock Holmes kalandjai;A szél nevében;Sherlock Holmes kalandjai
+Mi a híres angol színház, ahol sok Shakespeare-dráma is bemutatásra került?;Globe Színház;Royal Opera House;National Theatre;West End;Globe Színház
+Mi a híres állat, amely felnőttként a legnagyobb testtömeggel rendelkezik?;Elefánt;Bálna;Krokodil;Zsiráf;Bálna
+Mi a híres olasz város, ahol a híres Pisa-torony található?;Milánó;Róma;Pisa;Firenze;Pisa
+Melyik híres amerikai városban található a híres Golden Gate híd?;Los Angeles;New York;San Francisco;Las Vegas;San Francisco
+Mi a híres francia művész, aki az "Impresszionista" festészeti irányzat egyik alapítója volt?;Claude Monet;Vincent van Gogh;Edgar Degas;Renoir;Claude Monet
+Mi a híres brit rockzenekar, amelynek tagja volt John Lennon?;The Rolling Stones;Pink Floyd;The Beatles;Led Zeppelin;The Beatles
+Mi a híres olasz étel, amely tésztából, paradicsomból és mozzarellából készült?;Risotto;Pizza Margherita;Spaghetti;Carbonara;Pizza Margherita
+Mi a híres dél-amerikai ország, amelyet szivárványos hegyek és Machu Picchu emlékei tesznek híressé?;Brazília;Peru;Argentina;Chile;Peru
+Mi a híres román művész, aki a "A Memória Állandósága" című festményével vált híressé?;Salvador Dalí;Pablo Picasso;Vincent van Gogh;Leonardo da Vinci;Salvador Dalí
+Mi a híres olasz császár, aki Róma legnagyobb területét irányította?;Julius Caesar;Hadrianus;Nero;Traianus;Traianus
+Melyik híres amerikai elnök tette lehetővé az amerikai polgárháború végét?;Abraham Lincoln;George Washington;Thomas Jefferson;Franklin D. Roosevelt;Abraham Lincoln
+Mi a híres ókori római császár neve, aki a híres Colosseumot építtette?;Nero;Vespasianus;Julius Caesar;Hadrianus;Vespasianus
+Mi a legnagyobb ország terület alapján?;Oroszország;Kanada;Kína;Egyesült Államok;Oroszország
+Mi a híres londoni műemlék, amelyet 1859-ben építettek?;Big Ben;Tower Bridge;London Eye;Westminster Abbey;Big Ben
+Mi a híres amerikai filmes díj, amelyet a legjobb filmnek adnak?;Golden Globe;Emmy;Tony-díj;Oscar;Oscar
+Mi volt a híres francia császár neve, aki Európa nagy részét irányította?;Lajos XIV.;Napóleon;Henri IV.;Louis XVI.;Napóleon
+Mi a legnagyobb sivatag a Földön?;Sahara;Kalahári;Gobi;Atacama;Sahara
+Mi a híres olasz város, ahol a híres Colosseum található?;Milánó;Róma;Firenze;Pisa;Róma
+Mi a híres indiai templom, amely a hindu vallás egyik legismertebb helyszíne?;Taj Mahal;Angkor Wat;Kedarnath;Mecca;Taj Mahal
+Mi a legnagyobb ismert kémiai elem a periódusos rendszerben?;Urán;Ozmium;Tungsten;Hidrogén;Ozmium
+Mi volt a híres háború, amely 1914 és 1918 között zajlott?;Első világháború;Második világháború;Francia forradalom;Amerikai polgárháború;Első világháború
+Mi volt a híres nap, amikor Neil Armstrong elsőként lépett a Holdra?;1969. július 20.;1969. július 1.;1970. június 5.;1968. december 12.;1969. július 20.
+Mi a híres görög sziget, amelyet a minószi civilizáció szülőhelyeként ismernek?;Kréta;Rhodosz;Santorini;Kos;Kréta
+Mi a híres mexikói ital, amelyet agávé növényből készítenek?;Tequila;Margarita;Mezcal;Sambuca;Tequila
+Mi a híres francia város, ahol a híres borfesztivál zajlik?;Bordeaux;Párizs;Lyon;Marseille;Bordeaux
+Mi a híres afrikai ország, amely híres a szavannáiról és az oroszlánpopulációiról?;Kenya;Dél-Afrika;Tanzánia;Botswana;Kenya
+Mi volt a híres olasz művész, aki a "Utolsó vacsora" című festményét alkotta?;Caravaggio;Leonardo da Vinci;Michelangelo;Rafael;Leonardo da Vinci
+Mi a híres angol író, aki a "Rómeó és Júlia" című drámát írta?;William Shakespeare;Charles Dickens;George Orwell;Oscar Wilde;William Shakespeare
+Mi a híres amerikai film, amely a "Jaws" című horrorral indította karrierjét?;Star Wars;E.T.;Jaws;Jurassic Park;Jaws
+Mi a híres francia város, amely a híres Louvre múzeumának otthont ad?;Róma;Párizs;Lyon;Bordeaux;Párizs
+Mi a híres híres indiai filmipari központ neve?;Mumbai;Bangalore;Chennai;Hyderabad;Mumbai
+Mi a híres kínai fal nevű építmény, amely több ezer kilométeren keresztül húzódik?;Hosszú Fal;Peking-i Fal;Kínai fal;Tiananmen fal;Hosszú Fal
+Mi a híres német autómárka, amely sportautóiról ismert?;BMW;Mercedes-Benz;Volkswagen;Audi;Porsche
+Mi a híres magyar étel, amely gulyáslevesből készül?;Hortobágyi palacsinta;Pörkölt;Lángos;Gulyás;Gulyás
+Mi volt a híres első űrhajós, aki elérte az űrt?;Yuri Gagarin;Neil Armstrong;Valentina Tereskova;Buzz Aldrin;Yuri Gagarin
+Mi a híres olasz város, amely híres a gondolás hagyományairól?;Milánó;Róma;Firenze;Velence;Velence
+Mi a híres brit író, aki a "Narnia Krónikái" című könyvet írta?;J.R.R. Tolkien;C.S. Lewis;Philip Pullman;Roald Dahl;C.S. Lewis
+Mi a híres kínai filozófus, aki a konfucianizmus alapítója volt?;Laozi;Kong Fuzi;Sun Tzu;Zhuangzi;Kong Fuzi
+Mi a híres szlovák étel, amely túrós palacsintával készül?;Bryndzové halušky;Lángos;Gulyás;Túrós tészta;Bryndzové halušky
+Mi a híres magyar építmény, amely a Duna partján áll?;Lánchíd;Parlament;Mátyás-templom;Hősök tere;Lánchíd
+Mi a híres kínai étel, amely tésztából és különféle zöldségekből készült?;Sushi;Peking Duck;Dim Sum;Chow Mein;Chow Mein
+Mi a híres spanyol fesztivál, amely a bullfighting (bika harc) eseményekről híres?;Tomatina;La Feria;San Fermin;Fiesta de la Virgen;San Fermin
+Mi a híres olasz étel, amely tésztát, paradicsomot és sajtokat tartalmaz?;Lasagna;Spaghetti;Carbonara;Pizza;Pizza
+Mi a híres német város, amely a sörfesztiváljáról híres?;Berlin;Hamburg;München;Frankfurt;München
+Mi a híres művész, aki "Guernica" című festményével vált híressé?;Pablo Picasso;Claude Monet;Vincent van Gogh;Salvador Dalí;Pablo Picasso
+Mi a híres amerikai étteremlánc, amely hamburgerjairól ismert?;McDonald's;KFC;Subway;Burger King;McDonald's
+Mi a híres nyári olimpiai sportág, amelyet vízben játszanak?;Kosárlabda;Röplabda;Vízilabda;Úszás;Vízilabda
+Mi a híres brit színész, aki a "Sherlock Holmes" filmekben szerepelt?;Benedict Cumberbatch;Robert Downey Jr.;Daniel Craig;Matt Damon;Benedict Cumberbatch
+Mi a híres mexikói ünnep, amelyet évente november 1-jén és 2-án ünnepelnek?;Cinco de Mayo;Día de los Muertos;Las Posadas;Fiesta de la Virgen;Día de los Muertos
+Mi a híres ausztrál állat, amely a kengurufélék családjába tartozik?;Koala;Emu;Kenguru;Dingo;Kenguru
+Mi a híres francia szigeti hely, ahol a híres Mont Saint-Michel található?;Corsica;Réunion;Guadeloupe;Bretagne;Bretagne
+Mi a híres brit politikus, aki a második világháború idején volt miniszterelnök?;Winston Churchill;Harold Wilson;David Cameron;Tony Blair;Winston Churchill
+Mi a híres olasz filmfesztivál, amelyet évente Velencében rendeznek?;Cannes;Sundance;Venice Film Festival;Berlin International Film Festival;Venice Film Festival
+Mi a híres spanyol étel, amely paellát tartalmaz?;Paella;Tortilla;Churros;Gazpacho;Paella
+Mi a híres ausztrál operaház neve?;Sydney Opera House;Melbourne Opera House;Brisbane Opera House;Adelaide Opera House;Sydney Opera House
+Mi a híres amerikai szórakoztatóipari város, ahol a filmek készülnek?;Los Angeles;Las Vegas;Miami;Chicago;Los Angeles
+Mi a híres francia borvidék, amely Bordeaux-ban található?;Burgonya;Bordeaux;Champagne;Provence;Bordeaux
+Mi a híres osztrák zeneszerző, aki a "Téli utazás" című művet alkotta?;Wolfgang Amadeus Mozart;Ludwig van Beethoven;Franz Schubert;Johann Strauss II.;Franz Schubert
+Mi a híres romániai kastély, amelyet a Drakula-mondához kötnek?;Peleș Castle;Bran Castle;Hunyadi Castle;Corvin Castle;Bran Castle
+Mi a híres kínai étel, amelyben különféle húsok és zöldségek keverednek?;Dim Sum;Hot Pot;Peking Duck;Chow Mein;Hot Pot
+Mi a híres japán sziget, amely híres a szamuráj történetekről?;Hokkaido;Honshu;Kyushu;Shikoku;Honshu
+Mi a híres indiai filmipari központ, amely Bollywood néven ismert?;Chennai;Hyderabad;Mumbai;Delhi;Mumbai
+Mi a híres skót ital, amely maláta alapú?;Sambuca;Tequila;Scotch whisky;Rum;Scotch whisky
+Mi a híres belga étel, amelyben csokoládé és cukorka készül?;Chocolat;Trüffel;Praliné;Waffle;Praliné
+Mi a híres karibi ország, amely híres a reggae zenéről?;Haiti;Jamaica;Dominika;Bahama-szigetek;Jamaica
+Mi a híres finn város, amely a finn saunákról híres?;Helsinki;Rovaniemi;Tampere;Oulu;Tampere
+Mi a híres híres amerikai film, amely a "Titanic" katasztrófájáról szól?;The Titanic;Titanic;The Shipwreck;The Sea;Titanic
+Mi a híres indonéz étel, amelyet rizsből készítenek?;Nasi Goreng;Sushi;Kecap Manis;Rendang;Nasi Goreng
+Mi a híres spanyol építész, aki a híres Sagrada Família templomot tervezte?;Antonio Gaudí;Pablo Picasso;Juan Gris;Diego Rivera;Antonio Gaudí
+Mi a híres portugál étel, amely tenger gyümölcseivel készült?;Bacalhau;Sopa;Pastel de nata;Feijoada;Bacalhau
+Mi a híres indiai étel, amely curryvel készül?;Sushi;Tikka Masala;Naan;Butter Chicken;Tikka Masala
+Mi a híres finn sziget, amely híres a túrázókról és a természetjárásról?;Saimaa;Lakeland;Aland;Lapland;Lapland
+Mi a híres brazil sziget, amely híres a ritka állatvilágáról és az Amazonas esőerdőről?;São Tomé;Fernando de Noronha;Recife;Búzios;Fernando de Noronha
+Mi a híres amerikai zenekar, amely a "The Beatles" után a legnagyobb hatással volt a rockzenére?;The Rolling Stones;Led Zeppelin;Pink Floyd;The Who;The Rolling Stones
+Mi a híres francia kávézó, amely a híres Parizsi kávékultúrához tartozik?;Le Café de Flore;Le Procope;Café de la Paix;Café du Monde;Le Café de Flore
+Mi a híres belga város, ahol az atomkiállítás és a híres Atomium található?;Brüsszel;Bruges;Gent;Antwerpen;Brüsszel
+Mi a híres angol író, aki "A Gyűrűk Ura" trilógiát írta?;J.R.R. Tolkien;C.S. Lewis;George Orwell;H.G. Wells;J.R.R. Tolkien
+Mi a híres amerikai zenei fesztivál, amelyet Woodstocknak neveznek?;Woodstock;Coachella;Lollapalooza;Glastonbury;Woodstock
+Mi a híres brit tudós, aki a gravitáció törvényeit alkotta meg?;Isaac Newton;Charles Darwin;James Clerk Maxwell;Stephen Hawking;Isaac Newton
+Mi a híres francia film, amely a "Amélie" című vígjátékot alkotta?;Amélie;La Haine;The Intouchables;Le Fabuleux Destin d'Amélie Poulain;Amélie
+Mi a híres belga város, amely híres a csokoládéjáról?;Brussels;Antwerp;Bruges;Ghent;Brussels
+Mi a híres amerikai zenei műfaj, amely a 20. században született New Orleansban?;Jazz;Blues;Rock;Country;Jazz
+Mi a híres japán város, amely híres templomairól és szentélyeiről?;Kyoto;Tokyo;Osaka;Hiroshima;Kyoto
+Mi a híres angol sport, amelyet labdával és ütővel játszanak?;Tenisz;Rögbi;Futball;Kricket;Kricket
+Mi a híres mexikói étel, amelyet tészta és hús töltött tortillából készítenek?;Burrito;Taco;Quesadilla;Enchilada;Burrito
+Mi a híres olasz ital, amely egy erős kávét jelent?;Espresso;Cappuccino;Macchiato;Latte;Espresso
+Mi a híres olasz város, ahol a híres Colosseum található?;Róma;Milánó;Firenze;Velence;Róma
+Mi a híres amerikai regényíró, aki a "Huckleberry Finn kalandjai" című könyvet írta?;Mark Twain;F. Scott Fitzgerald;Ernest Hemingway;Harper Lee;Mark Twain
+Mi a híres indiai vallás, amelyet Buddha alapított?;Hinduizmus;Jainizmus;Buddhizmus;Szikhizmus;Buddhizmus
+Mi a híres brit festő, aki a "Békebeli virágok" című festményével vált híressé?;David Hockney;Francis Bacon;John Constable;Joseph Mallord William Turner;John Constable
+Mi a híres német filozófus, aki az "Értelem kritikáját" írta?;Friedrich Nietzsche;Immanuel Kant;Karl Marx;Georg Wilhelm Friedrich Hegel;Immanuel Kant
+Mi a híres német zeneszerző, aki a "Kötelező Szimfóniát" alkotta?;Ludwig van Beethoven;Johann Sebastian Bach;Wolfgang Amadeus Mozart;Richard Wagner;Ludwig van Beethoven
+Mi a híres amerikai sport, amelyet amerikai futballnak neveznek?;Baseball;Basketball;American Football;Rögbi;American Football
+Mi a híres spanyol város, amely a híres Alhambra palotát ad otthont?;Sevilla;Madrid;Granada;Valencia;Granada
+Mi a híres mexikói város, amely a híres Teotihuacan piramisairól ismert?;Mexico City;Guadalajara;Monterrey;Puebla;Mexico City
+Mi a híres finn rendező, aki a "Tűz és jég" című filmet alkotta?;Aki Kaurismäki;Renny Harlin;Teemu Nikki;Jalmari Helander;Aki Kaurismäki
+Mi a híres amerikai film, amely a "Titanic" katasztrófájáról szól?;Titanic;Jaws;The Godfather;The Exorcist;Titanic
+Mi a híres francia étel, amely friss tenger gyümölcseiből készült?;Bouillabaisse;Ratatouille;Coq au vin;Escargots;Bouillabaisse
+Mi a híres görög sziget, amely a híres Mykonos városáról ismert?;Kréta;Rhodosz;Lesbos;Mykonos;Mykonos
+Mi a híres magyar tánc, amely a pásztorok hagyományait idézi?;Csárdás;Kopogós;Keringő;Mazurka;Csárdás
+Mi a híres amerikai vízi sport, amelyet hajókkal játszanak?;Kajak;Vízilabda;Horgászat;Sárkányhajó;Kajak
+Mi a híres olasz város, amely híres a híres Michelangelo által alkotott Dávid szoborról?;Róma;Milánó;Firenze;Pádua;Firenze
+Mi a híres amerikai szórakoztatóipari város, amely az Oscar díjátadó helyszíne?;Los Angeles;New York;Las Vegas;Chicago;Los Angeles
+Mi a híres olasz zeneszerző, aki a "Traviata" című operát írta?;Giuseppe Verdi;Giacomo Puccini;Wolfgang Amadeus Mozart;Richard Wagner;Giuseppe Verdi
+Mi a híres francia film, amely a "La Haine" című drámai művet alkotta?;Amélie;La Haine;Le fabuleux destin d'Amélie Poulain;La Vie en Rose;La Haine
+Mi a híres amerikai sport, amelyet jégkorongnak neveznek?;Baseball;Kosárlabda;Jégkorong;Rögbi;Jégkorong
+Mi a híres olasz festő, aki a "Vitális Madonna" című festményt alkotta?;Raffaello;Leonardo da Vinci;Michelangelo;Caravaggio;Raffaello
+Mi a híres belga város, amely híres a csokoládéjáról?;Brussels;Antwerp;Bruges;Ghent;Brussels
+Mi a híres brit sziget, amely híres természetvédelmi területeiről és történelméről?;Skócia;Wales;Anglia;Írország;Skócia
+Mi a híres japán étel, amely rizsből és nyers halból készül?;Sushi;Ramen;Tempura;Okonomiyaki;Sushi
+Mi a híres mexikói város, ahol a híres Chichen Itza piramisa található?;Mexico City;Tulum;Chichen Itza;Guadalajara;Chichen Itza
+Mi a híres indiai templom, amely a híres Taj Mahal néven ismert?;Qutub Minar;Taj Mahal;Kashi Vishwanath;Akshardham;Taj Mahal
+Mi a híres francia régió, amelyet a borairól és a borfesztiváljáról ismernek?;Bordeaux;Provence;Normandia;Burgundia;Bordeaux
+Mi a híres görög templom, amely a híres Parthenon néven ismert?;Erekhtheion;Parthenon;Zeus-templom;Aphrodité-templom;Parthenon
+Mi a híres amerikai tudós, aki a relativitás elméletét dolgozta ki?;Nikola Tesla;Albert Einstein;Thomas Edison;Isaac Newton;Albert Einstein
+Mi a híres mexikói étel, amelyet fűszeres hús töltött tortillákból készítenek?;Tacos;Quesadillas;Burritos;Enchiladas;Tacos
+Mi a híres japán film, amelyet a "Rashomon" című mű alkotott?;Ikiru;Rashomon;Seven Samurai;Tokyo Story;Rashomon
+Mi a híres francia étel, amelyet fűszeres raguval készítenek?;Boeuf Bourguignon;Boeuf Carottes;Escargots;Ratatouille;Boeuf Bourguignon
+Mi a híres olasz film, amelyet a "La Dolce Vita" című mű alkotott?;La Dolce Vita;Ladri di biciclette;Cinema Paradiso;Il Gattopardo;La Dolce Vita
+Mi a híres indiai étel, amely curry alapú?;Tikka Masala;Samosa;Naan;Dosa;Tikka Masala
+Mi a híres német étel, amelyet kolbásszal készítenek?;Wiener Schnitzel;Sauerbraten;Bratwurst;Currywurst;Bratwurst
+Mi a híres spanyol ital, amely bor és szóda keverékéből készül?;Sangria;Tinto de verano;Cava;Cerveza;Sangria
+Mi a híres amerikai regényíró, aki "A nagy Gatsby" című könyvet írta?;F. Scott Fitzgerald;Ernest Hemingway;Mark Twain;Harper Lee;F. Scott Fitzgerald
+Mi a híres belga város, amely híres csokoládéjáról?;Brussels;Antwerp;Bruges;Ghent;Brussels
+Mi a híres brit író, aki a "Harry Potter" könyvsorozatot írta?;J.K. Rowling;C.S. Lewis;J.R.R. Tolkien;George Orwell;J.K. Rowling
+Mi a híres japán fesztivál, amely a tavaszi sakura virágzása körül zajlik?;Hanami;Obon;Tanabata;Setsubun;Hanami
+Mi a híres olasz sziget, amely híres a tengerpartjairól és a történelméről?;Szicília;Korzika;Sardínia;Elba;Szicília
+Mi a híres mexikói ital, amely agávéból készül?;Tequila;Sangria;Rum;Vodka;Tequila
+Mi a híres francia étel, amely a hagymalevesből készült változata?;French Onion Soup;Ratatouille;Boeuf Bourguignon;Coq au Vin;French Onion Soup
+Mi a híres brit film, amelyben egy fiatal férfi megpróbálja elérni álmait a zeneiparban?;Rocketman;Bohemian Rhapsody;The Boat That Rocked;This Is Spinal Tap;Rocketman
+Mi a híres olasz étel, amelyet tésztából és paradicsomból készítenek?;Spaghetti;Lasagna;Ravioli;Fettuccine;Spaghetti
+Mi a híres holland virág, amely az ország nemzeti jelképévé vált?;Tulipán;Rózsa;Liliom;Narcisz;Tulipán
+Mi a híres angol ital, amelyet híresen a teatime-hoz isznak?;Tea;Kávé;Whisky;Gin;Tea
+Mi a híres amerikai ünnep, amely a hálaadásról szól?;Thanksgiving;Halloween;Christmas;Memorial Day;Thanksgiving
+Mi a híres ausztrál állat, amely a zsebében hordja a kicsinyeit?;Kenguru;Koala;Emu;Wombat;Kenguru
+Mi a híres japán sziget, amely a híres Hiroshima városát is magába foglalja?;Honshu;Hokkaido;Kyushu;Shikoku;Honshu
+Mi a híres spanyol film, amelyet Pedro Almodóvar rendezett?;Volver;Hable con Ella;La Piel Que Habito;Todo sobre mi madre;Volver
+Mi a híres orosz író, aki a "Háború és béke" című regényt írta?;Lev Tolsztoj;Fjodor Dosztojevszkij;Anton Csehov;Vlagyimir Nabokov;Lev Tolsztoj
+Mi a híres brit rockzenekar, amely a "Stairway to Heaven" című dalt írta?;Led Zeppelin;The Rolling Stones;The Who;Pink Floyd;Led Zeppelin
+Mi a híres japán film, amely a "Szirom és eső" címmel ismert?;Ikiru;Rashomon;Seven Samurai;Orochi;Ikiru
+Mi a híres mexikói ünnep, amelyet a halottak napja ünneplésére rendeznek?;Día de los Muertos;Cinco de Mayo;Carnaval;Fiesta de la Virgen de Guadalupe;Día de los Muertos
+Mi a híres francia csokoládé, amelyet híresen trüffel formájában készítenek?;Trüffel;Mendiant;Praliné;Nougat;Trüffel
+Mi a híres amerikai zenei műfaj, amelyben az ének és a ritmus dominál?;Hip-Hop;Blues;Jazz;Rock;Hip-Hop
+Mi a híres brit rockzenekar, amely a "Bohemian Rhapsody" című dalt írta?;Queen;The Beatles;The Rolling Stones;Led Zeppelin;Queen
+Mi a híres indiai film, amely a "Lagaan" című címet viseli?;Lagaan;Dangal;Kabhi Khushi Kabhie Gham;Dilwale Dulhania Le Jayenge;Lagaan
+Mi a híres mexikói fesztivál, amely a "Carnival" néven ismert?;Carnaval;Cinco de Mayo;Día de los Muertos;Fiesta de la Virgen de Guadalupe;Carnaval
+Mi a híres amerikai film, amely a "A Keresztapa" című művet alkotta?;The Godfather;Scarface;Goodfellas;The Departed;The Godfather
+Mi a híres japán étel, amely nyers halat tartalmaz?;Sushi;Ramen;Tempura;Sashimi;Sushi
+Mi a híres görög sziget, amely híres a gyönyörű partjairól és fehér házairól?;Santorini;Kréta;Rhodosz;Lesbos;Santorini
+Mi a híres angol vízi sport, amelyet hógolyózásként ismernek?;Sítudomány;Vízilabda;Jégkorong;Légkorong;Jégkorong
+Mi a híres német étel, amelyet hagymás kolbászból készítenek?;Bratwurst;Currywurst;Sauerbraten;Wiener Schnitzel;Bratwurst
+Mi a híres kínai étel, amelyet pirított tésztából készítenek?;Chow Mein;Dim Sum;Peking Duck;Sweet and Sour Pork;Chow Mein
+Mi a híres francia film, amelyben egy fiatal lány életét követhetjük, aki szenved a háború alatt?;The Pianist;La Vie en Rose;The Intouchables;The Sorrow and the Pity;La Vie en Rose
+Mi a híres amerikai sport, amelyet baseballnak neveznek?;Baseball;Kosárlabda;Futball;Jégkorong;Baseball
+Mi a híres olasz étel, amelyet egy tészta, paradicsom és sajt keverékével készítenek?;Pizza;Lasagna;Fettuccine;Ravioli;Pizza
+Mi a híres francia város, amelyet a híres Louvre múzeum található?;Párizs;Nizza;Marseille;Bordeaux;Párizs
+Mi a híres olasz sziget, amelyet a tengerpartjairól és a boráról ismernek?;Szicília;Sardínia;Elba;Korzika;Szicília
+Mi a híres brit film, amely a "Harry Potter" című könyv alapján készült?;Harry Potter and the Philosopher's Stone;The Dark Knight;James Bond;Lord of the Rings;Harry Potter and the Philosopher's Stone
+Mi a híres japán étel, amelyet rántott hússal készítenek?;Tonkatsu;Ramen;Tempura;Sushi;Tonkatsu
+Mi a híres amerikai sziget, amely Hawaii néven ismert?;Hawaii;Alaska;Florida;California;Hawaii
+Mi a híres olasz város, ahol a híres Colosseum található?;Róma;Milánó;Firenze;Napoli;Róma
+Mi a híres spanyol ital, amelyet borból és szóda keverékéből készítenek?;Sangria;Tinto de verano;Cava;Sangría;Sangria
+Mi a híres francia regényíró, aki a "Les Misérables" című könyvet írta?;Victor Hugo;Émile Zola;Marcel Proust;Albert Camus;Victor Hugo
+Mi a híres amerikai rendező, aki a "Titanic" című filmet rendezte?;James Cameron;Steven Spielberg;Martin Scorsese;Christopher Nolan;James Cameron
+Mi a híres brit író, aki a "Szép új világ" című regényt írta?;Aldous Huxley;George Orwell;J.R.R. Tolkien;C.S. Lewis;Aldous Huxley
+Mi a híres olasz étel, amelyet sajtokkal és olívaolajjal készítenek?;Caprese;Pizza;Pasta;Tiramisu;Caprese
+Mi a híres belga város, amely híres csokoládéjáról és a híres Atomiumról ismert?;Brüsszel;Antwerp;Gent;Bruges;Brüsszel
+Mi a híres mexikói étel, amelyet fűszeres hús töltött tortillákból készítenek?;Burrito;Taco;Quesadilla;Nachos;Burrito
+Mi a híres német étel, amelyet fehér káposztával és hússal készítenek?;Sauerbraten;Bratwurst;Kartoffelsalat;Currywurst;Sauerbraten
+Mi a híres amerikai híres étel, amelyet sült burgonyából készítenek?;Fries;Chili;Nachos;Pancakes;Fries
+Mi a híres olasz tészta, amelyet paradicsommal és bazsalikommal készítenek?;Spaghetti;Penne;Fettuccine;Lasagna;Spaghetti
+Mi a híres francia étel, amelyet tojással és túrós tésztával készítenek?;Quiche;Ratatouille;Croissant;Crêpes;Quiche
+Mi a híres mexikói ital, amely kókuszvízből készül?;Coco Loco;Tequila;Mezcal;Agua de Jamaica;Coco Loco
+Mi a híres spanyol étel, amelyet rizsből és tenger gyümölcseiből készítenek?;Paella;Tortilla Española;Gazpacho;Croquetas;Paella
+Mi a híres olasz édesség, amelyet mascarpone sajttal és kávéval készítenek?;Tiramisu;Panna Cotta;Cannoli;Zabaione;Tiramisu
+Mi a híres holland étel, amelyet friss heringből készítenek?;Haring;Kroket;Stamppot;Poffertjes;Haring
+Mi a híres francia film, amelyben egy séf felkészül a legjobb étel elkészítésére?;Ratatouille;Amélie;La Vie en Rose;Les Intouchables;Ratatouilleű
+Mi a híres amerikai város, amely híres a Szabadság-szoborról?;New York;Los Angeles;Chicago;Miami;New York
+Mi a híres olasz film, amelyet Federico Fellini rendezett?;La Dolce Vita;Cinema Paradiso;Bicycle Thieves;Il Gattopardo;La Dolce Vita
+Mi a híres japán étel, amely rizsből és tenger gyümölcseiből készül?;Sushi;Ramen;Tempura;Sashimi;Sushi
+Mi a híres német sziget, amely a Balti-tengeren található?;Rügen;Sylt;Fehmarn;Usedom;Rügen
+Mi a híres mexikói város, amely híres az El Zócalo térről és a Templo Mayor romjairól?;Mexikóváros;Guadalajara;Monterrey;Cancún;Mexikóváros
+Mi a híres spanyol étel, amelyet tojással, burgonyával és hagymával készítenek?;Tortilla Española;Paella;Gazpacho;Churros;Tortilla Española
+Mi a híres brit film, amelyet a "James Bond" regények alapján készítettek?;Casino Royale;The Dark Knight;The Godfather;Skyfall;Casino Royale
+Mi a híres japán sziget, ahol a híres Hirosimát találjuk?;Honshu;Kyushu;Shikoku;Hokkaido;Honshu
+Mi a híres francia borvidék, amely a Bordeaux-i borok híres termesztéséről ismert?;Bordeaux;Burgundy;Champagne;Provence;Bordeaux
+Mi a híres amerikai étel, amelyet hússal, sajttal és zöldségekkel készítenek?;Hamburger;Hot dog;Pizza;Pancakes;Hamburger
+Mi a híres holland város, amely híres a múzeumairól, mint például a Van Gogh Múzeum?;Amszterdam;Rotterdam;Hágai;Utrecht;Amszterdam
+Mi a híres svéd étel, amelyet húsgombócokból és burgonyapüréből készítenek?;Köttbullar;Raggmunk;Lutefisk;Smörgåstårta;Köttbullar
+Mi a híres brit édesség, amelyet édes tejszínhabbal és gyümölcsökkel készítenek?;Trifle;Fruitcake;Scones;Eton Mess;Trifle
+Mi a híres mexikói étel, amelyet majonézzel és húsokkal készítenek?;Taco;Burrito;Quesadilla;Enchilada;Burrito
+Mi a híres belga étel, amelyet sült krumpliból készítenek?;Frites;Waffles;Moules-frites;Stoofvlees;Frites
+Mi a híres spanyol ital, amelyet borból és szóda keverékéből készítenek?;Tinto de Verano;Sangria;Cava;Cerveza;Tinto de Verano
+Mi a híres brit regényíró, aki a "1984" című könyvet írta?;George Orwell;Aldous Huxley;C.S. Lewis;J.R.R. Tolkien;George Orwell
+Mi a híres olasz étel, amelyet tésztából és csirkehúsból készítenek?;Fettuccine Alfredo;Lasagna;Pasta Carbonara;Penne arrabbiata;Fettuccine Alfredo
+Mi a híres francia város, amely híres a divatról és az ékszereiről?;Párizs;Nizza;Lyon;Marseille;Párizs
+Mi a híres indiai étel, amelyet curryvel és rizssel készítenek?;Biryani;Tandoori;Chole Bhature;Korma;Biryani
+Mi a híres japán étel, amelyet rántott ételként készítenek és sertéshúsból készül?;Tonkatsu;Sushi;Ramen;Tempura;Tonkatsu
+Mi a híres belga étel, amelyet csokoládéból készítenek?;Pralines;Frites;Waffles;Moules-frites;Pralines
+Mi a híres amerikai film, amelyet Stephen King regényéből készítettek?;The Shining;It;Carrie;Misery;The Shining
+Mi a híres brit film, amelyet a "Downton Abbey" című tévésorozat alapján készítettek?;Downton Abbey;The Crown;Sherlock Holmes;The King's Speech;Downton Abbey
+Mi a híres mexikói étel, amelyet húsokkal, tortillával és salátával készítenek?;Taco;Burrito;Enchilada;Quesadilla;Taco
+Mi a híres francia étel, amelyet tojással és húsos töltelékkel készítenek?;Quiche;Croissant;Boeuf Bourguignon;Escargot;Quiche
+Mi a híres olasz ital, amelyet espresso és tej alapú kávéital?;Cappuccino;Latte;Macchiato;Espresso;Cappuccino
+Mi a híres amerikai város, amely híres a Golden Gate hídjáról?;San Francisco;Los Angeles;Chicago;New York;San Francisco
+Mi a híres mexikói város, amely híres a piramisairól és a Teotihuacan romjairól?;Teotihuacan;Mexikóváros;Guadalajara;Monterrey;Teotihuacan
+Mi a híres japán templom, amely a "Kinkaku-ji" néven ismert?;Golden Pavilion;Senso-ji;Kiyomizu-dera;Todai-ji;Golden Pavilion
+Mi a híres francia étel, amelyet tejből, vajból és tojásból készítenek?;Crêpes;Ratatouille;Boeuf Bourguignon;Quiche;Crêpes
+Mi a híres brit regényíró, aki a "A gyűrűk ura" című könyvet írta?;J.R.R. Tolkien;C.S. Lewis;George Orwell;Aldous Huxley;J.R.R. Tolkien
+Mi a híres olasz város, ahol a híres Pisa-i ferde torony található?;Pisa;Róma;Firenze;Milánó;Pisa
+Mi a híres spanyol étel, amelyet édes tésztából készítenek és churros néven ismert?;Churros;Paella;Tortilla Española;Croquetas;Churros
+Mi a híres indiai étel, amelyet tejből és fűszerekből készítenek?;Lassi;Tandoori;Biryani;Korma;Lassi
+Mi a híres olasz borvidék, amely a Chianti borokat termeli?;Toscana;Sicília;Piemont;Veneto;Toscana
+Mi a híres mexikói étel, amelyet kukoricából és húsból készítenek?;Tamales;Taco;Burrito;Quesadilla;Tamales
+Mi a híres brit zenei műfaj, amelyet a Beatles hozott el?;Rock;Jazz;Punk;Disco;Rock
+Mi a híres francia étel, amelyet hússal és zöldségekkel készítenek?;Ratatouille;Coq au vin;Boeuf Bourguignon;Escargot;Ratatouille
+Mi a híres olasz édesség, amelyet túrós tésztával és lekvárral készítenek?;Cannoli;Tiramisu;Panna Cotta;Zabaione;Cannoli
+Mi volt az első civilizáció, amelyet Mezopotámiában alapítottak?;Sumér;Akád;Babilon;Asszíria;Sumér
+Ki volt az első római császár?;Julius Caesar;Nero;Augustus;Traianus;Augustus
+Melyik híres angol királynő uralkodott az angol aranykorban?;II. Erzsébet;I. Erzsébet;Victoria;Mária Stuart;I. Erzsébet
+Mi volt az első világháború kiinduló oka?;Franciaország és Németország közötti háború;A szarajevói merénylet;A trianoni békeszerződés;A berlini konferencia;A szarajevói merénylet
+Melyik ókori birodalom uralta Egyiptomot a fáraók idején?;Perzsa Birodalom;Római Birodalom;Makedón Birodalom;Ókori Egyiptom;Ókori Egyiptom
+Mi volt a római köztársaság területének legnagyobb kiterjedése?;A pun háborúk után;Julius Caesar uralkodása alatt;Diocletianus reformjai;Hadrianus falának megépítése után;Julius Caesar uralkodása alatt
+Melyik ókori birodalom volt a leghatalmasabb a Kr. e. 5. és 4. században?;Perzsa Birodalom;Római Birodalom;Görög Birodalom;Makedón Birodalom;Perzsa Birodalom
+Ki alapította a Mongol Birodalmat?;Genghis Khan;Kublai Khan;Attila;Buda;Genghis Khan
+Mi volt a Római Birodalom bukásának legfontosabb oka?;Barbár inváziók;Belső politikai zűrzavarok;Gazdasági válság;Róma túlnépesedése;Barbár inváziók
+Melyik évben zajlott le a normandiai partraszállás a második világháború alatt?;1941;1944;1939;1945;1944
+Ki volt a második világháború egyik legismertebb szövetséges vezére, aki a D-nap partraszállást irányította?;Winston Churchill;Franklin D. Roosevelt;Dwight D. Eisenhower;Charles de Gaulle;Dwight D. Eisenhower
+Mi volt a fő célja a Nyugati Fronton zajló első világháborús harcoknak?;A Német Birodalom legyőzése;Franciaország védelme;Britanniát megvédelmezni;A frontvonal elmozdítása;Franciaország védelme
+Mi volt a nehézsége a magyar forradalom 1848-as évében?;A Habsburg Birodalom hadereje;Az orosz segítség;A feudalizmus megszüntetése;Az európai hatalmak elutasítása;Az orosz segítség
+Milyen esemény történt a Trianoni békeszerződés aláírásakor?;Magyarország területének csökkentése;Németország felszabadítása;Szovjetunió létrejötte;Franciaország megszállása;Magyarország területének csökkentése
+Melyik csata volt a döntő fordulópont a Napóleoni háborúkban, amelyet 1815-ben vívtak?;Austerlitz;Waterloo;Leipzig;Borodino;Waterloo
+Ki volt a leghíresebb római hadvezér, aki legyőzte Pompeius-t a polgárháborúban?;Julius Caesar;Scipio Africanus;Nero;Sulla;Julius Caesar
+Mi volt a második világháború utolsó fontos csatája, amely Japán legyőzését eredményezte?;Pearl Harbor;Midway;Iwo Jima;Hiroshima;Iwo Jima
+Melyik hadvezér vezetésével hódította meg Napóleon Európa jelentős részét?;Napóleon Bonaparte;Scipio Africanus;Károly Nagy;Hannibál;Napóleon Bonaparte
+Mi volt a Római Birodalom szétválásának legfontosabb oka?;Belső politikai zűrzavarok;Barbár inváziók;Gazdasági válság;Birodalom terjedelme;Belső politikai zűrzavarok
+Ki vezette a szovjet hadsereget a második világháborúban?;León Trotszkij;Joszif Sztálin;Vlagyimir Lenin;Nikita Hruscsov;Joszif Sztálin
+Mi volt a legnagyobb viking támadás, amely a 9. században történt?;Dániai inváziók;Saxon invázió;London eleste;Ivar the Boneless támadása;Dániai inváziók
+Mi volt a római légiók híres támadási formája?;Külső védelem;Kastélyépítés;Fórum építése;Kollapszus támadások;Kollapszus támadások
+Melyik város volt a központja az ősi Görögország kultúrájának?;Athén;Spárta;Korinthosz;Róma;Athén
+Milyen hatással volt a francia forradalom a nemzetközi politikára?;Új köztársaságok alakultak;A monarchiák megerősödtek;Béke alakult ki;A szocializmus terjedése;Új köztársaságok alakultak
+Melyik csata során szenvedett el vereséget Napóleon Bonaparte?;Waterloo;Austerlitz;Leipzig;Borodino;Waterloo
+Mi volt az első nagy emberi civilizáció, amely Mezopotámiában alakult ki?;Sumer;Babilon;Asszíria;Makedón Birodalom;Sumer
+Mi volt az utolsó szovjet vezető, aki irányította a Szovjetuniót a hidegháború végén?;Leónid Brezsnyev;Mihail Gorbacsov;Vlagyimir Lenin;Nikita Hruscsov;Mihail Gorbacsov
+Mi volt a legfontosabb hatása a Nagy Francia Forradalomnak?;A köztársaság megalapítása;A monarchia megőrzése;A szocialista eszmék terjedése;A nemzetek közötti béke;A köztársaság megalapítása
+Mi volt a nevét viselő dinasztia, amely a legnagyobb kínai birodalom történetének alapítója volt?;Qin;Han;Tang;Ming;Qin
+Mi volt az első világháború egyik legfontosabb csatája, amely 1916-ban zajlott le?;Verdun;Marne;Tannenberg;Somme;Verdun
+Melyik évben zajlott le a berlini fal leomlása?;1990;1989;1991;1987;1989
+Ki volt a második világháború híres brit vezetője, aki a háború során irányította az országot?;Winston Churchill;Edward VIII;Neville Chamberlain;Clement Attlee;Winston Churchill
+Ki vezette a francia csapatokat a Waterloo-i csatában?;Napóleon Bonaparte;Charles de Gaulle;Louis XVI;Napoleon III;Napóleon Bonaparte
+Milyen évben alakult meg a NATO?;1949;1950;1947;1955;1949
+Ki volt az első amerikai elnök?;Abraham Lincoln;Thomas Jefferson;George Washington;John Adams;George Washington
+Mi volt a híres indiai vallási vezető neve, aki a brit gyarmati uralom ellen küzdött?;Mahatma Gandhi;Nehru;Tagore;Ambedkar;Mahatma Gandhi
+Melyik csata során szenvedett el vereséget Nagy Sándor?;Gaugamela;Issosz;Hydaspes;Tigris;Issosz
+Mi volt a híres csata, amelyet a Napóleoni háború alatt vívtak 1812-ben?;Borodino;Waterloo;Austerlitz;Leipzig;Borodino
+Mi volt a második világháború utolsó szakasza, amely Japán kapitulációjával zárult?;Pearl Harbor;D-nap;Hiroshima és Nagasaki;Stalingrád;Hiroshima és Nagasaki
+Milyen eseményhez vezetett a Berlini Fal építése 1961-ben?;A hidegháború fokozódása;A Szovjetunió elindítása a világűrbe;A kommunizmus terjedése;A NATO megerősítése;A hidegháború fokozódása
+Melyik csata során verték meg a mongolokat az 1200-as évek elején?;Liegnicai csata;Karakorum;Leipzig;Párizsi csata;Liegnicai csata
+Mi volt a fő célja az első templomi háborúknak?;Jeruzsálem visszafoglalása;Róma megszerzése;Nagy Sándor győzelme;Keresztények védelme;Jeruzsálem visszafoglalása
+Melyik híres római politikai és katonai vezető alapította meg a császári dinasztiát?;Julius Caesar;Traianus;Augustus;Nero;Augustus
+Melyik birodalom terjeszkedett a legnagyobb területre a Kr. e. 3. században?;Római Birodalom;Perzsa Birodalom;Ókori Kína;Makedón Birodalom;Római Birodalom
+Mi volt a híres spanyol hódító, aki a maja civilizációt elpusztította?;Hernán Cortés;Francisco Pizarro;Diego de Almagro;Álvar Núñez Cabeza de Vaca;Hernán Cortés
+Mi volt a legfontosabb gazdasági alapja a Római Birodalomnak?;Földművelés;Bányászat;Kereskedelem;Hadiköltségvetés;Földművelés
+Ki volt a legnagyobb szovjet tábornok a második világháború idején?;Georgij Zukov;Kónyev;Sztálin;Kruscsov;Georgij Zukov
+Melyik város volt a római császárok székhelye a Kr. e. 4. és 5. században?;Róma;Constantinápoly;Athén;Babilon;Constantinápoly
+Melyik város volt az ókori Egyiptom fővárosa a fáraók uralkodása alatt?;Memphis;Thebai;Alexandria;Kairó;Memphis
+Melyik hódító birodalomhoz tartozott Dél-Amerika legnagyobb része a 16. században?;Azték Birodalom;Spanyol Birodalom;Inka Birodalom;Brit Birodalom;Spanyol Birodalom
+Ki volt a francia forradalom híres vezére, aki megalapította a Társaságot?;Maximilien Robespierre;Napóleon Bonaparte;Louis XVI;Napoleon III;Maximilien Robespierre
+Mi volt a legfontosabb gazdasági tevékenység az ókori görögök számára?;Kereskedelem;Földművelés;Hadviselés;Kohászat;Kereskedelem
+Mi volt a római katonák egyik legismertebb harci formációja?;Phalanx;Tercio;Manipulus;Testudo;Testudo
+Mi volt az amerikai polgárháború kitörésének oka?;Rabszolgaság;Gazdasági különbségek;Etnikai feszültségek;Politikai hatalom;Rabszolgaság
+Ki volt a híres római császár, aki megosztotta a birodalmat két részre?;Nerva;Diocletianus;Constantinus;Septimius Severus;Diocletianus
+Melyik szövetség győzelmével alakult meg a Német Császárság 1871-ben?;Németország;Osman Birodalom;Anglia;Franciaország;Németország
+Ki volt a híres angol király, aki elveszítette a francia trónért folytatott háborút?;Róbert Király;Richárd Lajós;János Király;Henry VIII;János Király
+Mi volt a híres római építkezés, amelyet a Flavius-dinasztia alatt építettek?;Kolosseum;Pantheon;Kapitóliumi templom;Hadrianus fala;Kolosseum
+Mi volt a híres görög filozófus, aki a szofistákat és a demokratikus politikát kritikusan szemlélte?;Szókratész;Platón;Arisztotelész;Püthagorasz;Szókratész
+Mi volt a híres római császár, aki elsőként elfogadta a kereszténységet?;Nero;Constantinus;Julius Caesar;Caligula;Constantinus
+Milyen céllal alapították a Magna Carta-t Angliában 1215-ben?;A király hatalmának korlátozása;A városi élet szabályozása;A középkori feudalizmus megszüntetése;A hadsereg szabályozása;A király hatalmának korlátozása
+Melyik birodalom volt a leghosszabb ideig uralkodó?;Római Birodalom;Ókori Egyiptom;Ottomán Birodalom;Brit Birodalom;Ókori Egyiptom
+Ki volt az, aki befejezte a rabszolgaságot az Egyesült Államokban a polgárháború után?;Abraham Lincoln;Andrew Johnson;Ulysses S. Grant;Robert E. Lee;Abraham Lincoln
+Mi volt a legfontosabb gazdasági alapja az ókori római birodalomnak?;Bányászat;Földművelés;Kereskedelem;Hadsereg;Földművelés
+Mi volt a legfontosabb célja a második világháború után megalakult ENSZ-nek?;A béke fenntartása;A gazdaság fejlesztése;A szocialista rendszerek támogatása;A nemzetek elnyomása;A béke fenntartása
+Ki volt a híres római hadvezér, aki hódítóként járta be Britanniát és a Pannóniai térséget?;Julius Caesar;Scipio Africanus;Nero;Traianus;Julius Caesar
+Mi volt a híres brit felfedező, aki a dél-amerikai kontinenset térképezte fel és a modern geográfiát alapította?;David Livingstone;Francis Drake;Captain Cook;Christopher Columbus;David Livingstone
+Melyik évben írta alá Anglia a híres és fontos politikai okmányt, a Magna Carta-t?;1215;1205;1300;1500;1215
+Ki volt a híres görög filozófus, aki megalkotta az arany középutat?;Szókratész;Arisztotelész;Platón;Püthagorasz;Arisztotelész
+Mi volt a híres ókori város, ahol a híres Templomot is felépítették?;Babylon;Alexandria;Jeruzsálem;Athén;Jeruzsálem
+Melyik esemény vezetett a harmadik pun háborúhoz?;Róma háborúja Karthágóval;Julius Caesar hódításai;Az asszíriai hódítások;A makedón háborúk;Róma háborúja Karthágóval
+Mi volt az első hódító, aki egészen Indiaig eljutott és hódította meg a területet?;Nagy Sándor;Róma;Alexander the Great;Napóleon Bonaparte;Nagy Sándor
+Melyik világháború idején kezdődtek el a zsidók elleni háborús bűnök?;Első világháború;Második világháború;Koreai háború;Vietnam háború;Második világháború
+Mi volt a híres orosz cár, aki megszabadította az oroszokat a jobbágyoktól?;II. Péter;I. Katalin;III. Ivan;Sztálin;II. Péter
+Melyik űrszonda érte el először a Plútót?;New Horizons;Voyager 1;Parker Solar Probe;Juno;New Horizons
+Melyik bolygó holdja az Europa, amely valószínűleg víz alatt lévő óceánt rejt?;Jupiter;Mars;Saturnus;Neptunusz;Jupiter
+Melyik űrprogram volt az első, amely embert küldött a Holdra?;Apollo 11;Mercury;Gemini;Soyuz;Apollo 11
+Mi a "Fermi paradoxon", amely a világűrben idegen civilizációk létezésére vonatkozik?;A jelenség, hogy miért nem találtunk még idegen életet;Az elképzelés, hogy a Földön kívüli élet minden formája hasonló a Földön található élethez;A kérdés, hogy miért nincsenek emberek más bolygókon;A teória, hogy a Föld egyedülálló az univerzumban;A jelenség, hogy miért nem találtunk még idegen életet
+Mi a legnagyobb ismert csillag a galaxisunkban?;UY Scuti;Betelgeuse;Sirius;Alpha Centauri;UY Scuti
+Mi a galaxisunk neve?;Tejút;Androméda;Szalag;Nagy Magellán-felhő;Tejút
+Mi a legnagyobb bolygó a Naprendszerben?;Jupiter;Szaturnusz;Neptunusz;Uránusz;Jupiter
+Mi a neve annak az elméletnek, amely szerint az univerzum folyamatosan tágul?;Big Bang elmélet;Mikrohullámú háttérsugárzás elmélete;Kozmikus infláció elmélet;Mikrogravitáció elmélet;Big Bang elmélet
+Melyik bolygón található a legmagasabb ismert vulkán a Naprendszerben?;Mars;Föld;Vénusz;Jupiter;Mars
+Mi a világ legnagyobb, mesterségesen létrehozott űrtávcsöve?;James Webb űrtávcső;Hubble űrtávcső;Chandra űrtávcső;Spitzer űrtávcső;James Webb űrtávcső
+Mi a legnagyobb ismert fekete lyuk a Tejútrendszerben?;Sagittarius A*;Cygnus X-1;Andromeda A;M87;Sagittarius A*
+Melyik űrszonda küldött vissza elsőként képeket a Szaturnusz gyűrűiről?;Cassini;Parker Solar Probe;Juno;Voyager 2;Cassini
+Mi a híres elmélet, amely az univerzum eredetét és fejlődését magyarázza, és amely az 1920-as években jött létre?;Big Bang elmélet;Szupernova elmélet;Mágneses elmélet;Relatívitás elmélet;Big Bang elmélet
+Milyen objektumokat keresnek az exobolygók felfedezésekor, amelyek élet jeleit jelezhetik?;Oxygenikus atmoszféra;Vulkánikus aktivitás;Tökéletes gravitációs környezet;Fizikai aktivitás;Oxygenikus atmoszféra
+Melyik a legnagyobb ismert galaxis az univerzumban?;IC 1101;Tejút;Androméda;Nagy Magellán-felhő;IC 1101
+Melyik naprendszeri objektum tekinthető a Nap legnagyobb holdjának?;Ganymedes;Io;Callisto;Titan;Ganymedes
+Melyik bolygón található a Valles Marineris, amely a Naprendszer legnagyobb kanyonja?;Mars;Vénusz;Jupiter;Neptunusz;Mars
+Mi az a jelenség, amelyet a csillagászatban „szuperújra” vagy „szupernova robbanásra” neveznek?;A csillag halála és rendkívüli fényessége;A csillag pulzálása;A galaxisok közötti tér megnyúlása;A csillagok egyesülése;A csillag halála és rendkívüli fényessége
+Mi az a kozmikus mikrohullámú háttérsugárzás?;Az ősi univerzum hőmérsékletének lenyomata;A fekete lyukak körüli sugárzás;A bolygók által kibocsátott hőmérséklet;A csillagok fényessége;Az ősi univerzum hőmérsékletének lenyomata
+Mi volt az első mesterséges műhold, amelyet az emberi civilizáció az űrbe bocsátott?;Szputnyik 1;Vanguard 1;Apollo 11;Hubble űrtávcső;Szputnyik 1
+Melyik csillagászat program küldött először emberi űrhajóst a világűrbe?;Szovjet űrprogram;NASA;ESA;JAXA;Szovjet űrprogram
+Mi az a fekete lyuk?;Olyan objektum, amely rendkívül nagy gravitációval rendelkezik, és semmit, még a fényt sem engedi el;Egy olyan csillag, amely fokozatosan elhalványul;A Nap halála;Olyan csillag, amely hatalmas szupernóva robbanás után kialakul;Olyan objektum, amely rendkívül nagy gravitációval rendelkezik, és semmit, még a fényt sem engedi el
+Mi volt a legnagyobb űrszonda, amely valaha elhagyta a Naprendszert?;Voyager 1;Voyager 2;Parker Solar Probe;New Horizons;Voyager 1
+Mi a híres elmélet, amely azt sugallja, hogy az univerzum végtelen és sosem áll meg a tágulásban?;Az inflációs elmélet;A szingularitás elmélete;A kvantummechanika elmélete;A multiverzum elmélete;Az inflációs elmélet
+Mi az, ami lehetővé teszi számunkra, hogy élet jeleit keressük más bolygókon?;Az exobolygók felfedezése;Fényképezés a galaxisok között;A Nap és a bolygók közötti távolságok;A csillagok tömege;Az exobolygók felfedezése
+Melyik bolygó legnagyobb vulkánja a „Olympus Mons”?;Mars;Föld;Venus;Jupiter;Mars
+Mi a legnagyobb ismert bolygó a Naprendszerben?;Jupiter;Szaturnusz;Uránusz;Neptunusz;Jupiter
+Mi az, amit a tudósok keresnek az „élhető zónákban” más csillagok körül?;Olyan bolygókat, ahol víz lehet folyékony állapotban;Bolygók, amelyek a csillagot közvetlenül körbeveszik;Bolygók, ahol az élet nem lehetséges;Bolygók, amelyek sűrű atmoszférával rendelkeznek;Olyan bolygókat, ahol víz lehet folyékony állapotban
+Mi a híres űrprogram neve, amely a Marsra próbál landolni az embereket?;NASA Artemis program;Mars One;Mars Exploration Program;Apollo program;Mars One
+Mi az a kozmikus infláció elmélete?;A világegyetem rendkívül gyors tágulásáról szóló elmélet;A Nap és a Föld közötti hőmérsékletkülönbség;A galaxisok összeolvadásának elmélete;A csillagok evolúciójának magyarázata;A világegyetem rendkívül gyors tágulásáról szóló elmélet
+Mi az a gravitációs hullám?;A tér és az idő hullámzása a gravitáció hatására;A csillagok keletkezésének jele;A Nap energiájának áramlása;A földi légkör mozgása;A tér és az idő hullámzása a gravitáció hatására
+Milyen távol van a Nap a Földtől?;Kb. 150 millió km;Kb. 300 millió km;Kb. 50 millió km;Kb. 1 millió km;Kb. 150 millió km
+Mi az, ami az univerzumban található anyagot és energiát kíséri, de még nem teljesen értették meg a tudósok?;Sötét anyag;Fekete lyukak;Szupernóva robbanások;Gravitációs hullámok;Sötét anyag
+Melyik bolygón található a híres "Nagy Vörös Folt"?;Jupiter;Saturnus;Mars;Uránusz;Jupiter
+Mi a legnagyobb és legfontosabb galaxis, amely a Tejútrendszerrel együtt alkotja az „Lokal csoportot”?;Androméda;Szalag;Messier 87;NGC 224;Androméda
+Melyik bolygó rendelkezik a legnagyobb holdakkal?;Jupiter;Föld;Saturnus;Mars;Jupiter
+Mi a neve annak a szupernóva típusnak, amely felelős az elemek létrehozásáért, mint a vas és az arany?;Szuperújra;Vörös óriás;Fehér törpe;Csillagkeletkezés;Szuperújra
+Mi az a "nagyméretű exobolygó", amely egy új típusú bolygó osztályába tartozik, és amely 2015-ben vált ismertté?;Superföld;Neptunusz típusú;Jupiter típusú;Szuperúj bolygó;Superföld
+Melyik bolygó atmoszférájában található a legtöbb szén-dioxid?;Vénusz;Mars;Föld;Jupiter;Vénusz
+Melyik napraforgó a legnagyobb ismert csillag a Tejútrendszerben?;UY Scuti;Betelgeuse;Rigel;Antares;UY Scuti
+Mi a legnagyobb ismert csillagcsalád a galaxisunkban?;Tejút;Androméda;Messier 87;Aquila;Tejút
+Mi a legnagyobb ismert meteorit, amely valaha a Földre esett?;Hoba meteorit;Chelyabinsk meteorit;Tunguska meteorit;Bering meteorit;Hoba meteorit
+Mi a neve annak a bolygónak, amelyet a NASA először talált, és amely a legnagyobb eséllyel képes fenntartani az életet?;Kepler-452b;Proxima b;Gliese 581g;HD 209458 b;Kepler-452b
+Melyik bolygó az, amely az „egyetlen bolygó, amelyen megfigyelhető víz a felszínen”?;Föld;Mars;Vénusz;Europa;Föld
+Milyen jelenség történik, amikor egy csillag elhalványul a végső szakaszában, és egy fekete lyukká alakul?;Szupernóva robbanás;Fehér törpe;Neutroncsillag;Gravitációs összeomlás;Szupernóva robbanás
+Milyen űrszonda szállította a legelső képeket a Plútóról?;New Horizons;Voyager 2;Parker Solar Probe;Mars Reconnaissance Orbiter;New Horizons
+Mi a "Kozmikus háttérsugárzás", amit az űrkutatók tanulmányoznak?;A világűrben mérhető sugárzás, amely az ősrobbanás nyomait tartalmazza;A galaxisok közötti fényes sugárzás;A Napból érkező sugárzás;A csillagok által kibocsátott hőmérséklet;A világűrben mérhető sugárzás, amely az ősrobbanás nyomait tartalmazza
+Milyen elmélet magyarázza az univerzum tágulását?;Big Bang elmélet;Fekete lyuk elmélet;Multiverzum elmélet;Inflációs elmélet;Big Bang elmélet
+Mi a neve annak az elméletnek, amely szerint létezhetnek más, párhuzamos univerzumok?;Multiverzum elmélet;Relatívitás elmélet;Kvantummechanika elmélet;Sötét energia elmélet;Multiverzum elmélet
+Melyik bolygón található a "Tharsis vulkánrendszer", amely a legnagyobb vulkánokat tartalmazza?;Mars;Föld;Vénusz;Jupiter;Mars
+Mi a neve annak a galaxisnak, amely a Tejútrendszer legközelebbi nagy galaxis szomszédja?;Androméda;Messier 87;Sombrero galaxis;NGC 224;Androméda
+Mi a neve annak a híres űrszondának, amely 2014-ben elérte a C/67P/Tsugaszso fényes üstököst?;Rosetta;Venera;New Horizons;Parker Solar Probe;Rosetta
+Mi az a koncepció, amely szerint a sötét anyag és a sötét energia az univerzum több mint 90%-át alkotja, de még mindig nem teljesen értjük?;Sötét anyag és sötét energia elmélete;Gravitációs elmélet;Kvantumelmélet;Fekete lyuk elmélete;Sötét anyag és sötét energia elmélete
+Mi volt az első űrhajó, amely elérte a Napot?;Parker Solar Probe;Voyager 1;Apollo 11;Cassini;Parker Solar Probe
+Milyen bolygón található a legnagyobb vihar a Naprendszerben?;Jupiter;Mars;Neptunusz;Föld;Jupiter
+Milyen elmélet állítja, hogy a galaxisok és csillagok keletkezése az univerzum kezdetén történt?;Big Bang elmélet;Hélium elmélet;Fekete lyuk elmélet;Gravitációs elmélet;Big Bang elmélet

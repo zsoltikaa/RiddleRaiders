@@ -11,9 +11,11 @@ namespace RiddleRaiders
         private WaveOutEvent musicPlayer;
         private AudioFileReader audioFileReader;
 
-        private string menuMusicPath = "../../../Resources/menu_music.mp3";
+        private readonly string menuMusicPath = "../../../Resources/menu_music.mp3";
 
-        private string combatMusicPath = "../../../Resources/combat_music.mp3";
+        private readonly string combatMusicPath = "../../../Resources/combat_music.mp3";
+
+        private readonly string gameOverMusicPath = "../../../Resources/ending_music.mp3";
 
         private const int PLAYER_HEALTH = 10;
 
@@ -75,7 +77,14 @@ namespace RiddleRaiders
             btnMute.Click += BtnMuteClick;
             btnEN.Click += BtnENClick;
             btnHU.Click += BtnHUClick;
+            btnBackToMenu.Click += BtnBackToMenuClick;
 
+        }
+
+        private void BtnBackToMenuClick(object sender, EventArgs e)
+        {
+            textTimer.Stop();
+            ShowMenu();
         }
 
         private void BtnENClick(object sender, EventArgs e)
@@ -140,23 +149,22 @@ namespace RiddleRaiders
         private void BtnMuteClick(object sender, EventArgs e)
         {
 
+            ToggleMute();
+
+        }
+
+        private void ToggleMute()
+        {
+            isMuted = !isMuted; 
+
             if (isMuted)
             {
-                if (currentScene != null && currentScene.enemy != null)
-                {
-                    PlayMusic(combatMusicPath, 0.02f);
-                }
-                else
-                {
-                    PlayMusic(menuMusicPath, 0.5f);
-                }
+                musicPlayer.Volume = 0f; 
             }
             else
             {
-                PlayMusic(menuMusicPath, 0f);
+                musicPlayer.Volume = 0.8f;
             }
-
-            isMuted = !isMuted;
 
         }
 
@@ -260,7 +268,7 @@ namespace RiddleRaiders
                 if (currentScene.enemy.health <= 0)
                 {
                     await Task.Delay(1000);
-                    CheckEnemyDeath();
+                    ChangeLevel();
                 }
 
                 await Task.Delay(1000);
@@ -324,6 +332,10 @@ namespace RiddleRaiders
                 isTimeStopped = false;
 
                 GetRandomQuestion();
+            }
+            else
+            {
+                btnBackToMenu.Visible = true;
             }
 
         }
@@ -507,7 +519,11 @@ namespace RiddleRaiders
             }
             else
             {
-                StopMusic();
+                PlayMusic(gameOverMusicPath, 0.1f);
+                musicPlayer.PlaybackStopped += (sender, args) =>
+                {
+                    ShowMenu();
+                };
                 pbxEnemy.Visible = false;
                 if (!wasWrong)
                 {
@@ -578,8 +594,17 @@ namespace RiddleRaiders
             btnPlay.Visible = true;
             btnExit.Visible = true;
             lblVersion.Visible = true;
+            btnHU.Visible = true;
+            btnEN.Visible = true;
+            btnMute.Visible = true;
+
+            btnBackToMenu.Visible = false;
+
+            lblGameOver.Visible = false;
 
             PlayMusic(menuMusicPath, 0.8f);
+
+            FillScenes();
 
         }
 
@@ -638,21 +663,6 @@ namespace RiddleRaiders
                 }
             }
 
-
-        }
-
-        private void CheckEnemyDeath()
-        {
-
-            if (level == sceneList.Count - 1)
-            {
-                StopMusic();
-                this.Close();
-            }
-            else
-            {
-                ChangeLevel();
-            }
 
         }
 

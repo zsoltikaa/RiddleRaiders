@@ -57,6 +57,7 @@ namespace RiddleRaiders
             btnEN = new Button();
             btnHU = new Button();
             lblGameOver = new Label();
+            btnBackToMenu = new Button();
             ((System.ComponentModel.ISupportInitialize)pbxEnemy).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbxPlayer).BeginInit();
             tblQuestionPanel.SuspendLayout();
@@ -391,12 +392,27 @@ namespace RiddleRaiders
             lblGameOver.TextAlign = ContentAlignment.MiddleCenter;
             lblGameOver.Visible = false;
             // 
+            // btnBackToMenu
+            // 
+            btnBackToMenu.BackColor = Color.FromArgb(190, 255, 255, 255);
+            btnBackToMenu.FlatStyle = FlatStyle.Popup;
+            btnBackToMenu.Font = new System.Drawing.Font("Brush Script MT", 31.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnBackToMenu.Location = new Point(1135, 885);
+            btnBackToMenu.Margin = new Padding(3, 4, 3, 4);
+            btnBackToMenu.Name = "btnBackToMenu";
+            btnBackToMenu.Size = new Size(414, 127);
+            btnBackToMenu.TabIndex = 14;
+            btnBackToMenu.Text = "Back To Main Menu";
+            btnBackToMenu.UseVisualStyleBackColor = false;
+            btnBackToMenu.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (System.Drawing.Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1561, 1024);
+            Controls.Add(btnBackToMenu);
             Controls.Add(lblGameOver);
             Controls.Add(btnHU);
             Controls.Add(btnEN);
@@ -455,5 +471,6 @@ namespace RiddleRaiders
         private Button btnEN;
         private Button btnHU;
         private Label lblGameOver;
+        private Button btnBackToMenu;
     }
 }

@@ -6,107 +6,150 @@ namespace RiddleRaiders
 
     public partial class Form1 : Form
     {
+        // create a static random object to generate random numbers
         private static Random rnd = new Random();
-
+        
+        // declare the music player and audio file reader objects for playing sound
         private WaveOutEvent musicPlayer;
         private AudioFileReader audioFileReader;
-
+        
+        // define paths to different music files for various scenes
         private readonly string menuMusicPath = "../../../Resources/menu_music.mp3";
-
         private readonly string combatMusicPath = "../../../Resources/combat_music.mp3";
-
         private readonly string gameOverMusicPath = "../../../Resources/ending_music.mp3";
-
+        
+        // define a constant for player health
         private const int PLAYER_HEALTH = 10;
-
-        private const int MAX_POWERUP_PER_LEVEL = 3;
-        private const int POWERUP_DROP_CHANCE = 20;
-
-        private bool wasWrong = false;
-        private bool isTimeStopped = false;
-
+        
+        // define constants for power-up settings
+        private const int MAX_POWERUP_PER_LEVEL = 3; // maximum number of power-ups per level
+        private const int POWERUP_DROP_CHANCE = 20; // chance of a power-up dropping (in percentage)
+        
+        // declare boolean flags for various game states
+        private bool wasWrong = false; // flag for wrong answer state
+        private bool isTimeStopped = false; // flag for checking if time is stopped
+        
+        // instantiate power-ups with default values
         PowerUp pUpHalf = new PowerUp(0);
         PowerUp pUpStopTime = new PowerUp(0);
         PowerUp pUpHealth = new PowerUp(0);
-
+        
+        // declare variables for level, scene, and other game elements
         private int level;
         private Scene currentScene;
-        private List<Scene> sceneList = new List<Scene>();
-        private string resourceDir;
+        private List<Scene> sceneList = new List<Scene>(); // list of scenes in the game
+        private string resourceDir; // directory path for resources
+        
+        // declare timers for text and question timings
         private Timer textTimer;
         private Timer questionTimer;
+        
+        // variable to track the current character index in the text being displayed
         private int currentCharIndex;
+        
+        // string to hold the current text being displayed
         private string text;
+        
+        // player object and list of questions
         private Player player;
         private List<Question> questionList = new List<Question>();
-        private Question currentQuestion;
+        private Question currentQuestion; // current question being asked
+        
+        // store the original width of the timer
         private int originalTimerWidth;
+        
+        // declare a flag for muting the game sounds
         private bool isMuted = false;
-        private string currentLanguage = "EN";
+        
+        // store the current language setting
+        private string currentLanguage = "EN"; // default language is English
 
         public Form1()
         {
 
+            // set the form's start position to center of the screen
             this.StartPosition = FormStartPosition.CenterScreen;
-
+            
+            // initialize the form components
             InitializeComponent();
-
+            
+            // initialize the game
             InitGame();
-
+            
+            // store the original width of the timer panel
             originalTimerWidth = pnlTimer.Width;
-
+            
+            // add event handler for the exit button click
             btnExit.Click += BtnExitClick;
-
+            
+            // add event handler for the play button click
             btnPlay.Click += BtnPlayClick;
-
+            
+            // initialize the text timer with an interval of 30 milliseconds
             textTimer = new Timer();
             textTimer.Interval = 30;
             textTimer.Tick += TextTimerTick;
-
+            
+            // initialize the question timer with an interval of 7 milliseconds
             questionTimer = new Timer();
             questionTimer.Interval = 7;
             questionTimer.Tick += QuestionTimerTick;
-
+            
+            // add event handlers for the answer buttons' click events
             btnAnswer1.Click += BtnAnswerClick;
             btnAnswer2.Click += BtnAnswerClick;
             btnAnswer3.Click += BtnAnswerClick;
             btnAnswer4.Click += BtnAnswerClick;
+            
+            // add event handlers for the power-up buttons' click events
             btnHalfPup.Click += BtnHalfPupClick;
             btnStopTimePup.Click += BtnStopTimePupClick;
             btnHealthPup.Click += BtnHealthPupClick;
+            
+            // add event handler for the mute button click
             btnMute.Click += BtnMuteClick;
+            
+            // add event handler for the English language button click
             btnEN.Click += BtnENClick;
+            
+            // add event handler for the Hungarian language button click
             btnHU.Click += BtnHUClick;
+            
+            // add event handler for the back-to-menu button click
             btnBackToMenu.Click += BtnBackToMenuClick;
 
         }
 
+        // stops the text timer and shows the menu when the back-to-menu button is clicked
         private void BtnBackToMenuClick(object sender, EventArgs e)
         {
             textTimer.Stop();
             ShowMenu();
         }
-
+        
+        // sets the language to English and updates the scenes
         private void BtnENClick(object sender, EventArgs e)
         {
             SetLanguage("EN");
             FillScenes();
         }
-
+        
+        // sets the language to Hungarian and updates the scenes
         private void BtnHUClick(object sender, EventArgs e)
         {
             SetLanguage("HU");
             FillScenes();
         }
-
+        
+        // sets the current language and loads the respective question file
         private void SetLanguage(string language)
         {
             currentLanguage = language;
-
+        
             questionList.Clear();
-
+        
             string questionFilePath = $"{resourceDir}questions{currentLanguage}.txt";
-
+        
             if (File.Exists(questionFilePath))
             {
                 using (StreamReader sr = new StreamReader(questionFilePath))
@@ -122,11 +165,11 @@ namespace RiddleRaiders
             {
                 MessageBox.Show($"The questions file for {currentLanguage} is missing!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+        
             UpdateUIText();
-
         }
-
+        
+        // updates the UI text based on the selected language
         private void UpdateUIText()
         {
             if (currentLanguage == "EN")
@@ -140,37 +183,35 @@ namespace RiddleRaiders
             {
                 lblTitle.Text = "Riddle Raiders";
                 lblVersion.Text = "v. 1.0.0.7";
-                btnPlay.Text = "Játék";
-                btnExit.Text = "Kilépés";
+                btnPlay.Text = "JÃ¡tÃ©k";
+                btnExit.Text = "KilÃ©pÃ©s";
             }
         }
 
-
+        // toggles the mute state and adjusts the music volume accordingly
         private void BtnMuteClick(object sender, EventArgs e)
         {
-
             ToggleMute();
-
         }
-
+        
+        // changes the mute state and adjusts the music player's volume
         private void ToggleMute()
         {
             isMuted = !isMuted; 
-
+        
             if (isMuted)
             {
-                musicPlayer.Volume = 0f; 
+                musicPlayer.Volume = 0f;
             }
             else
             {
-                musicPlayer.Volume = 0.8f;
+                musicPlayer.Volume = 0.8f; 
             }
-
         }
-
+        
+        // uses a health power-up to increase the player's health
         private void BtnHealthPupClick(object sender, EventArgs e)
         {
-
             pUpHealth.owned--;
             RefreshPowerUps();
             if (player.health < PLAYER_HEALTH)
@@ -178,38 +219,35 @@ namespace RiddleRaiders
                 player.health = Math.Min(player.health + 2, PLAYER_HEALTH);
                 lblPlayerHP.Text = $"HP: {player.health}";
             }
-
         }
-
+        
+        // uses the stop time power-up to pause the question timer
         private void BtnStopTimePupClick(object sender, EventArgs e)
         {
-
             pUpStopTime.owned--;
             RefreshPowerUps();
             btnStopTimePup.Enabled = false;
-
+        
             questionTimer.Stop();
             isTimeStopped = true;
-
+        
             Task.Delay(5000).ContinueWith(t =>
             {
-
                 if (!isTimeStopped)
                 {
                     Invoke(() => questionTimer.Start());
                     isTimeStopped = false;
                 }
             });
-
         }
-
+        
+        // uses the half-pick power-up to remove two wrong answers from the choices
         private void BtnHalfPupClick(object sender, EventArgs e)
         {
-
             pUpHalf.owned--;
             RefreshPowerUps();
             btnHalfPup.Enabled = false;
-
+        
             List<int> wrongAnswers = new List<int>();
             for (int i = 0; i < currentQuestion.answers.Length; i++)
             {
@@ -218,37 +256,37 @@ namespace RiddleRaiders
                     wrongAnswers.Add(i);
                 }
             }
-
+        
             Random rnd = new Random();
             int answerToRemove1 = wrongAnswers[rnd.Next(wrongAnswers.Count)];
             wrongAnswers.Remove(answerToRemove1);
             int answerToRemove2 = wrongAnswers[rnd.Next(wrongAnswers.Count)];
-
+        
             if (answerToRemove1 == 0) btnAnswer1.Visible = false;
             if (answerToRemove1 == 1) btnAnswer2.Visible = false;
             if (answerToRemove1 == 2) btnAnswer3.Visible = false;
             if (answerToRemove1 == 3) btnAnswer4.Visible = false;
-
+        
             if (answerToRemove2 == 0) btnAnswer1.Visible = false;
             if (answerToRemove2 == 1) btnAnswer2.Visible = false;
             if (answerToRemove2 == 2) btnAnswer3.Visible = false;
             if (answerToRemove2 == 3) btnAnswer4.Visible = false;
-
         }
 
+        // handles the answer button click event, checks if the answer is correct, and updates health
         private async void BtnAnswerClick(object sender, EventArgs e)
         {
-
             questionTimer.Stop();
             Button btn = sender as Button;
-
+        
             if (btn != null)
             {
+
                 btnAnswer1.Enabled = false;
                 btnAnswer2.Enabled = false;
                 btnAnswer3.Enabled = false;
                 btnAnswer4.Enabled = false;
-
+        
                 if (btn.Text == currentQuestion.right_answer)
                 {
                     currentScene.enemy.TakeDamage(player.damage);
@@ -260,33 +298,33 @@ namespace RiddleRaiders
                     if (!wasWrong) wasWrong = true;
                     btn.BackColor = Color.Red;
                 }
-
+        
                 lblPlayerHP.Text = $"HP: {player.health}";
                 lblEnemyHP.Text = $"HP: {currentScene.enemy.health}";
-
+        
                 CheckPlayerDeath();
                 if (currentScene.enemy.health <= 0)
                 {
                     await Task.Delay(1000);
                     ChangeLevel();
                 }
-
+        
                 await Task.Delay(1000);
                 GetRandomQuestion();
-
+        
                 btnAnswer1.Enabled = true;
                 btnAnswer2.Enabled = true;
                 btnAnswer3.Enabled = true;
                 btnAnswer4.Enabled = true;
+                
             }
-
         }
-
+        
+        // handles the question timer tick, reduces the timer width, and damages the player if time runs out
         private async void QuestionTimerTick(object sender, EventArgs e)
         {
-
             pnlTimer.Width -= 2;
-
+        
             if (pnlTimer.Width <= 0)
             {
                 questionTimer.Stop();
@@ -297,12 +335,11 @@ namespace RiddleRaiders
                 pnlTimer.Width = originalTimerWidth;
                 GetRandomQuestion();
             }
-
         }
-
+        
+        // this method handles the timer tick event, updating the displayed text and progressing through the game scenes.
         private async void TextTimerTick(object? sender, EventArgs e)
         {
-
             if (currentCharIndex < text.Length)
             {
 
@@ -317,9 +354,9 @@ namespace RiddleRaiders
                 }
                 currentCharIndex++;
             }
-
             else if (currentScene.enemy != null)
             {
+
                 textTimer.Stop();
                 await Task.Delay(2000);
                 rtbChat.Visible = false;
@@ -327,80 +364,69 @@ namespace RiddleRaiders
                 tblQuestionPanel.Visible = true;
                 lblEnemyHP.Visible = true;
                 lblPlayerHP.Visible = true;
-
+        
                 questionTimer.Start();
                 isTimeStopped = false;
-
+        
                 GetRandomQuestion();
             }
             else
             {
                 btnBackToMenu.Visible = true;
             }
-
         }
-
+        
+        // initializes the game, setting up the player, scenes, and starting music
         private void InitGame()
         {
-
             level = -1;
-
             resourceDir = "../../../Resources/";
-
             player = new Player("Player", 1, 1, $"{resourceDir}player.png");
-
+        
             FillScenes();
-
             SetLanguage("EN");
-
+        
             pbxPlayer.Visible = false;
-
             pbxEnemy.Visible = false;
-
+        
             PlayMusic(menuMusicPath, 0.8f);
-
         }
 
+        // handles the Play button click event, starts the game, and plays combat music
         private void BtnPlayClick(object? sender, EventArgs e)
         {
-
             StopMusic();
-
+        
             player.health = PLAYER_HEALTH;
-
+        
             btnPlay.Visible = false;
             btnExit.Visible = false;
             lblTitle.Visible = false;
             lblVersion.Visible = false;
-
+        
             ChangeLevel();
-
-            PlayMusic(combatMusicPath, 0.02f);
-
-            Image img = Image.FromFile(player.imagePath);
-
+        
+            PlayMusic(combatMusicPath, 0.02f); 
+        
+            Image img = Image.FromFile(player.imagePath); 
+        
             pbxPlayer.Image = img;
-
             pbxPlayer.Width = img.Width;
-
             pbxPlayer.Height = img.Height;
-
-            pbxPlayer.Visible = true;
-
+        
+            pbxPlayer.Visible = true; 
             pbxEnemy.Visible = true;
-
+        
             btnMute.Visible = false;
-
             btnEN.Visible = false;
-
             btnHU.Visible = false;
-
         }
-
+        
+        // handles the Exit button click event, asks the user if they want to exit the game
         private void BtnExitClick(object? sender, EventArgs e)
         {
             string caption, text;
-
+        
             if (currentLanguage == "EN")
             {
                 caption = "Riddle Raiders";
@@ -409,111 +435,109 @@ namespace RiddleRaiders
             else if (currentLanguage == "HU")
             {
                 caption = "Riddle Raiders";
-                text = "Ki szeretnél lépni a játékból?";
+                text = "Ki szeretnÃ©l lÃ©pni a jÃ¡tÃ©kbÃ³l?";
             }
             else
             {
                 caption = "Riddle Raiders";
                 text = "Do you want to exit the game?";
             }
-
+        
             DialogResult result = MessageBox.Show(
                 caption: caption,
                 text: text,
                 buttons: MessageBoxButtons.YesNo,
                 icon: MessageBoxIcon.Question
             );
-
+        
             if (result == DialogResult.Yes)
             {
                 Application.Exit();
             }
         }
-
-
+        
+        // fills the scene list with different scenes, enemies, and descriptions based on the current language
         private void FillScenes()
         {
             sceneList.Clear();
-            sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), currentLanguage == "HU"? "Úgy tûnik, ennyi volt...\nLehet, hogy mutáns szörnyeteg vagy, de nem hagyom, hogy az utamba állj a küldetésemben.\nKészülj, teremtmény!" : "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission.\nPrepare yourself, creature!"));
-
-            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 3, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), currentLanguage == "HU" ? "Az a kasza elég nehéznek tûnik.\nFogadok, hogy még meglengetni sem tudod rendesen!\nDe ha mégis, biztos kitérek—kár lenne elrontani egy ilyen drámai divatot a véremmel." : "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodge—it’d be a shame to ruin such dramatic fashion with my blood"));
-
-            sceneList.Add(new Scene($"{resourceDir}mountain.jpg", "Mountain", new Position(350, 390), new Enemy("Long Arms", 4, 2, $"{resourceDir}long_arms.png", new Position(800, 350)), currentLanguage == "HU" ? "Szép karok!\nVan hozzájuk használati útmutató, vagy csak improvizálsz és reménykedsz a legjobbakban?\nHadd találjam ki—azok a dolgok ölelésre valók... nagyon agresszívan, igaz?" : "Nice arms! \nDo they come with a user manual, or are you just winging it and hoping for the best? \nLet me guess—those things are for hugging... real aggressively, right?"));
-
-            sceneList.Add(new Scene($"{resourceDir}cave.jpg", "Cave", new Position(380, 500), new Enemy("Long Sword", 5, 3, $"{resourceDir}long_sword.png", new Position(760, 445)), currentLanguage == "HU" ? "Hû, szép kard!\nValamit kompenzálsz vele? Vagy a drámai villámhatás csak arra szolgál, hogy elterelje a figyelmet arról, hogy évszázadok óta nem mosolyogtál?" : "Wow, nice sword!\nCompensating for something? Or is the dramatic lightning effect just to distract from the fact you haven’t smiled in centuries?"));
-
-            sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 6, 5, $"{resourceDir}final_boss.png", new Position(760, 445)), currentLanguage == "HU" ? "Hûha, jól nézel ki!\nA kard arra van, hogy levágd a tested elrohadt részeit? Vagy csak arra, hogy szórakozz az utolsó pillanataidban?" : "Whoa, looking nice!\nIs the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
-
-            sceneList.Add(new Scene($"{resourceDir}game_over.jpg", "Game Over", new Position(581, 462), null, currentLanguage == "HU" ? "Gratulálok!\nSikeresen legyõztél minden ellenfelet, aki az utadba került.\nLara megszerezte a mindenható kincset." : "Congratulations!\nYou successfully defeated every opponent that came in your way. \nLara had managed to obtain the almighty treasure."));
-
+        
+            sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), currentLanguage == "HU"? "Ãšgy tÃ»nik, ennyi volt...\nLehet, hogy mutÃ¡ns szÃ¶rnyeteg vagy, de nem hagyom, hogy az utamba Ã¡llj a kÃ¼ldetÃ©semben.\nKÃ©szÃ¼lj, teremtmÃ©ny!" : "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission.\nPrepare yourself, creature!"));
+        
+            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 3, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), currentLanguage == "HU" ? "Az a kasza elÃ©g nehÃ©znek tÃ»nik.\nFogadok, hogy mÃ©g meglengetni sem tudod rendesen!\nDe ha mÃ©gis, biztos kitÃ©rekÂ—kÃ¡r lenne elrontani egy ilyen drÃ¡mai divatot a vÃ©remmel." : "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodgeÂ—itâ€™d be a shame to ruin such dramatic fashion with my blood"));
+        
+            sceneList.Add(new Scene($"{resourceDir}mountain.jpg", "Mountain", new Position(350, 390), new Enemy("Long Arms", 4, 2, $"{resourceDir}long_arms.png", new Position(800, 350)), currentLanguage == "HU" ? "SzÃ©p karok!\nVan hozzÃ¡juk hasznÃ¡lati ÃºtmutatÃ³, vagy csak improvizÃ¡lsz Ã©s remÃ©nykedsz a legjobbakban?\nHadd talÃ¡ljam kiÂ—azok a dolgok Ã¶lelÃ©sre valÃ³k... nagyon agresszÃ­van, igaz?" : "Nice arms! \nDo they come with a user manual, or are you just winging it and hoping for the best? \nLet me guessÂ—those things are for hugging... real aggressively, right?"));
+        
+            sceneList.Add(new Scene($"{resourceDir}cave.jpg", "Cave", new Position(380, 500), new Enemy("Long Sword", 5, 3, $"{resourceDir}long_sword.png", new Position(760, 445)), currentLanguage == "HU" ? "HÃ», szÃ©p kard!\nValamit kompenzÃ¡lsz vele? Vagy a drÃ¡mai villÃ¡mhatÃ¡s csak arra szolgÃ¡l, hogy elterelje a figyelmet arrÃ³l, hogy Ã©vszÃ¡zadok Ã³ta nem mosolyogtÃ¡l?" : "Wow, nice sword!\nCompensating for something? Or is the dramatic lightning effect just to distract from the fact you havenâ€™t smiled in centuries?"));
+        
+            sceneList.Add(new Scene($"{resourceDir}dungeon.jpg", "Dungeon", new Position(380, 500), new Enemy("Final Boss", 6, 5, $"{resourceDir}final_boss.png", new Position(760, 445)), currentLanguage == "HU" ? "HÃ»ha, jÃ³l nÃ©zel ki!\nA kard arra van, hogy levÃ¡gd a tested elrohadt rÃ©szeit? Vagy csak arra, hogy szÃ³rakozz az utolsÃ³ pillanataidban?" : "Whoa, looking nice!\nIs the sword for cutting down the rotted parts of your body? Or just to have fun in your last moments?"));
+        
+            sceneList.Add(new Scene($"{resourceDir}game_over.jpg", "Game Over", new Position(581, 462), null, currentLanguage == "HU" ? "GratulÃ¡lok!\nSikeresen legyÃµztÃ©l minden ellenfelet, aki az utadba kerÃ¼lt.\nLara megszerezte a mindenhatÃ³ kincset." : "Congratulations!\nYou successfully defeated every opponent that came in your way. \nLara had managed to obtain the almighty treasure."));
         }
 
+        // shuffles a list of items randomly. It performs a basic shuffle and then adds extra shuffles for additional randomness.
         public static void Shuffle<T>(List<T> list)
         {
-
             int n = list.Count;
-
+        
             while (n > 1)
             {
                 n--;
                 int k = rnd.Next(n + 1);
                 T value = list[k];
-                list[k] = list[n];
+                list[k] = list[n]; 
                 list[n] = value;
             }
 
-            int extraShuffles = rnd.Next(3, 6);
+            int extraShuffles = rnd.Next(3, 6); 
             for (int i = 0; i < extraShuffles; i++)
             {
                 int index1 = rnd.Next(list.Count);
                 int index2 = rnd.Next(list.Count);
                 T temp = list[index1];
-                list[index1] = list[index2];
+                list[index1] = list[index2]; 
                 list[index2] = temp;
             }
-
         }
-
+        
+        // changes the level by incrementing the level counter and updating the scene and power-ups.
         private void ChangeLevel()
         {
-
             level += 1;
-
+        
             currentScene = sceneList[level];
 
             tblQuestionPanel.Visible = false;
             lblEnemyHP.Visible = false;
             lblPlayerHP.Visible = false;
-
+        
             textTimer.Stop();
             questionTimer.Stop();
-
-            GivePowerUps(MAX_POWERUP_PER_LEVEL, POWERUP_DROP_CHANCE);
-
-            UpdateScene();
-
+        
+            GivePowerUps(MAX_POWERUP_PER_LEVEL, POWERUP_DROP_CHANCE); 
+        
+            UpdateScene(); 
         }
-
+        
+        // updates the visual elements for the current scene (background, player, enemy, etc.) and starts text display.
         private void UpdateScene()
         {
 
             BackgroundImage = Image.FromFile(currentScene.backgroundImage);
-
+        
             pbxPlayer.Location = new Point(currentScene.playerPosition.x, currentScene.playerPosition.y);
-
+        
             rtbChat.Visible = true;
-
-            text = currentScene.chat;
-
+            text = currentScene.chat; 
             currentCharIndex = 0;
 
             if (currentScene.enemy != null)
             {
-                Image img = Image.FromFile(currentScene.enemy.imagePath);
+                Image img = Image.FromFile(currentScene.enemy.imagePath); 
                 pbxEnemy.Location = new Point(currentScene.enemy.position.x, currentScene.enemy.position.y);
                 pbxEnemy.Image = img;
                 pbxEnemy.Width = img.Width;
                 pbxEnemy.Height = img.Height;
+        
                 lblPlayerHP.Text = $"HP: {player.health}";
                 lblEnemyHP.Text = $"HP: {currentScene.enemy.health}";
             }
@@ -524,7 +548,9 @@ namespace RiddleRaiders
                 {
                     ShowMenu();
                 };
-                pbxEnemy.Visible = false;
+        
+                pbxEnemy.Visible = false; 
+        
                 if (!wasWrong)
                 {
                     Image notsafe4work = Image.FromFile($"{resourceDir}lara_croft_nsfw.png");
@@ -534,15 +560,15 @@ namespace RiddleRaiders
                 }
                 pbxPlayer.Visible = !wasWrong;
                 rtbChat.Visible = false;
-                lblGameOver.Text = String.Empty;
-                lblGameOver.Visible = true;
-                rtbChat.Text = String.Empty;
+                lblGameOver.Text = String.Empty; 
+                lblGameOver.Visible = true; 
+                rtbChat.Text = String.Empty; 
             }
-
-            textTimer.Start();
-
+        
+            textTimer.Start(); 
         }
 
+        // updates the question and answers displayed on the UI.
         private void UpdateQuestion()
         {
 
@@ -558,6 +584,7 @@ namespace RiddleRaiders
 
         }
 
+        // selects a random question, removes it from the list, and updates the UI.
         private void GetRandomQuestion()
         {
 
@@ -573,7 +600,8 @@ namespace RiddleRaiders
             isTimeStopped = false;
 
         }
-
+        
+        // displays the main menu, resetting the game state and showing menu elements.
         private void ShowMenu()
         {
 
@@ -608,6 +636,7 @@ namespace RiddleRaiders
 
         }
 
+        // resets the appearance of the answer buttons to their default state.
         private void ResetAnswerButtons()
         {
 
@@ -623,6 +652,7 @@ namespace RiddleRaiders
 
         }
 
+        // checks if the player's health has reached zero, triggering the game over process.
         private void CheckPlayerDeath()
         {
 
@@ -640,8 +670,8 @@ namespace RiddleRaiders
                 }
                 else if (currentLanguage == "HU")
                 {
-                    caption = "JÁTÉK VÉGE!";
-                    text = "Nem sikerült átverekedned magad a kihívásokon. \nVisszakerülsz a menübe.";
+                    caption = "JÃTÃ‰K VÃ‰GE!";
+                    text = "Nem sikerÃ¼lt Ã¡tverekedned magad a kihÃ­vÃ¡sokon. \nVisszakerÃ¼lsz a menÃ¼be.";
                 }
                 else
                 {
@@ -666,6 +696,7 @@ namespace RiddleRaiders
 
         }
 
+        // updates the status of power-ups buttons based on their availability.
         private void RefreshPowerUps()
         {
 
@@ -677,6 +708,7 @@ namespace RiddleRaiders
 
         }
 
+        // grants power-ups to the player based on a chance percentage.
         private void GivePowerUps(int max, int chancePercentage)
         {
 
@@ -690,6 +722,7 @@ namespace RiddleRaiders
 
         }
 
+        // updates the text of power-up buttons based on the number of owned power-ups.
         private void RefreshPowerUpButtons()
         {
 
@@ -701,13 +734,14 @@ namespace RiddleRaiders
             }
             else if (currentLanguage == "HU")
             {
-                btnHalfPup.Text = pUpHalf.owned > 0 ? $"Felezõ x{pUpHalf.owned}" : "Felezõ";
-                btnStopTimePup.Text = pUpStopTime.owned > 0 ? $"Idõmegállítás (5s) x{pUpStopTime.owned}" : "Idõmegállítás (5s)";
-                btnHealthPup.Text = pUpHealth.owned > 0 ? $"+2 Élet x{pUpHealth.owned}" : "+2 Élet";
+                btnHalfPup.Text = pUpHalf.owned > 0 ? $"FelezÃµ x{pUpHalf.owned}" : "FelezÃµ";
+                btnStopTimePup.Text = pUpStopTime.owned > 0 ? $"IdÃµmegÃ¡llÃ­tÃ¡s (5s) x{pUpStopTime.owned}" : "IdÃµmegÃ¡llÃ­tÃ¡s (5s)";
+                btnHealthPup.Text = pUpHealth.owned > 0 ? $"+2 Ã‰let x{pUpHealth.owned}" : "+2 Ã‰let";
             }
 
         }
 
+        // plays music from the specified path with the given volume, and loops it.
         private void PlayMusic(string musicPath, float volume)
         {
 
@@ -735,6 +769,7 @@ namespace RiddleRaiders
 
         }
 
+        // stops the currently playing music and disposes of the audio resources.
         private void StopMusic()
         {
 

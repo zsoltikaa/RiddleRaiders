@@ -22,12 +22,12 @@ namespace RiddleRaiders
         private const int PLAYER_HEALTH = 10;
         
         // define constants for power-up settings
-        private const int MAX_POWERUP_PER_LEVEL = 3; // maximum number of power-ups per level
-        private const int POWERUP_DROP_CHANCE = 20; // chance of a power-up dropping (in percentage)
+        private const int MAX_POWERUP_PER_LEVEL = 3; 
+        private const int POWERUP_DROP_CHANCE = 20;
         
         // declare boolean flags for various game states
-        private bool wasWrong = false; // flag for wrong answer state
-        private bool isTimeStopped = false; // flag for checking if time is stopped
+        private bool wasWrong = false; 
+        private bool isTimeStopped = false; 
         
         // instantiate power-ups with default values
         PowerUp pUpHalf = new PowerUp(0);
@@ -37,8 +37,8 @@ namespace RiddleRaiders
         // declare variables for level, scene, and other game elements
         private int level;
         private Scene currentScene;
-        private List<Scene> sceneList = new List<Scene>(); // list of scenes in the game
-        private string resourceDir; // directory path for resources
+        private List<Scene> sceneList = new List<Scene>(); 
+        private string resourceDir;
         
         // declare timers for text and question timings
         private Timer textTimer;
@@ -53,7 +53,7 @@ namespace RiddleRaiders
         // player object and list of questions
         private Player player;
         private List<Question> questionList = new List<Question>();
-        private Question currentQuestion; // current question being asked
+        private Question currentQuestion;
         
         // store the original width of the timer
         private int originalTimerWidth;
@@ -62,7 +62,7 @@ namespace RiddleRaiders
         private bool isMuted = false;
         
         // store the current language setting
-        private string currentLanguage = "EN"; // default language is English
+        private string currentLanguage = "EN"; 
 
         public Form1()
         {
@@ -338,7 +338,7 @@ namespace RiddleRaiders
         }
         
         // this method handles the timer tick event, updating the displayed text and progressing through the game scenes.
-        private async void TextTimerTick(object? sender, EventArgs e)
+        private async void TextTimerTick(object sender, EventArgs e)
         {
             if (currentCharIndex < text.Length)
             {
@@ -393,7 +393,7 @@ namespace RiddleRaiders
         }
 
         // handles the Play button click event, starts the game, and plays combat music
-        private void BtnPlayClick(object? sender, EventArgs e)
+        private void BtnPlayClick(object sender, EventArgs e)
         {
             StopMusic();
         
@@ -423,7 +423,7 @@ namespace RiddleRaiders
         }
         
         // handles the Exit button click event, asks the user if they want to exit the game
-        private void BtnExitClick(object? sender, EventArgs e)
+        private void BtnExitClick(object sender, EventArgs e)
         {
             string caption, text;
         

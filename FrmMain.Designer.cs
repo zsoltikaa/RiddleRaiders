@@ -449,7 +449,6 @@ namespace RiddleRaiders
         private Button btnPlay;
         private Button btnExit;
         private Label lblVersion;
-        private PictureBox pictureBox1;
         private PictureBox pbxEnemy;
         private PictureBox pbxPlayer;
         private RichTextBox rtbChat;

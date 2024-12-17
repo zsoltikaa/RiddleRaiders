@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace RiddleRaiders
 {
-    partial class Form1
+    partial class FrmMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,7 +31,7 @@ namespace RiddleRaiders
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             lblTitle = new Label();
             btnPlay = new Button();
             btnExit = new Button();

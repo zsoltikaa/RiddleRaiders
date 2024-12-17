@@ -4,10 +4,10 @@ namespace RiddleRaiders
     using NAudio.Wave;
     using Timer = System.Windows.Forms.Timer;
 
-    public partial class Form1 : Form
+    public partial class FrmMain : Form
     {
         // create a static random object to generate random numbers
-        private static Random rnd = new Random();
+        private static readonly Random rnd = new();
         
         // declare the music player and audio file reader objects for playing sound
         private WaveOutEvent musicPlayer;
@@ -27,22 +27,22 @@ namespace RiddleRaiders
         
         // declare boolean flags for various game states
         private bool wasWrong = false; 
-        private bool isTimeStopped = false; 
-        
+        private bool isTimeStopped = false;
+
         // instantiate power-ups with default values
-        PowerUp pUpHalf = new PowerUp(0);
-        PowerUp pUpStopTime = new PowerUp(0);
-        PowerUp pUpHealth = new PowerUp(0);
+        readonly PowerUp pUpHalf = new(0);
+        readonly PowerUp pUpStopTime = new(0);
+        readonly PowerUp pUpHealth = new(0);
         
         // declare variables for level, scene, and other game elements
         private int level;
         private Scene currentScene;
-        private List<Scene> sceneList = new List<Scene>(); 
+        private readonly List<Scene> sceneList = []; 
         private string resourceDir;
         
         // declare timers for text and question timings
-        private Timer textTimer;
-        private Timer questionTimer;
+        private readonly Timer textTimer;
+        private readonly Timer questionTimer;
         
         // variable to track the current character index in the text being displayed
         private int currentCharIndex;
@@ -52,11 +52,11 @@ namespace RiddleRaiders
         
         // player object and list of questions
         private Player player;
-        private List<Question> questionList = new List<Question>();
+        private readonly List<Question> questionList = [];
         private Question currentQuestion;
         
         // store the original width of the timer
-        private int originalTimerWidth;
+        private readonly int originalTimerWidth;
         
         // declare a flag for muting the game sounds
         private bool isMuted = false;
@@ -64,7 +64,7 @@ namespace RiddleRaiders
         // store the current language setting
         private string currentLanguage = "EN"; 
 
-        public Form1()
+        public FrmMain()
         {
 
             // set the form's start position to center of the screen
@@ -84,15 +84,19 @@ namespace RiddleRaiders
             
             // add event handler for the play button click
             btnPlay.Click += BtnPlayClick;
-            
+
             // initialize the text timer with an interval of 30 milliseconds
-            textTimer = new Timer();
-            textTimer.Interval = 30;
+            textTimer = new Timer
+            {
+                Interval = 30
+            };
             textTimer.Tick += TextTimerTick;
-            
+
             // initialize the question timer with an interval of 7 milliseconds
-            questionTimer = new Timer();
-            questionTimer.Interval = 7;
+            questionTimer = new Timer
+            {
+                Interval = 7
+            };
             questionTimer.Tick += QuestionTimerTick;
             
             // add event handlers for the answer buttons' click events
@@ -152,7 +156,7 @@ namespace RiddleRaiders
         
             if (File.Exists(questionFilePath))
             {
-                using (StreamReader sr = new StreamReader(questionFilePath))
+                using (StreamReader sr = new(questionFilePath))
                 {
                     while (!sr.EndOfStream)
                     {
@@ -248,7 +252,7 @@ namespace RiddleRaiders
             RefreshPowerUps();
             btnHalfPup.Enabled = false;
         
-            List<int> wrongAnswers = new List<int>();
+            List<int> wrongAnswers = [];
             for (int i = 0; i < currentQuestion.answers.Length; i++)
             {
                 if (currentQuestion.answers[i] != currentQuestion.right_answer)
@@ -257,7 +261,7 @@ namespace RiddleRaiders
                 }
             }
         
-            Random rnd = new Random();
+            Random rnd = new();
             int answerToRemove1 = wrongAnswers[rnd.Next(wrongAnswers.Count)];
             wrongAnswers.Remove(answerToRemove1);
             int answerToRemove2 = wrongAnswers[rnd.Next(wrongAnswers.Count)];
@@ -277,16 +281,15 @@ namespace RiddleRaiders
         private async void BtnAnswerClick(object sender, EventArgs e)
         {
             questionTimer.Stop();
-            Button btn = sender as Button;
-        
-            if (btn != null)
+
+            if (sender is Button btn)
             {
 
                 btnAnswer1.Enabled = false;
                 btnAnswer2.Enabled = false;
                 btnAnswer3.Enabled = false;
                 btnAnswer4.Enabled = false;
-        
+
                 if (btn.Text == currentQuestion.right_answer)
                 {
                     currentScene.enemy.TakeDamage(player.damage);
@@ -298,25 +301,25 @@ namespace RiddleRaiders
                     if (!wasWrong) wasWrong = true;
                     btn.BackColor = Color.Red;
                 }
-        
+
                 lblPlayerHP.Text = $"HP: {player.health}";
                 lblEnemyHP.Text = $"HP: {currentScene.enemy.health}";
-        
+
                 CheckPlayerDeath();
                 if (currentScene.enemy.health <= 0)
                 {
                     await Task.Delay(1000);
                     ChangeLevel();
                 }
-        
+
                 await Task.Delay(1000);
                 GetRandomQuestion();
-        
+
                 btnAnswer1.Enabled = true;
                 btnAnswer2.Enabled = true;
                 btnAnswer3.Enabled = true;
                 btnAnswer4.Enabled = true;
-                
+
             }
         }
         
@@ -461,7 +464,7 @@ namespace RiddleRaiders
         {
             sceneList.Clear();
         
-            sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), currentLanguage == "HU"? "Úgy tûnik, ennyi volt...\nLehet, hogy mutáns szörnyeteg vagy, de nem hagyom, hogy az utamba állj a küldetésemben.\nKészülj, teremtmény!" : "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission.\nPrepare yourself, creature!"));
+            sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), currentLanguage == "HU"? "Úgy tűnik, ennyi volt...\nLehet, hogy mutáns szörnyeteg vagy, de nem hagyom, hogy az utamba állj a küldetésemben.\nKészülj, teremtmény!" : "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission.\nPrepare yourself, creature!"));
         
             sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 3, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), currentLanguage == "HU" ? "Az a kasza elég nehéznek tûnik.\nFogadok, hogy még meglengetni sem tudod rendesen!\nDe ha mégis, biztos kitérekkár lenne elrontani egy ilyen drámai divatot a véremmel." : "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodgeit’d be a shame to ruin such dramatic fashion with my blood"));
         
@@ -483,9 +486,7 @@ namespace RiddleRaiders
             {
                 n--;
                 int k = rnd.Next(n + 1);
-                T value = list[k];
-                list[k] = list[n]; 
-                list[n] = value;
+                (list[n], list[k]) = (list[k], list[n]);
             }
 
             int extraShuffles = rnd.Next(3, 6); 
@@ -493,9 +494,7 @@ namespace RiddleRaiders
             {
                 int index1 = rnd.Next(list.Count);
                 int index2 = rnd.Next(list.Count);
-                T temp = list[index1];
-                list[index1] = list[index2]; 
-                list[index2] = temp;
+                (list[index2], list[index1]) = (list[index1], list[index2]);
             }
         }
         
@@ -700,9 +699,9 @@ namespace RiddleRaiders
         private void RefreshPowerUps()
         {
 
-            btnHalfPup.Enabled = pUpHalf.owned > 0 ? true : false;
-            btnStopTimePup.Enabled = pUpStopTime.owned > 0 ? true : false;
-            btnHealthPup.Enabled = pUpHealth.owned > 0 ? true : false;
+            btnHalfPup.Enabled = pUpHalf.owned > 0;
+            btnStopTimePup.Enabled = pUpStopTime.owned > 0;
+            btnHealthPup.Enabled = pUpHealth.owned > 0;
 
             RefreshPowerUpButtons();
 
@@ -712,7 +711,7 @@ namespace RiddleRaiders
         private void GivePowerUps(int max, int chancePercentage)
         {
 
-            Random rng = new Random();
+            Random rng = new();
 
             pUpHalf.owned += rng.Next(1, 100) <= chancePercentage ? rng.Next(1, max) : 0;
             pUpStopTime.owned += rng.Next(1, 100) <= chancePercentage ? rng.Next(1, max) : 0;

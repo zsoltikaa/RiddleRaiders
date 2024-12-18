@@ -484,23 +484,16 @@ namespace RiddleRaiders
         // shuffles a list of items randomly. It performs a basic shuffle and then adds extra shuffles for additional randomness.
         public static void Shuffle<T>(List<T> list)
         {
-            int n = list.Count;
-        
-            while (n > 1)
+
+            for (int i = 0; i < list.Count/2; i++)
             {
-                n--;
-                int k = rnd.Next(n + 1);
-                (list[n], list[k]) = (list[k], list[n]);
+                int ri = rnd.Next(list.Count);
+                int rj = rnd.Next(list.Count);
+
+                (list[ri], list[rj]) = (list[rj], list[ri]);
             }
 
-            int extraShuffles = rnd.Next(3, 6); 
-            for (int i = 0; i < extraShuffles; i++)
-            {
-                int index1 = rnd.Next(list.Count);
-                int index2 = rnd.Next(list.Count);
-                (list[index2], list[index1]) = (list[index1], list[index2]);
             }
-        }
         
         // changes the level by incrementing the level counter and updating the scene and power-ups.
         private void ChangeLevel()

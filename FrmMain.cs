@@ -23,7 +23,7 @@ namespace RiddleRaiders
         
         // define constants for power-up settings
         private const int MAX_POWERUP_PER_LEVEL = 3; 
-        private const int POWERUP_DROP_CHANCE = 20;
+        private const int POWERUP_DROP_CHANCE = 100;
         
         // declare boolean flags for various game states
         private bool wasWrong = false; 
@@ -224,27 +224,31 @@ namespace RiddleRaiders
                 lblPlayerHP.Text = $"HP: {player.health}";
             }
         }
-        
+
         // uses the stop time power-up to pause the question timer
         private void BtnStopTimePupClick(object sender, EventArgs e)
         {
             pUpStopTime.owned--;
             RefreshPowerUps();
-            btnStopTimePup.Enabled = false;
-        
-            questionTimer.Stop();
-            isTimeStopped = true;
-        
+            btnStopTimePup.Enabled = false; 
+
+            questionTimer.Stop(); 
+            isTimeStopped = true; 
+
             Task.Delay(5000).ContinueWith(t =>
             {
-                if (!isTimeStopped)
+                if (isTimeStopped) 
                 {
-                    Invoke(() => questionTimer.Start());
-                    isTimeStopped = false;
+                    Invoke(() =>
+                    {
+                        questionTimer.Start();
+                        isTimeStopped = false; 
+                    });
                 }
             });
         }
-        
+
+
         // uses the half-pick power-up to remove two wrong answers from the choices
         private void BtnHalfPupClick(object sender, EventArgs e)
         {
@@ -466,7 +470,7 @@ namespace RiddleRaiders
         
             sceneList.Add(new Scene($"{resourceDir}jungle.jpg", "Jungle", new Position(390, 476), new Enemy("Mutated Crocodile", 2, 1, $"{resourceDir}mutated_crocodile.png", new Position(900, 534)), currentLanguage == "HU"? "Úgy tűnik, ennyi volt...\nLehet, hogy mutáns szörnyeteg vagy, de nem hagyom, hogy az utamba állj a küldetésemben.\nKészülj, teremtmény!" : "Looks like this is it...\nYou may be a mutated beast, but I won't let you stand in the way of my mission.\nPrepare yourself, creature!"));
         
-            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 3, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), currentLanguage == "HU" ? "Az a kasza elég nehéznek tûnik.\nFogadok, hogy még meglengetni sem tudod rendesen!\nDe ha mégis, biztos kitérekkár lenne elrontani egy ilyen drámai divatot a véremmel." : "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodgeit’d be a shame to ruin such dramatic fashion with my blood"));
+            sceneList.Add(new Scene($"{resourceDir}ancient_building.jpg", "Ancient Building", new Position(390, 496), new Enemy("Black Guy", 3, 2, $"{resourceDir}black_guy.png", new Position(800, 425)), currentLanguage == "HU" ? "Az a kasza elég nehéznek tűnik.\nFogadok, hogy még meglengetni sem tudod rendesen!\nDe ha mégis, biztos kitérekkár lenne elrontani egy ilyen drámai divatot a véremmel." : "That scythe looks heavy.\nBet you can't even swing it properly!\nThough, if you can, I'll be sure to dodgeit’d be a shame to ruin such dramatic fashion with my blood"));
         
             sceneList.Add(new Scene($"{resourceDir}mountain.jpg", "Mountain", new Position(350, 390), new Enemy("Long Arms", 4, 2, $"{resourceDir}long_arms.png", new Position(800, 350)), currentLanguage == "HU" ? "Szép karok!\nVan hozzájuk használati útmutató, vagy csak improvizálsz és reménykedsz a legjobbakban?\nHadd találjam kiazok a dolgok ölelésre valók... nagyon agresszívan, igaz?" : "Nice arms! \nDo they come with a user manual, or are you just winging it and hoping for the best? \nLet me guessthose things are for hugging... real aggressively, right?"));
         
